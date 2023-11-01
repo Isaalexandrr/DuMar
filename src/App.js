@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -6,22 +6,18 @@ function App() {
   const estiloDeFundo = {
     backgroundColor: '#538AAD', // Substitua pela cor desejada
     color: '#ffffff', // Cor do texto
-    minHeight: '100vh', // Para garantir que o fundo se estenda até o final da página
-    
-  
+    minHeight: '100vh',
   };
-  
+
+ 
 
   return (
     <div style={estiloDeFundo}>
-      <p className="font-custom">DuMar</p>
-  
-    
+      <p className="font-custom"></p>
+      
+      
     </div>
-    
   );
 }
-
-
 
 export default App;
