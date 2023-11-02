@@ -3,7 +3,7 @@ function Products() {
         <div>
             Produtos
         </div>
-    )
+    );
 }
 
-export default Products();
+export default Products;

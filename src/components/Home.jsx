@@ -1,34 +1,31 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.module.css';
 
 function Home() {
-    return (
-        <div>
-        <div class="serch-box">
-          <input type="text" class="serch-txt" placeholder="Pesquisar"/>
-          <a href="#" class="serch-btn">
-            <img src="loupe.png" width="20" height="18" alt="Lupa"/>
-          </a>
+  return (
+    <div className="serch-box">
+          <div className="serch-btn">
+            <input type="text" className="serch-txt" placeholder="Pesquisar" />
         </div>
-        <div class="img-logo2">
-          <img src="./imagens/logo2.png"  height="50%" alt="DUMAR"/>
-        </div>
-       <div class="titulo">
-        <h1  style="color: #A8F2FE;" >Consumo <br/> Consiente</h1>
-       </div>
-       <div class="subtitulo"> 
-         <h2> Você sabia que 70% dos <br/>resíduos do mar brasileiro <br/>são plástico?</h2> 
-       </div>
-      <div class="img-peixe"> 
-        <img src="peixe.png" alt="peixinhos"/> 
-      </div> 
-    
-      <div class="img-menu">
-        <img src="menu.png" alt="menu"/>
-    
+
+      <div className="img-logo2">
+          <img src="./imagens/logo2.png" className="img-logo2" alt="DUMAR" />
+      </div>
+      <div className="titulo">
+       <h1 className="text-primary">Consumo Consciente</h1>
+      </div>
+      <div className="subtitulo">
+        <h2> Você sabia que 70% dos resíduos do mar brasileiro são plástico?</h2>
+      </div>
+      <div className="img-peixe">
+          <img src="peixe.png" className="img-peixe" alt="peixinhos" />
+      </div>
+      <div className="img-menu">
+          <img src="menu.png" className="img-menu" alt="menu" />
       </div>
     </div>
-    );
-  }
+  );
+}
 
-  export default Home();
+export default Home;
