@@ -16,11 +16,12 @@ function Home() {
        <h1 className="text-primary">Consumo Consciente</h1>
       </div>
       <div className="subtitulo">
-        <h2> Você sabia que 70% dos resíduos do mar brasileiro são plástico?</h2>
+        <h2> Você sabia que 70% dos <br /> resíduos do mar brasileiro <br /> são plástico?</h2>
       </div>
       <div className="img-peixe">
-          <img src="peixe.png" className="img-peixe" alt="peixinhos" />
+          <img src="/imagens/peixe.png" className="img-peixe" alt="peixinhos" />
       </div>
+
       <div className="img-menu">
           <img src="menu.png" className="img-menu" alt="menu" />
       </div>
