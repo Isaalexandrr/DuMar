@@ -1,9 +1,28 @@
 function Login() {
     return (
-        <div>
-            Login
+        <div class="container mt-4">
+        <div class="row justify-content-left">
+            <div class="col-md-10 mx-auto col-lg-5">
+                <h1 class="text-center mb-4">Bem-Vindo(a).Acesse sua conta!</h1>
+                <form class="p-4 p-md-5 border rounded-4 bg-#538AAD">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail"/>
+                        <label for="inputEmail">E-mail</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Senha"/>
+                        <label for="inputPassword">Senha</label>
+                    </div>
+                    <div class="checkbox mb-4">
+                        <input class="form-check-input" type="checkbox" value="Lembrar-me" id="rememberMe"/>
+                        <label class="form-check-label" for="rememberMe">Lembrar-me</label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-success" type="submit">Entrar</button>
+                    <p style="color:blue">Ainda não tem uma conta? Inscreva-se</p>
+                </form>
+            </div>
         </div>
-    );
-}
+    </div>
 
-export default Login;
+ )} 
+ export default Login
