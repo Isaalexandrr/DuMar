@@ -1,19 +1,19 @@
 body {
-    margin: 0%;
-    height: 100vh;
-    width: 100vh;
-   background-color: #538AAD;
+  margin: 0%;
+  height: 100vh;
+  width: 100vh;
+ background-color: #538AAD;
 }
 /* estilo caixa de pesquisa */
 .serch-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #538AAD;
-    flex-direction: column;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #538AAD;
+  flex-direction: column;
+}
+
 
   
   .serch-txt {
@@ -26,11 +26,13 @@ body {
     width: 200px;
   }
   
-
-
-
+  .img-logo2 {
+    width: 30%;
+    height: 50%;
+  }
+  
   .titulo {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   
   .subtitulo {
@@ -43,15 +45,7 @@ body {
     height: 50%;
   }
   
- 
-
-
-
-
-
-
-
-
-
-
-
+  .img-menu {
+    width: 30px;
+    height: 30px;
+  }
