@@ -30,7 +30,7 @@ body {
   .img-logo2 {
     width: 250px;
     height: auto;
-    margin-top: -110px;
+    margin-top: -100px;
    
   }
   
@@ -44,13 +44,37 @@ body {
     margin-bottom: 20px;
     
   }
-  
+ /* imagens */ 
   .img-peixe {
-    width: 30%;
-    height: 50%;
+    width: 600px;
+    height: auto;
+    position: absolute;
+    left: 30%;
+    bottom: 25%;
+  }
+  .img-alga{
+    width: 480px;
+    height: auto;
+    position: absolute;
+    top: 130px;
+    left: 30%;
+  }
+
+  .img-onda1{
+    width: 1440px;
+    height: auto;
+    position: absolute;
+    bottom: -1px;
+    right: 1px;
+
   }
   
-  .img-menu {
-    width: 30px;
-    height: 30px;
+  .img-aguaviva{
+    width: 490px;
+    height: auto;
+    position: absolute;
+    left: 55%;
+    top: 15px;
+
   }
+
