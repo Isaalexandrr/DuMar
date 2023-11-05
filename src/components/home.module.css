@@ -65,7 +65,7 @@ body {
 }
  /*lupa da barra de pesquisa*/
 
-.searchContainer {
+ .searchContainer {
   position: relative;
 }
 
@@ -90,7 +90,6 @@ body {
   top: 50%; 
   transform: translateY(-50%);
 }
-
 
 /* Botão icone de  compra  */
 

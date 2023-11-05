@@ -10,14 +10,19 @@ import aguaviva from './imagens/aguaviva.png';
 import onda2 from './imagens/onda2.png';
 import alga from './imagens/alga.png';
 import peixe2 from './imagens/peixe2.png';
+import loupeIcon from './imagens/loupe.png';
 
 function Home() {
-  function Home() {
+  
     return (
       <div className={styles.container}>
         <div className={styles.searchContainer}>
-          <div className={styles.searchBox}></div>
-        </div>
+      <div className={styles.searchBox}>
+        <button className={styles.searchButton}>
+          <img className={styles.searchIcon} src={loupeIcon} alt="Ícone de pesquisa" />
+        </button>
+      </div>
+    </div>
   
         <button className={styles.userButton}>
           <img src={userIcon} className={styles.userIcon} alt="Ícone de Usuário" />
@@ -67,7 +72,7 @@ function Home() {
         </div>
       </div>
     );
-  }
+  
   
 } 
 export default Home;
