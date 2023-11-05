@@ -123,18 +123,30 @@ body {
  
 }
 
+<<<<<<< HEAD
 /* Titulo consumo consciente */
 .titulo {
+=======
+.titulo{
+  color: #A8F2FE;
+  font-size: 60px;
+  font-weight:bolder;
+  margin-left: 20px;
+  width: 200px;
+>>>>>>> b79193523d71e86d2069606152b094af5976ff19
   margin-top: 20px;
- 
+  line-height: 65px;
 }
 
 /* Subtitulo você sabia */
 .subtitulo {
-  font-size: 20px;
-  margin-bottom: 20px;
-  
+font-size: 30px;
+margin-bottom: 20px;
+margin-left: 60px;
+width: 400px;
+line-height: 40px;
 }
+
 /* imagens */ 
 .img-peixe {
   width: 600px;
