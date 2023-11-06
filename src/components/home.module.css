@@ -46,13 +46,21 @@ body {
     width: 400px;
     line-height: 40px;
   }
-  
-  .img-peixe {
-    width: 30%;
-    height: 50%;
-  }
-  
+
   .img-menu {
     width: 30px;
     height: 30px;
   }
+
+  .img-esquerdo img{ 
+    vertical-align: top;
+    position: absolute;
+  }
+
+  .img-direito img{ 
+    margin: auto;
+    margin-inline-start: 200px;
+    position: static;
+	  display: grid;
+  }
+
