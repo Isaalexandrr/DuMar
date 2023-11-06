@@ -7,8 +7,10 @@ function Login() {
     
     return (
       
-        <div className="container mt-10">
-            <img src="onda5.png" class="w-15"></img>
+        <div className="container">
+
+        <img src="imagens/onda5.png" alt="" />
+            
         <div className="row justify-content-left">
             <div className="col-md-10 mx-auto col-lg-5">
                 <h1 className="text align:center mb-5 justify-content-left"></h1>
