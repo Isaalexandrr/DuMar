@@ -97,7 +97,7 @@ body {
 
 .cartButton {
   position: fixed;
-  bottom: 497px; 
+  top: 10px; 
   right: 30px; 
   width: 40px;
   height: 40px; 
