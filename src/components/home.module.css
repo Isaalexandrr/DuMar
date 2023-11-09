@@ -1,4 +1,26 @@
 
 
 
+body{
+    background-color: #538AAD;
+}
+
+.grid-menu{
+    flex: 0.5;
+    background-color: white;
+   
+    
+}
+
+.img-logo1{
+    height: 50px;
+    margin-left: 20px;
+}
+.img-logo2 {
+    height: 20px;
+   margin-left: 20px;
+}
+
+
+
 
