@@ -2,13 +2,6 @@ body{
 background-color: #538AAD;
 }
 
-.grid-menu{
-  flex: 0.5;
-  background-color: white;
- 
-  
-}
-
 .img-logo1{
   height: 50px;
   margin-left: 20px;
@@ -18,19 +11,54 @@ background-color: #538AAD;
  margin-left: 20px;
 }
 
-.botao {
+.entrar {
   background-color: #0A376E;
   border-radius: 50px;
   display: flex;
- 
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+
+
 }
-.botao p{
-  
+
+.entrar svg{
+   margin-right: 10px;
+    width: 30px;
+    height: 30px;
+   
+}
+
+.entrar p{
     color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.carrinho {
+    background-color: #0A376E;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+.carrinho svg{
+    text-align: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    
 }
 
 .pessoa-carro {
     display: flex;
+    gap: 35px;
+    margin-right: 60px;
+    align-items: center;
 }
 
 .search-box{
@@ -38,7 +66,7 @@ background-color: #538AAD;
     height: 50px;
     border: 3px solid #0A376E;
     border-radius: 20px;
-    margin-left: 80px;
+    margin-left: 350px;
 
 }
 
@@ -66,13 +94,6 @@ background-color: #538AAD;
 
 
 
-.nav-bar{
-    width: 1520px;
-  
-
-}
-
-
 .bgt-blue{
   background-color: #B0C5D1;
   color: bisque;
@@ -80,4 +101,29 @@ background-color: #538AAD;
 .personalize-bg{
   background-color: #B0C5D1;
   width: 100%;
+}
+
+.texto-h1{
+    color: #A8F2FE;
+    font-size: 60px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.texto-h3{
+    font-size: 25px;
+    margin-left: 85px;
+    
+}
+
+.onda-coral{
+    width: 110px;
+}
+.cardume-g{
+    width: 250px;
+}
+.cardume-p{
+    width: 400px;
+}
+.onda-agua{
+    width: 500px;
 }
