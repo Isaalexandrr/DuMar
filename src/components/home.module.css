@@ -1,16 +1,8 @@
 
-
-
 body{
     background-color: #538AAD;
 }
 
-.grid-menu{
-    flex: 0.5;
-    background-color: white;
-   
-    
-}
 
 .img-logo1{
     height: 50px;
@@ -21,6 +13,58 @@ body{
    margin-left: 20px;
 }
 
+.botao {
+  background-color: #0A376E;
+  border-radius: 50px;
+  display: flex;
+ 
+}
+.botao p{
+  
+    color: white;
+}
 
+.pessoa-carro {
+    display: flex;
+}
+
+.search-box{
+    width: 550px;
+    height: 50px;
+    border: 3px solid #0A376E;
+    border-radius: 20px;
+    margin-left: 80px;
+
+}
+
+.search-txt{
+    margin: 10px;
+    border: 0;
+    outline: none;
+    background: none;
+   
+}
+
+.search-bnt {
+    margin-left: 300px;
+    cursor: pointer ;
+    border: none;
+    background: none;
+
+}
+
+
+.search-bnt button:hover{
+   color: #0A376E;
+}
+
+
+
+
+.nav-bar{
+    width: 1520px;
+  
+
+}
 
 
