@@ -57,7 +57,7 @@ function Home() {
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" className={styles['personalize-bg']}>
          <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Quem somos <span class="sr-only"></span></a>
@@ -66,19 +66,24 @@ function Home() {
                 <a class="nav-link" href="#">Contato</a>
             </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Consumo consciente</a>
+            </li>
 
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" 
+                href="#" id="navbarDropdownMenuLink" 
+                role="button" 
+                data-toggle="dropdown" 
+                aria-haspopup="true" 
+                aria-expanded="false">Categorias</a>
+        <div class="dropdown-menu" >
           <a class="dropdown-item" href="#">Peixes</a>
           <a class="dropdown-item" href="#">Moluscos</a>
           <a class="dropdown-item" href="#">Crustáceos</a>
         </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Consumo consciente</a>
-            </li>
         </ul>
       </div>
     </nav>
