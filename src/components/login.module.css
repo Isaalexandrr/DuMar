@@ -1,0 +1,42 @@
+.container {
+    background-color: #538aad;
+}
+.ondastar {
+    height: 5%;
+}
+.welcome {
+    color: #a8f2fe;
+}
+.mergulhador {
+    height: 10%;
+    float: right;
+}
+.ondaalga2 {
+    height: 10%;
+}
+.peixebolha {
+    height: 5%;
+}
+.ondaalga3 {
+    height: 12%;
+    float: right;
+}
+.email, .senha {
+    width: 320px;
+    height: 40px;
+    border-radius: 15px;
+}
+.esqueceu {
+    justify-content: end;
+    text-align: end;
+}
+.entrar {
+    width: 320px;
+    height: 40px;
+    background-color: #a8f2fe;
+    border-radius: 20px;
+}
+small a {
+    color: #a8f2fe;
+    text-decoration: none;
+}
