@@ -11,8 +11,8 @@ function Login() {
   return (
     <div className={styles.container} class="container-fluid">
       <div class="row">
-        <div class="col-5">
-          <img src={ondaestrela} className={styles.ondastar} class="img-fluid" alt="" />
+        <div class="col-5 col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 m-0 p-0">
+          <img src={ondaestrela} className={styles.ondastar} alt="" />
           <div class="text-center">
             <h1 className={styles.welcome}>
               Bem-vindo(a).
@@ -24,21 +24,24 @@ function Login() {
               </div>
               <div class="form-group m-3">
                 <input className={styles.senha} type="passowrd" name="" id="" placeholder="digite sua senha"/> 
-                <br />
-                <small className={styles.esqueceu}>
+                <div className="text-end w-75 fs-4">  
+                <small>
                   <a href="">esqueceu a senha?</a>
                 </small>
+                </div>
               </div>
               <input type="button" className={styles.entrar} value="Entrar"/>
               <br />
+              <div className="fs-4">
               <small>
                 Ainda não tem uma conta? <a href="">inscreva-se</a>
               </small>
+              </div>
             </form>
           </div>
           <img className={styles.ondaalga2} src={ondaalga2} alt="" />
         </div>
-        <div class="col-7">
+        <div class="col-7 d-none d-lg-block d-xl-block d-xxl-block m-0 p-0">
           <img src={mergulhador} className={styles.mergulhador} alt="" />
           <img src={peixebolha} className={styles.peixebolha} alt="" />
           <img src={ondaalga3} className={styles.ondaalga3} alt="" />
