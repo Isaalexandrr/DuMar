@@ -1,4 +1,8 @@
-body{  
+* {
+    box-sizing: border-box;
+  }
+
+body{
 background-color: #538AAD;
 }
 
@@ -91,16 +95,16 @@ background-color: #538AAD;
    color: #0A376E;
 }
 
-
-
-
 .bgt-blue{
   background-color: #B0C5D1;
   color: bisque;
 }
+
 .personalize-bg{
   background-color: #B0C5D1;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .texto-h1{
@@ -121,9 +125,16 @@ background-color: #538AAD;
 .cardume-g{
     width: 250px;
 }
+
 .cardume-p{
-    width: 400px;
+    width: 420px;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 10%;
 }
 .onda-agua{
-    width: 500px;
+    width: 400px;
+    float: right;
+    margin-top: 5%;
+
 }
