@@ -8,9 +8,6 @@ import cardumepequeno from './imagens/cardume-peixe-pequeno.png';
 import ondaaguaviva from './imagens/onda-agua-viva.png';
 import cardumegrande from './imagens/cardume-peixe-grande.png';
 import ondacoral from './imagens/onda-coral.png';
-import salmao from './imagens/download.jpeg';
-import ondaestrela from './imagens/onda-estrela-2.png';
-
 
 
 
@@ -71,11 +68,7 @@ function Home() {
         <div id="navbarNavDropdown" className={styles['personalize-bg']}>
          <ul class="navbar-nav ms-3 gap-3">
             <li class="nav-item active ">
-<<<<<<< HEAD
                 <a class="nav-link" href="#">Quem somos <span class="sr-only"></span></a>
-=======
-                <a  class="nav-link" href="#">Quem somos <span class="sr-only"></span></a>
->>>>>>> 5d09e6c04027acd228c19f912813e0e06121e9ed
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contato</a>
@@ -110,13 +103,8 @@ function Home() {
 
 
         <header>
-<<<<<<< HEAD
         <div className='row m-0 p-0'>
-=======
-         <section>
-           <div className='row m-0 p-0'>
->>>>>>> 5d09e6c04027acd228c19f912813e0e06121e9ed
-                <div className="col w-xs-100 w-sm-100 w-md-100 col-lg-5 col-xl-5 col-xxl-5 m-0 p-0">
+                <div className="col w-xs-100 w-sm-100 5 m-0 p-0">
 
                     <h1 className={styles['texto-h1']}>DuMar para <br /> a sua mesa!</h1>
                     <h3 className={styles['texto-h3']}>Produtos fresquinhos <br />diariamente!</h3>
@@ -125,102 +113,27 @@ function Home() {
                 </div>
             
 
-                <div className="col-7 d-none d-lg-block d-xl-block d-xxl-block m-0 p-0">
+                <div className="col d-none d-lg-block d-xl-block d-xxl-block m-0 p-0">
                      <img src={cardumepequeno} className={styles['cardume-p']} alt="Cardume.pequeno" />
                      <img src={ondaaguaviva} className={styles['onda-agua']} alt="Onda.aguaviva" />
                 </div>
 
             </div>
-<<<<<<< HEAD
         
-=======
-         </section>
-            
-
-
-         <section>
-        
-
-         </section>
->>>>>>> 5d09e6c04027acd228c19f912813e0e06121e9ed
         </header>
+        
 
         <main>
-          
             <section>
-
-                {/* <div className={styles['imagem']}>
-                    <img src={cardumepequeno} alt="" className={styles['peixe-p']}/>
-                    <img src={ondaestrela} alt="" className={styles['onda-estrela']} />
-                </div>
- */}
-
-
-            <div className={styles['box']}>
-
-                <div className={styles['grid-caixa']}>
-                    <img src={salmao} alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-
-                <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-
-                <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-
-                <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-            </div>
-
 
             </section>
-            <div className={styles['box']}>
-                <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-
-                <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-
-                <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-
-                <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-            </div>
 
             <section>
-            
+
+            </section>
+
+            <section>
+
             </section>
         </main>
 
