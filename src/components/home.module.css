@@ -138,3 +138,49 @@ background-color: #538AAD;
     margin-top: 5%;
 
 }
+.grid-caixa{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+       
+}
+.box{
+    display: grid;
+    flex: 1;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 30px;
+    width: 80%;
+    margin: 50px;
+    margin-left: 140px;
+}
+ 
+   
+.grid-caixa input{
+    background-color: #94C3C9;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 4px 120px 4px 60px ;
+    width: 120px;
+    height: 30px;
+    flex-shrink: 0;
+    
+}
+
+.grid-caixa input:hover{
+    box-shadow: 0px 0px 8px #94C3C9;
+    transform: scale(1.05);
+}
+.grid-caixa img{
+    margin-top: 10px;
+}
+
+.imagem{
+    display: flex;
+    
+}
+
