@@ -49,21 +49,57 @@ small a {
 }
 
 @media screen and (max-width: 576px) {
-    /* .mergulhador, .ondaalga3, .peixebolha {
-        display: none;
-    } */
+    .email, .senha {
+        width: 90%;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+    .entrar {
+        width: 70%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .welcome {
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
-    /* .mergulhador, .ondaalga3, .peixebolha {
-        display: none;
-    } */
+    .email, .senha {
+        width: 90%;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+    .entrar {
+        width: 70%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .welcome {
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    /* .mergulhador, .ondaalga3, .peixebolha {
-        display: none;
-    } */
+    .email, .senha {
+        width: 60%;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+    .entrar {
+        width: 50%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .welcome {
+        font-size: 40px;
+    }
+    .ondaalga2 {
+        margin-top: 30%;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {

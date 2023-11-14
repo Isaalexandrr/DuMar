@@ -11,7 +11,7 @@ function Login() {
   return (
     <div className={styles.container} class="container-fluid">
       <div class="row">
-        <div class="col-5 col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5 m-0 p-0">
+        <div class="col w-xs-100 w-sm-100 w-md-100 col-lg-5 col-xl-5 col-xxl-5 m-0 p-0">
           <img src={ondaestrela} className={styles.ondastar} alt="" />
           <div class="text-center">
             <h1 className={styles.welcome}>
