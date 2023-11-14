@@ -60,14 +60,14 @@ function Home() {
        </nav>
 
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-light w-auto p-0">
+     <nav class="navbar-expand-lg navbar-light m-0 p-0 ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" className={styles['personalize-bg']}>
-         <ul class="navbar-nav">
-            <li class="nav-item active">
+        <div id="navbarNavDropdown" className={styles['personalize-bg']}>
+         <ul class="navbar-nav ms-3 gap-3">
+            <li class="nav-item active ">
                 <a class="nav-link" href="#">Quem somos <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
@@ -103,8 +103,8 @@ function Home() {
 
 
         <header>
-            <div className='row'>
-                <div className="col-5">
+        <div className='row m-0 p-0'>
+                <div className="col w-xs-100 w-sm-100 w-md-100 col-lg-5 col-xl-5 col-xxl-5 m-0 p-0">
 
                     <h1 className={styles['texto-h1']}>DuMar para <br /> a sua mesa!</h1>
                     <h3 className={styles['texto-h3']}>Produtos fresquinhos <br />diariamente!</h3>
@@ -113,12 +113,13 @@ function Home() {
                 </div>
             
 
-                <div className='col-7'>
+                <div className="col-7 d-none d-lg-block d-xl-block d-xxl-block m-0 p-0">
                      <img src={cardumepequeno} className={styles['cardume-p']} alt="Cardume.pequeno" />
                      <img src={ondaaguaviva} className={styles['onda-agua']} alt="Onda.aguaviva" />
                 </div>
 
             </div>
+        
         </header>
 
         <main>
