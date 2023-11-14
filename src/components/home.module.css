@@ -122,8 +122,11 @@ background-color: #538AAD;
     width: 250px;
 }
 .cardume-p{
-    width: 400px;
+    width: 450px;
+   margin-top: 260px;
 }
 .onda-agua{
-    width: 500px;
+    width: 450px;
+    position: absolute;
+    margin-top: 50px
 }
