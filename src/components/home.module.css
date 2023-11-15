@@ -111,6 +111,8 @@ background-color: #538AAD;
     width: 300px;
     height: 400px;
     justify-content: center;
+    border-top: 5px solid #0A376E; 
+    
     
        
 }
@@ -121,8 +123,8 @@ background-color: #538AAD;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 30px;
     width: 80%;
-    margin: 50px;
-    margin-left: 140px;
+    margin-bottom: 40px;
+    margin-left: 100px;
 }
  
    
@@ -145,6 +147,9 @@ background-color: #538AAD;
     transform: scale(1.05);
 }
 .grid-caixa img{
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
     margin-top: 10px;
 }
 

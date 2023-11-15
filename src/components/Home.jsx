@@ -10,6 +10,13 @@ import cardumegrande from './imagens/cardume-peixe-grande.png';
 import ondacoral from './imagens/onda-coral.png';
 import salmao from './imagens/download.jpeg';
 import ondaestrela from './imagens/onda-estrela-2.png';
+import camarao from './imagens/camarao.jpg';
+import tilapia from './imagens/tilapia.jpg';
+import lagosta from './imagens/lagosta.jpg';
+import atum from './imagens/atum.jpg';
+import bacalhau from './imagens/bacalhau.jpg'
+import corvina from './imagens/corvina.jpg'
+import arenque from './imagens/arenque.jpg';
 
 
 
@@ -153,28 +160,28 @@ function Home() {
                 <div className={styles['grid-caixa']}>
                     <img src={salmao} alt="Salmão" />
                     <h3>Salmão</h3>
-                    <p>R$</p>
+                    <p>R$ 40,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
 
                 <div className={styles['grid-caixa']}>
-                    <img src="" alt="Camarão" />
+                    <img src={camarao} alt="Camarão" />
                     <h3>Camarão</h3>
-                    <p>R$</p>
+                    <p>R$ 25,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
 
                 <div className={styles['grid-caixa']}>
-                    <img src="" alt="Tilapia" />
+                    <img src={tilapia} alt="Tilapia" />
                     <h3>Tilapia</h3>
-                    <p>R$</p>
+                    <p>R$ 45,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
 
                 <div className={styles['grid-caixa']}>
-                    <img src="" alt="Lagosta" />
+                    <img src={lagosta} alt="Lagosta" />
                     <h3>Lagosta</h3>
-                    <p>R$</p>
+                    <p>R$ 70,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
             </div>
@@ -183,30 +190,30 @@ function Home() {
             </section>
             <div className={styles['box']}>
                 <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
+                    <img src={atum} alt="Atum" />
+                    <h3>Atum</h3>
+                    <p>R$ 30,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
 
                 <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
+                    <img src={bacalhau} alt="Bacalhau" />
+                    <h3>Bacalhau</h3>
+                    <p>R$ 20,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
 
                 <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
+                    <img src={corvina} alt="Corvina" />
+                    <h3>Corvina</h3>
+                    <p>R$ 20,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
 
                 <div className={styles['grid-caixa']}>
-                    <img src="" alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$</p>
+                    <img src= {arenque} alt="arenque" />
+                    <h3>Arenque</h3>
+                    <p>R$ 12,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
             </div>
