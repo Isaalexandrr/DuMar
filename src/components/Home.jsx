@@ -27,25 +27,27 @@ function Home() {
        
        <nav class="navbar navbar-light bg-light"> 
           
-          <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#">
             <div className='logos'>
                     <img src={logo1} className={styles['img-logo1']} alt="DUMAR" />
                     <img src={logo2} className={styles['img-logo2']} alt="DUMAR" />
-           </div>
-          </a>
-  
-          <form class="form-inline">
-  
-  
-              <div className={styles['search-box']}>
-               <input  type="search" placeholder="Pesquisar" className={styles['search-txt']}/>
-              <button type='submit' className={styles['search-bnt']}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" color='#0A376E' > 
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
-              </button>
-              
-              </div>
-          </form>
+            </div>
+        </a>
+
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+            <form class="d-flex" role="search">
+            <input className={styles['barra']} class="form-control" type="search" placeholder="Pesquisar" aria-label="Search"/>
+            <button className={styles['lupa']} class="btn p-0" type="submit">
+            <i class="bi bi-search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </i>
+        </button>
+        </form>
+             </div>
+        </nav>
   
           <div className={styles['pessoa-carro']}>
 
@@ -107,9 +109,10 @@ function Home() {
 
 
         <header>
-         <section>
-           <div className='row m-0 p-0'>
-                <div className="col w-xs-100 w-sm-100 w-md-100 col-lg-5 col-xl-5 col-xxl-5 m-0 p-0">
+        <section>
+            
+        <div className='row m-0 p-0'>
+                <div className="col w-xs-100 w-sm-100 m-0 p-0">
 
                     <h1 className={styles['texto-h1']}>DuMar para <br /> a sua mesa!</h1>
                     <h3 className={styles['texto-h3']}>Produtos fresquinhos <br />diariamente!</h3>
@@ -118,7 +121,7 @@ function Home() {
                 </div>
             
 
-                <div className="col-7 d-none d-lg-block d-xl-block d-xxl-block m-0 p-0">
+                <div className="col d-none d-lg-block  m-0 p-0">
                      <img src={cardumepequeno} className={styles['cardume-p']} alt="Cardume.pequeno" />
                      <img src={ondaaguaviva} className={styles['onda-agua']} alt="Onda.aguaviva" />
                 </div>
