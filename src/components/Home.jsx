@@ -216,16 +216,47 @@ function Home() {
         </main>
 
         <footer>
+        <h1>Contatos</h1>
 
+      <div class="container text-center">
+    <div class="row align-items-end">
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+      <h2>Alanes</h2>
+      <p>+55 81 9 8319-7918</p>
+    </div>
+
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+     <h2 > Andreza</h2>
+     <p>+55 81 9517-1524</p>
+    </div>
+
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+      <h2>Gabriela </h2>
+      <p>+55 81 8585-1699</p>
+    </div>
+
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+      <h2>Gerson </h2>
+      <p>+55 81 8898-7159</p>
+    </div>
+
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+     <h2>Isabela</h2>
+     <p>+55 81 9728-8086</p>
+    </div>
+  </div>
+</div>
         </footer>
 
 
      </div>
 
   
-   
-    
-
     );
 
 } 
