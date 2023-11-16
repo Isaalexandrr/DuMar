@@ -114,7 +114,7 @@ function Home() {
 
 
 
-
+    
         <header>
         <section>
             
@@ -142,20 +142,22 @@ function Home() {
         
 
          </section>
-        </header>
+         </header>
 
         <main>
           
             <section>
 
                 {/* <div className={styles['imagem']}>
-                    <img src={cardumepequeno} alt="" className={styles['peixe-p']}/>
-                    <img src={ondaestrela} alt="" className={styles['onda-estrela']} />
-                </div>
- */}
+                     <img src={cardumepequeno} alt="" className={styles['peixe-p']}/>
+                     <img src={ondaestrela} alt="" className={styles['onda-estrela']} />
+                   </div>
+                */}
+             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner justify-content-center">
+              <div class="carousel-item active" >
 
-
-            <div className={styles['box']}>
+              <div className={styles['box']}>
 
                 <div className={styles['grid-caixa']}>
                     <img src={salmao} alt="Salmão" />
@@ -163,7 +165,7 @@ function Home() {
                     <p>R$ 40,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
-
+              
                 <div className={styles['grid-caixa']}>
                     <img src={camarao} alt="Camarão" />
                     <h3>Camarão</h3>
@@ -184,11 +186,29 @@ function Home() {
                     <p>R$ 70,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
-            </div>
+              </div>
+              <button class="carousel-control-prev" type="button"  data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon me-2" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+               <span class="carousel-control-next-icon me-4" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
 
-
+              </button>
+             
+             </div>
+             
+             </div>
+             </div>
             </section>
-            <div className={styles['box']}>
+
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner justify-content-center">
+            <div class="carousel-item active" >
+
+            <div className ={styles['box']}>
                 <div className={styles['grid-caixa']}>
                     <img src={atum} alt="Atum" />
                     <h3>Atum</h3>
@@ -216,6 +236,13 @@ function Home() {
                     <p>R$ 12,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
+
+                </div>
+
+              </div>
+            </div>
+             
+                
             </div>
 
             <section>
@@ -228,7 +255,7 @@ function Home() {
         </footer>
 
 
-     </div>
+    </div>
 
   
    
