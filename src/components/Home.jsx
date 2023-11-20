@@ -251,13 +251,35 @@ function Home() {
 
             </div>
 
-            <section>
+                
+            <div class ="container-fluid  bg-white">
+                <section>
+                <h2>
+                O que é “DuMar”?
+                <br />
+                <p>
+                “DuMar” é um E-commerce (comércio eletrônico) que oferece serviços de compra e venda de peixes e frutos do mar.
+                </p>
+                </h2>
+                <h2>
+                Propósito e missão:
+                <br />
+                    <p>
+                    No DuMar, nossa missão é oferecer peixes frescos diretamente de pescadores locais,  contribuindo para a saúde dos consumidores e
+                     preservando os oceanos. Ao escolher o DuMar, você apoia práticas pesqueiras sustentáveis, ajuda na renda dos pescadores e 
+                     faz parte de uma comunidade comprometida com um futuro mais saudável e consciente.
+                     Junte-se a nós no DuMar - onde cada compra conta para uma vida melhor e um planeta mais preservado.
+                    </p>
+                </h2>
+                </section>
+                </div>
             
-            </section>
         </main>
+        
+           
 
         <footer>
-        <h1>Contatos</h1>
+        <h2>Nossa Equipe</h2>
 
       <div class="container text-center">
     <div class="row align-items-end">
