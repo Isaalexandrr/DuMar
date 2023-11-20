@@ -164,15 +164,6 @@ function Home() {
 
                 <div className={styles['grid-caixa']}>
                     <img src={salmao} alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$ 40,00</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-
-                <div className={styles['grid-caixa']}>
-                    <img src={camarao} alt="Camarão" />
-                    <h3>Camarão</h3>
-                    <p>R$ 25,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
 
