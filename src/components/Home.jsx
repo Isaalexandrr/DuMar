@@ -191,11 +191,11 @@ function Home() {
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon me-2" aria-hidden="true"></span>
+               <span class="carousel-control-prev-icon me-4" aria-hidden="true"></span>
                <span class="visually-hidden">Previous</span>
                </button>
                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon me-4" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon me-2" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
               </button>
 
