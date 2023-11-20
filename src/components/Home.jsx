@@ -8,6 +8,17 @@ import cardumepequeno from './imagens/cardume-peixe-pequeno.png';
 import ondaaguaviva from './imagens/onda-agua-viva.png';
 import cardumegrande from './imagens/cardume-peixe-grande.png';
 import ondacoral from './imagens/onda-coral.png';
+import salmao from './imagens/download.jpeg';
+import ondaestrela from './imagens/onda-estrela-2.png';
+import camarao from './imagens/camarao.jpg';
+import tilapia from './imagens/tilapia.jpg';
+import lagosta from './imagens/lagosta.jpg';
+import atum from './imagens/atum.jpg';
+import bacalhau from './imagens/bacalhau.jpg'
+import corvina from './imagens/corvina.jpg'
+import arenque from './imagens/arenque.jpg';
+
+
 
 
 
@@ -47,13 +58,13 @@ function Home() {
   
           <div className={styles['pessoa-carro']}>
 
-          <button type="button" class="btn btn-secondary btn-sm" className={styles['entrar']}> 
+          <button type="button" class=" btn-secondary btn-sm" className={styles['entrar']}> 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" color='white'> 
           <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>
             <p>Entrar</p>
           </button>
   
-          <button type="button" class="btn btn-secondary btn-sm"  className={styles['carrinho']} >
+          <button type="button" class="btn-secondary btn-sm"  className={styles['carrinho']} >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16" color='white'>
               <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/></svg>
           </button>
@@ -105,6 +116,8 @@ function Home() {
 
 
         <header>
+        <section>
+            
         <div className='row m-0 p-0'>
                 <div className="col w-xs-100 w-sm-100 m-0 p-0">
 
@@ -128,7 +141,108 @@ function Home() {
         <main>
             <section>
 
-            </section>
+                {/* <div className={styles['imagem']}>
+                    <img src={cardumepequeno} alt="" className={styles['peixe-p']}/>
+                    <img src={ondaestrela} alt="" className={styles['onda-estrela']} />
+                </div>
+ */}        </section>
+
+        <section>
+
+             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner justify-content-center">
+              <div class="carousel-item active" >
+             <div className={styles['box']}>
+                
+
+                <div className={styles['grid-caixa']}>
+                    <img src={salmao} alt="Salmão" />
+                    <h3>Salmão</h3>
+                    <p>R$ 40,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                <div className={styles['grid-caixa']}>
+                    <img src={camarao} alt="Camarão" />
+                    <h3>Camarão</h3>
+                    <p>R$ 25,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                <div className={styles['grid-caixa']}>
+                    <img src={tilapia} alt="Tilapia" />
+                    <h3>Tilapia</h3>
+                    <p>R$ 45,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                <div className={styles['grid-caixa']}>
+                    <img src={lagosta} alt="Lagosta" />
+                    <h3>Lagosta</h3>
+                    <p>R$ 70,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon me-4" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon me-2" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+
+              </div>
+              </div>
+              </div>
+            </div>
+
+
+
+
+          </section>
+
+          
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+           <div class="carousel-inner justify-content-center">
+           <div class="carousel-item active" >
+            <div className={styles['box']}>
+                <div className={styles['grid-caixa']}>
+                    <img src={atum} alt="Atum" />
+                    <h3>Atum</h3>
+                    <p>R$ 30,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                <div className={styles['grid-caixa']}>
+                    <img src={bacalhau} alt="Bacalhau" />
+                    <h3>Bacalhau</h3>
+                    <p>R$ 20,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                <div className={styles['grid-caixa']}>
+                    <img src={corvina} alt="Corvina" />
+                    <h3>Corvina</h3>
+                    <p>R$ 20,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                <div className={styles['grid-caixa']}>
+                    <img src= {arenque} alt="arenque" />
+                    <h3>Arenque</h3>
+                    <p>R$ 12,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                
+             </div>
+             </div>
+             </div>
+             
+
+
+            </div>
 
             <section>
 
@@ -140,16 +254,47 @@ function Home() {
         </main>
 
         <footer>
+        <h1>Contatos</h1>
 
+      <div class="container text-center">
+    <div class="row align-items-end">
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+      <h2>Alanes</h2>
+      <p>+55 81 9 8319-7918</p>
+    </div>
+
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+     <h2 > Andreza</h2>
+     <p>+55 81 9517-1524</p>
+    </div>
+
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+      <h2>Gabriela </h2>
+      <p>+55 81 8585-1699</p>
+    </div>
+
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+      <h2>Gerson </h2>
+      <p>+55 81 8898-7159</p>
+    </div>
+
+    <div class="col">
+    <img src="..." class="card-img-end" alt="..."/>
+     <h2>Isabela</h2>
+     <p>+55 81 9728-8086</p>
+    </div>
+  </div>
+</div>
         </footer>
 
 
      </div>
 
   
-   
-    
-
     );
 
 } 
