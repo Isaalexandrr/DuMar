@@ -17,11 +17,13 @@ import atum from './imagens/atum.jpg';
 import bacalhau from './imagens/bacalhau.jpg'
 import corvina from './imagens/corvina.jpg'
 import arenque from './imagens/arenque.jpg';
+import sardinha from './imagens/Sardinha.jpg';
 import Alanes from './imagens/Alanes.jpg';
 import Gabii from './imagens/Gabii.jpeg';
 import ISABELA from './imagens/ISABELA (1).png';
 import Andrezaa from './imagens/Andrezaa.jpg';
 import Gerson from './imagens/Gerson.jpeg';
+
 
 
 
@@ -163,22 +165,13 @@ function Home() {
 
         <section>
 
-             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner justify-content-center">
               <div class="carousel-item active" >
              <div className={styles['box']}>
-                
-
                 <div className={styles['grid-caixa']}>
                     <img src={salmao} alt="Salmão" />
                     <h3>Salmão</h3>
-                    <p>R$ 40,00</p>
-                    <input type="button" name="" id="" value="Comprar"/>
-                </div>
-
-                <div className={styles['grid-caixa']}>
-                    <img src={camarao} alt="Camarão" />
-                    <h3>Camarão</h3>
                     <p>R$ 25,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
@@ -187,6 +180,13 @@ function Home() {
                     <img src={tilapia} alt="Tilapia" />
                     <h3>Tilapia</h3>
                     <p>R$ 45,00</p>
+                    <input type="button" name="" id="" value="Comprar"/>
+                </div>
+
+                <div className={styles['grid-caixa']}>
+                    <img src={sardinha} alt="Sardinha" />
+                    <h3>Sardinha</h3>
+                    <p>R$ 20,00</p>
                     <input type="button" name="" id="" value="Comprar"/>
                 </div>
 
@@ -209,12 +209,14 @@ function Home() {
               </div>
               </div>
               </div>
+              
+              
             </div>
 
 
 
 
-          </section>
+        </section>
 
           
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -256,7 +258,7 @@ function Home() {
              
 
 
-            </div>
+             </div>
 
         
                 <section>
