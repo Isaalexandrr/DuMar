@@ -28,7 +28,7 @@ function Login() {
                         <label class="form-check-label" for="rememberMe">Lembrar-me</label>
                     </div>
                     <button class="w-100 btn btn-lg btn-success" type="submit">Entrar</button>
-                    <p style="color:blue">Ainda não tem uma conta? Inscreva-se</p>
+                    <p styles="color:blue">Ainda não tem uma conta? Inscreva-se</p>
                 </form>
             </div>
         </div>
