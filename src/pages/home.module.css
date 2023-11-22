@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+background-color: #538AAD;
+}
+
+.grid-caixa{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    border-top: 5px solid #0A376E; 
+    
+    
+       
+}
+.box{
+    display: grid;
+    flex: 1;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 30px;
+    width: 80%;
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+ 
+   
+.grid-caixa input{
+    background-color: #94C3C9;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 4px 120px 4px 60px ;
+    width: 120px;
+    height: 30px;
+    flex-shrink: 0;
+    
+}
+
+.grid-caixa input:hover{
+    box-shadow: 0px 0px 8px #94C3C9;
+    transform: scale(1.05);
+}
+.grid-caixa img{
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #0A376E;
+    height: auto;
+    width: 100vw;
+    font-family: Open Sans;
+    font-size: 13px;
+    padding-top: 70px;
+    color: white;
+}
+footer h1{
+    
+    margin-left: 28px;
+    font-size: 30px;
+    padding-right: 20px;
+    justify-content: right 25px;
+}
+footer h2{
+    font-size: 18px;
+}
+
+
+/* .imagem{
+    display: flex;
+    
+} */
+
+.grid-caixa{
+    width: 250px;
+}
+
+
+
