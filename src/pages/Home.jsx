@@ -224,6 +224,46 @@ function Home() {
           </div>
         </div>
 
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner justify-content-center">
+            <div class="carousel-item active">
+              <div className={styles["box"]}>
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Atum" />
+                  <h3>Lulas</h3>
+                  <p>R$ 45,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Bacalhau" />
+                  <h3>Polvo</h3>
+                  <p>R$ 25,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Corvina" />
+                  <h3>Merluza</h3>
+                  <p>R$ 15,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="arenque" />
+                  <h3>Caranguejo</h3>
+                  <p>R$ 16,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <section></section>
 
         <section></section>
