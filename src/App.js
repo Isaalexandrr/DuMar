@@ -1,10 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/Home';
-import Login from './components/Login';
-import Products from './components/Products';
-import { Consumo } from './components/Consumo';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Products from './pages/Products';
+import Navbar from './components/Navbar';
+import { Consumo } from './pages/Consumo';
 
 
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <Router>
       <div>
+        <Navbar/>
         <nav>
          
         </nav>

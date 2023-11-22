@@ -1,12 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from './Consumo.module.css';
-import icon from './imagens/icons8-ajuda-50.png';
-import logo1 from './imagens/logo1.png';
-import logo2 from './imagens/logo2.png';
-import foca from './imagens/Foca.jpeg';
-import tartaruga from './imagens/Tartaruga.jpeg';
-import peixes from './imagens/peixes.png';
+import icon from '../imagens/icons8-ajuda-50.png';
+import logo1 from '../imagens/logo1.png';
+import logo2 from '../imagens/logo2.png';
+import foca from '../imagens/Foca.jpeg';
+import tartaruga from '../imagens/Tartaruga.jpeg';
+import peixes from '../imagens/peixes.png';
 
 
 
