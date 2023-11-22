@@ -189,6 +189,7 @@
 
 .container-consumo{
     display: flex;
+  
     
 }
 
@@ -199,8 +200,38 @@
 
 h1{
     font-size: 16px;
-    margin-left: 190px;
+    margin-left: 180px;
+    
 }
+
+h2{
+    font-size: 16px;
+    margin-left: -10px;
+    margin-top: 170px;
+
+    
+
+}
+
+p{
+    margin-top:80px;
+   
+
+}
+
+h1{
+    margin-left: -50px;
+    margin-top: 30px;
+}
+
+h4{
+    font-size: 16px;
+    margin-left: 160px;
+    margin-top: 40px;
+}
+
+
+
 
 html {
     background-color: black;
@@ -210,6 +241,35 @@ html {
 body {
     margin: 0; 
 }
+
+.img-tartaruga{
+   position: absolute;
+   top: 440px;
+   right: 100px;
+  
+}
+
+.img-foca{
+    position: absolute;
+    top: 590px;
+    right: 100px;
+}
+
+.img-peixes {
+    width: 900px; 
+    height:600px;
+    margin-left: -10px;
+    margin-top: -130px;
+
+
+}
+
+
+
+
+
+
+  
   
 
 
