@@ -2,14 +2,23 @@
     background-color: #538aad;
 }
 .ondaestrela3{
-    justify-content: right;
-    height: 250px;
+    position: absolute;
+    left: 90%;
+    height: 350px;
     width: auto;
+    align-items: end;
+    display: flow-root;
+    margin-block-end: auto;
 }
 .ondacoral{
-    justify-content: left;
-    height: 250px;
-    width: auto
+    position: absolute;
+    right: 92%;
+     padding: 2%;
+    align-items:start;
+    justify-content: start;
+    height: 350px;
+    width:auto;
+    margin-block-start: auto;
 }
 
 .welcome {

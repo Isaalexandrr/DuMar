@@ -197,21 +197,44 @@ footer{
     height: auto;
     width: 100vw;
     font-family: Open Sans;
-    font-size: 13px;
-    padding-top: 70px;
+    font-size: 14px;
+    padding-top: 40px;
     color: black;
 }
-footer h1{
-    
-    margin-left: 28px;
-    font-size: 30px;
-    padding-right: 20px;
-    justify-content: right 25px;
-}
 footer h2{
-    font-size: 18px;
+    font-size: 16px;
     color: #0A376E;
+    font-weight:bold;
 }
+footer p{
+    text-align: justify;
+    font-family: open Sans;
+    letter-spacing: 2px;
+}
+small{
+    font-size: 16px;
+    font-weight: bold;
+    color: #0A376E;
+    display: flex;
+   justify-content: center;
+
+}
+footer h3{
+    font-size: 14px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    display: flex;
+    border-radius: 50px;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    
+}
+
 
 
 @media screen and (min-width: 950px) {
