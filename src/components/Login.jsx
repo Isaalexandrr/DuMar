@@ -9,7 +9,7 @@ import ondaestrela3 from "./imagens/onda-estrela-3.png";
 function Login() {
   return (
     <div className={styles.container} class="container-fluid">
-       <img src={ondaestrela3} className= {styles.ondaestrela3} alt="" />       
+       <img src={ondaestrela3} className= {styles.ondaestrela3} alt="" />    
       <div class="row justify-content-center">
         <div class="col w-xs-100 w-sm-100 w-md-100 col-lg-5 col-xl-5 col-xxl-5 m-0 p-0 ">
           <div class="text-center justify-content-center">
@@ -25,6 +25,7 @@ function Login() {
                 <input className={styles.senha} type="passowrd" name="" id="" placeholder=  "  Senha "/> 
                 <div className="text-end-center w-80 fs-4">  
                 <small>
+                  
                   <a href="">   esqueceu a senha?  </a>
                 </small>
                 </div>
@@ -34,16 +35,16 @@ function Login() {
               <div class="fs-4">
               <small>
                 Ainda não tem uma conta?
-                <br />
-                < a href=""> inscreva-se! </a>
+                 <br />
+                 < a href="">inscreva-se!</a>
               </small>
               </div>
             </form>
             </div>
-            <div class="col-1">
+            <div class="col">
               <img src={ondacoral} className= {styles.ondacoral} alt="" />             
 
-             
+              
             </div>
             </div>
       </div>
