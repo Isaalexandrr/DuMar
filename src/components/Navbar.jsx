@@ -1,17 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
-
 import logo1 from "../imagens/logo1.png";
 import logo2 from "../imagens/logo2.png";
 import styles from "./Navbar.module.css";
-
-
 import { IoSearch, IoCartOutline, IoPersonSharp } from "react-icons/io5";
 
 function Navbar() {
   return (
-    <div className={styles["nav-bar grid-caixa"]}>
+    <div className={styles ["nav-bar grid-caixa"]}>
       <nav class="navbar navbar-light bg-light ">
         <a class="navbar-brand" href="#">
           <div className="logos" class="grid text-center mx-4">
