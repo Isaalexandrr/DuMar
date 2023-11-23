@@ -10,7 +10,7 @@ import { IoSearch, IoCartOutline, IoPersonSharp } from "react-icons/io5";
 
 function Navbar() {
   return (
-    <div className={styles["nav-bar grid-caixa"]}>
+    <div className={styles ["nav-bar grid-caixa"]}>
       <nav class="navbar navbar-light bg-light ">
         <a class="navbar-brand" href="#">
           <div className="logos" class="grid text-center mx-4">
