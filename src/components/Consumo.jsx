@@ -7,6 +7,7 @@ import logo2 from './imagens/logo2.png';
 import foca from './imagens/Foca.jpeg';
 import tartaruga from './imagens/Tartaruga.jpeg';
 import peixes from './imagens/peixes.png';
+import lixo from './imagens/lixo.png';
 
 
 
@@ -23,21 +24,21 @@ return (
         
         <div className={styles['nav-bar']}>  
        
-       <nav class="navbar navbar-light bg-light"> 
+       <nav className="navbar navbar-light bg-light"> 
           
-        <a class="navbar-brand" href="#">
+        <a className="navbar-brand" href="#">
             <div className='logos'>
                     <img src={logo1} className={styles['img-logo1']} alt="DUMAR" />
                     <img src={logo2} className={styles['img-logo2']} alt="DUMAR" />
             </div>
         </a>
 
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-            <form class="d-flex" role="search">
+        <nav className="navbar bg-body-tertiary">
+            <div className="container-fluid">
+            <form className="d-flex" role="search">
             <input className={styles['barra']} class="form-control" type="search" placeholder="Pesquisar" aria-label="Search"/>
             <button className={styles['lupa']} class="btn p-0" type="submit">
-            <i class="bi bi-search">
+            <i className="bi bi-search">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
@@ -64,35 +65,35 @@ return (
        </nav>
 
 
-     <nav class="navbar-expand-lg navbar-light m-0 p-0 ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
+     <nav className="navbar-expand-lg navbar-light m-0 p-0 ">
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span className="navbar-toggler-icon"></span>
         </button>
 
         <div id="navbarNavDropdown" className={styles['personalize-bg']}>
-         <ul class="navbar-nav ms-5 gap-4 ">
-            <li class="nav-item active ">
-                <a  class="nav-link" href="#">Quem somos <span class="sr-only"></span></a>
+         <ul className="navbar-nav ms-5 gap-4 ">
+            <li className="nav-item active ">
+                <a  className="nav-link" href="#">Quem somos <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#">Consumo consciente</a>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Contato</a>
             </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" 
+            <li className="nav-item">
+                <a className="nav-link" href="#">Consumo consciente</a>
+            </li>
+
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" 
                 href="#" id="navbarDropdownMenuLink" 
                 role="button" 
                 data-toggle="dropdown" 
                 aria-haspopup="true" 
                 aria-expanded="false">Categorias</a>
-        <div class="dropdown-menu" >
-          <a class="dropdown-item" href="#">Peixes</a>
-          <a class="dropdown-item" href="#">Moluscos</a>
-          <a class="dropdown-item" href="#">Crustáceos</a>
+        <div className="dropdown-menu" >
+          <a className="dropdown-item" href="#">Peixes</a>
+          <a className="dropdown-item" href="#">Moluscos</a>
+          <a className="dropdown-item" href="#">Crustáceos</a>
         </div>
             </li>
 
@@ -150,13 +151,13 @@ return (
    O consumo desenfreado de peixes ameaçados de extinção <br />alimenta um ciclo perigoso. Além da redução das populações <br />dessas espécies, há impactos significativos na biodiversidade<br /> marinha, desequilibrando ecossistemas e prejudicando outras<br /> formas de vida marinha.<br />
    Além disso, a perda de peixes-chave na cadeia alimentar marinha <br />pode ter consequências graves para as comunidades humanas que <br />dependem desses recursos para alimentação e subsistência.</p>
 
-   <div class="container mt-4">
-  <div class="row">
-    <div class="col-md-4 " >
-      <div class="card" style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "15px",display: "flex", flexDirection: "column", alignItems: "center", left:200, top:'30%', width:350, height:400 }}>
+   <div className="container mt-4">
+  <div className="row">
+    <div className="col-md-4 " >
+      <div className="card" style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "15px",display: "flex", flexDirection: "column", alignItems: "center", left:200, top:'30%', width:350, height:400 }}>
       
-        <div class="card-body d-flex flex-column align-items-start">
-          <h1 class="card-title font-weight-bold text-dark custom-text-size text-center "  style={{
+        <div className="card-body d-flex flex-column align-items-start">
+          <h1 className="card-title font-weight-bold text-dark custom-text-size text-center "  style={{
           textAlign: "center", margin:"0 auto"}}>
           ESPÉCIES SERIAMENTES AMEAÇADAS DE <br />EXTINÇÃO <br />
           <strong><span class="text-danger">!!PESCA PROIBIDA!!</span></strong>
@@ -172,8 +173,7 @@ return (
   </div>
 </div>
 
-   
-  
+
               
   </div>
   </section>
@@ -181,7 +181,14 @@ return (
   <section>
    <div>
    <div className='container-pesca'style={{ display: 'flex', alignItems: 'flex-start'}}> 
-  <h1>DICAS DE PRESERVAÇÃO</h1>
+    <h1>DICAS DE PRESERVAÇÃO</h1>
+    <div className="img-dicas">
+   
+
+   
+   
+   </div>
+   
   
 
 
