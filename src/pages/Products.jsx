@@ -17,12 +17,12 @@ function Products() {
     <div className="container-fluid p-0">
         <main>
         <section> 
-            
+        
             <div class="col-12" >
                     <h1 className={styles['texto']}>MEUS PEDIDOS</h1>
-                    <div className={styles['caixa']}>
+                    <div className={styles['caixa']} >
                         <div className={styles['grid-caixa']}>
-                            <div className={styles['grid-item']}>
+                            <div className={styles['grid-item']} >
 
                                 <div className={styles['data']}>
                                     <p>**Data do pedido**</p>
@@ -60,12 +60,11 @@ function Products() {
                                         <li  data-avaliacao="4"></li>
                                         <li  data-avaliacao="5"></li>
                                     </ul>
-
                                 </div>
                                 
 
                                 <div className={styles['comprar-nov']}> 
-                                    <a href="#">Comprar novamente</a>
+                                    <input type="submit" value="Comprar novamente"/>
                                 </div>
                             </div>
                         </div>
@@ -101,14 +100,20 @@ function Products() {
                                     </div>
 
                                     <div className={styles['avaliacao']}>
-                                        <p>Avaliação</p>
-                                        
+                                    <p>Avaliação</p>
+                                    <ul>
+                                        <li  data-avaliacao="1"></li>
+                                        <li  data-avaliacao="2"></li>
+                                        <li  data-avaliacao="3"></li>
+                                        <li  data-avaliacao="4"></li>
+                                        <li  data-avaliacao="5"></li>
+                                    </ul>
+                                </div>
+                                
 
-                                    </div>
-
-                                    <div className={styles['comprar-nov']}> 
-                                        <a href="#">Comprar novamente</a>
-                                    </div>
+                                <div className={styles['comprar-nov']}> 
+                                    <input type="submit" value="Comprar novamente"/>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -147,13 +152,20 @@ function Products() {
                                     </div>
 
                                     <div className={styles['avaliacao']}>
-                                        <p>Avaliação</p>
+                                    <p>Avaliação</p>
+                                    <ul>
+                                        <li  data-avaliacao="1"></li>
+                                        <li  data-avaliacao="2"></li>
+                                        <li  data-avaliacao="3"></li>
+                                        <li  data-avaliacao="4"></li>
+                                        <li  data-avaliacao="5"></li>
+                                    </ul>
+                                </div>
+                                
 
-                                    </div>
-
-                                    <div className={styles['comprar-nov']}> 
-                                        <a href="#">Comprar novamente</a>
-                                    </div>
+                                <div className={styles['comprar-nov']}> 
+                                    <input type="submit" value="Comprar novamente"/>
+                                </div>
                                 </div>
                             </div>
 
@@ -188,13 +200,20 @@ function Products() {
                                     </div>
 
                                     <div className={styles['avaliacao']}>
-                                        <p>Avaliação</p>
+                                    <p>Avaliação</p>
+                                    <ul>
+                                        <li  data-avaliacao="1"></li>
+                                        <li  data-avaliacao="2"></li>
+                                        <li  data-avaliacao="3"></li>
+                                        <li  data-avaliacao="4"></li>
+                                        <li  data-avaliacao="5"></li>
+                                    </ul>
+                                </div>
+                                
 
-                                    </div>
-
-                                    <div className={styles['comprar-nov']}> 
-                                        <a href="#">Comprar novamente</a>
-                                    </div>
+                                <div className={styles['comprar-nov']}> 
+                                    <input type="submit" value="Comprar novamente"/>
+                                </div>
                                 </div>
                             </div>
                         </div>

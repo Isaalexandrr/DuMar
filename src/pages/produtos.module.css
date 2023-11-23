@@ -14,8 +14,8 @@
 
 .grid-caixa{
     background-color: white;
-    width: 315px;
-    height: 290px;
+    width: 318px;
+    height: 316px;
     justify-content: center;
     margin-top: 90px;
     
@@ -24,8 +24,9 @@
 
 .grid-item{
     margin: 10px;
-    margin-top: 20px;
     margin-left: 20px;
+    margin-top: 20px;
+    
 }
 
 
@@ -90,15 +91,20 @@
     display: flex;
 }
 
+.avaliacao p{
+    margin-top: 20px;
+}
+
 .avaliacao ul{
     display: flex;
+   
 }
 
 .avaliacao li{
     list-style-type: none;
     cursor: pointer;
     color: #0A376E;
-    font-size: 20px;
+    font-size: 40px;
     margin-bottom: 40px;
     
 }
@@ -120,9 +126,35 @@
     content: "\2606";
 }
 
+.comprar-nov input{
+    background-color: #0A376E;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    color: white;
+    border-radius: 40px;
+    font-size: 20px;
+ 
+}
 
 h1{
     color: white;
     font-size: 30px;
     text-align: center;
+}
+
+.imagens{
+    display: flex;
+
+}
+
+.ondacoral{
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.ondaestrela{
+    height: 350px;
+    padding-left: 1130px;
+  
 }
