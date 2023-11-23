@@ -1,3 +1,13 @@
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import styles from './login.module.css';
+
+import ondaestrela from "../imagens/onda-estrela.png";
+import ondaalga2 from "../imagens/onda-alga-2.png";
+import peixebolha from "../imagens/cardume-bolha-pequeno.png";
+import ondaalga3 from "../imagens/onda-alga-3.png";
+
 function Login() {
     return (
         <div class="container mt-4">
@@ -18,11 +28,15 @@ function Login() {
                         <label class="form-check-label" for="rememberMe">Lembrar-me</label>
                     </div>
                     <button class="w-100 btn btn-lg btn-success" type="submit">Entrar</button>
-                    <p style="color:blue">Ainda não tem uma conta? Inscreva-se</p>
+                    <p styles="color:blue">Ainda não tem uma conta? Inscreva-se</p>
                 </form>
             </div>
         </div>
-    </div>
+        <div class="col-7 d-none d-lg-block d-xl-block d-xxl-block m-0 p-0">
+          <img src={peixebolha} className={styles.peixebolha} alt="" />
+          <img src={ondaalga3} className={styles.ondaalga3} alt="" />
+        </div>
+      </div>
 
  )} 
  export default Login

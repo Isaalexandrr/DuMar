@@ -1,17 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from './Consumo.module.css';
-import icon from './imagens/icons8-ajuda-50.png';
-import logo1 from './imagens/logo1.png';
-import logo2 from './imagens/logo2.png';
-import foca from './imagens/Foca.jpeg';
-import tartaruga from './imagens/Tartaruga.jpeg';
-import peixes from './imagens/peixes.png';
-import lixo from './imagens/lixo.png';
-
-
-
-
+import icon from '../imagens/icons8-ajuda-50.png';
+import logo1 from '../imagens/logo1.png';
+import logo2 from '../imagens/logo2.png';
+import foca from '../imagens/Foca.jpeg';
+import tartaruga from '../imagens/Tartaruga.jpeg';
+import peixes from '../imagens/peixes.png';
 
 
 const Consumo = () => {
@@ -23,83 +18,6 @@ return (
 <div className='container-fluid p-0' >
         
         <div className={styles['nav-bar']}>  
-       
-       <nav className="navbar navbar-light bg-light"> 
-          
-        <a className="navbar-brand" href="#">
-            <div className='logos'>
-                    <img src={logo1} className={styles['img-logo1']} alt="DUMAR" />
-                    <img src={logo2} className={styles['img-logo2']} alt="DUMAR" />
-            </div>
-        </a>
-
-        <nav className="navbar bg-body-tertiary">
-            <div className="container-fluid">
-            <form className="d-flex" role="search">
-            <input className={styles['barra']} class="form-control" type="search" placeholder="Pesquisar" aria-label="Search"/>
-            <button className={styles['lupa']} class="btn p-0" type="submit">
-            <i className="bi bi-search">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-            </i>
-        </button>
-        </form>
-             </div>
-        </nav>
-  
-          <div className={styles['pessoa-carro']}>
-
-          <button type="button" class=" btn-secondary btn-sm" className={styles['entrar']}> 
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" color='white'> 
-          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>
-            <p>Entrar</p>
-          </button>
-  
-          <button type="button" class="btn-secondary btn-sm"  className={styles['carrinho']} >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16" color='white'>
-              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/></svg>
-          </button>
-          </div>
-          
-       </nav>
-
-
-     <nav className="navbar-expand-lg navbar-light m-0 p-0 ">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div id="navbarNavDropdown" className={styles['personalize-bg']}>
-         <ul className="navbar-nav ms-5 gap-4 ">
-            <li className="nav-item active ">
-                <a  className="nav-link" href="#">Quem somos <span class="sr-only"></span></a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">Contato</a>
-            </li>
-
-            <li className="nav-item">
-                <a className="nav-link" href="#">Consumo consciente</a>
-            </li>
-
-            <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" 
-                href="#" id="navbarDropdownMenuLink" 
-                role="button" 
-                data-toggle="dropdown" 
-                aria-haspopup="true" 
-                aria-expanded="false">Categorias</a>
-        <div className="dropdown-menu" >
-          <a className="dropdown-item" href="#">Peixes</a>
-          <a className="dropdown-item" href="#">Moluscos</a>
-          <a className="dropdown-item" href="#">Crustáceos</a>
-        </div>
-            </li>
-
-        </ul>
-      </div>
-    </nav>
 
   </div>
   </div>
@@ -151,13 +69,13 @@ return (
    O consumo desenfreado de peixes ameaçados de extinção <br />alimenta um ciclo perigoso. Além da redução das populações <br />dessas espécies, há impactos significativos na biodiversidade<br /> marinha, desequilibrando ecossistemas e prejudicando outras<br /> formas de vida marinha.<br />
    Além disso, a perda de peixes-chave na cadeia alimentar marinha <br />pode ter consequências graves para as comunidades humanas que <br />dependem desses recursos para alimentação e subsistência.</p>
 
-   <div className="container mt-4">
-  <div className="row">
-    <div className="col-md-4 " >
-      <div className="card" style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "15px",display: "flex", flexDirection: "column", alignItems: "center", left:200, top:'30%', width:350, height:400 }}>
+   <div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 " >
+      <div class="card" style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "15px",display: "flex", flexDirection: "column", alignItems: "center", left:200, top:'30%', width:350, height:400 }}>
       
-        <div className="card-body d-flex flex-column align-items-start">
-          <h1 className="card-title font-weight-bold text-dark custom-text-size text-center "  style={{
+        <div class="card-body d-flex flex-column align-items-start">
+          <h1 class="card-title font-weight-bold text-dark custom-text-size text-center "  style={{
           textAlign: "center", margin:"0 auto"}}>
           ESPÉCIES SERIAMENTES AMEAÇADAS DE <br />EXTINÇÃO <br />
           <strong><span class="text-danger">!!PESCA PROIBIDA!!</span></strong>
@@ -173,7 +91,8 @@ return (
   </div>
 </div>
 
-
+   
+  
               
   </div>
   </section>
@@ -181,14 +100,7 @@ return (
   <section>
    <div>
    <div className='container-pesca'style={{ display: 'flex', alignItems: 'flex-start'}}> 
-    <h1>DICAS DE PRESERVAÇÃO</h1>
-    <div className="img-dicas">
-   
-
-   
-   
-   </div>
-   
+  <h1>DICAS DE PRESERVAÇÃO</h1>
   
 
 
@@ -218,4 +130,3 @@ return (
 );
 }
 export { Consumo };
-
