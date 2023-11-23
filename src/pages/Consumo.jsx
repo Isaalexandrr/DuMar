@@ -130,4 +130,3 @@ return (
 );
 }
 export { Consumo };
-

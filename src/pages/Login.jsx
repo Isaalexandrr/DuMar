@@ -1,51 +1,42 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./login.module.css";
-import ondaestrela3 from "../imagens/onda-estrela-3.png";
-import ondacoral from "../imagens/onda-coral.png";
+
+import styles from './login.module.css';
+
+import ondaestrela from "../imagens/onda-estrela.png";
+import ondaalga2 from "../imagens/onda-alga-2.png";
+import peixebolha from "../imagens/cardume-bolha-pequeno.png";
+import ondaalga3 from "../imagens/onda-alga-3.png";
 
 function Login() {
-  return (
-   <div className={styles.container} class="container-fluid">
-    <div className="row justify-content-center">
-    <div class="col w-xs-100 w-sm-100 w-md-100 col-lg-5 col-xl-5 col-xxl-5 m-0 p-0 ">
-          <div class="text-center justify-content-center">
-          <h1 className={styles.welcome}> Bem vindo(a).
-                <br />
-                 Acesse sua conta!
-            </h1>
-        <form action="">
-        
-            <div className="form-group m-3 justify-content-center">
-                <input className={styles.email} type="Email" placeholder=" E-Mail "/>
+    return (
+        <div class="container mt-4">
+        <div class="row justify-content-left">
+            <div class="col-md-10 mx-auto col-lg-5">
+                <h1 class="text-center mb-4">Bem-Vindo(a).Acesse sua conta!</h1>
+                <form class="p-4 p-md-5 border rounded-4 bg-#538AAD">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail"/>
+                        <label for="inputEmail">E-mail</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Senha"/>
+                        <label for="inputPassword">Senha</label>
+                    </div>
+                    <div class="checkbox mb-4">
+                        <input class="form-check-input" type="checkbox" value="Lembrar-me" id="rememberMe"/>
+                        <label class="form-check-label" for="rememberMe">Lembrar-me</label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-success" type="submit">Entrar</button>
+                    <p styles="color:blue">Ainda não tem uma conta? Inscreva-se</p>
+                </form>
             </div>
-            <div className="form-group m-3 justify-content-center">
-                <input className={styles.senha} type="passoword" name="" id="" placeholder=" Senha "/>
-                <div className="text-end-center w-80 fs-4">
-                    <br />
-                <small>
-                    <a href=""> Esqueceu sua Senha? </a>
-                </small>
-                </div>
-            </div>
-            <input className={styles.button} type="submit" value="Entrar" a href="Entrar" />
-            
-            <div className="text-end-center w-80 fs-4"></div>
-            <br />
-            <div className="fs-4">
-                <small>
-                       Ainda não tem uma conta? <br />
-                </small>
-                <small>
-                <a href="">   Inscreva-se!  </a>
-                </small>
-                
-            </div>
-        </form>
-    </div>
-    </div>
-    </div>
-   </div>
+        </div>
+        <div class="col-7 d-none d-lg-block d-xl-block d-xxl-block m-0 p-0">
+          <img src={peixebolha} className={styles.peixebolha} alt="" />
+          <img src={ondaalga3} className={styles.ondaalga3} alt="" />
+        </div>
+      </div>
 
   );
 }
