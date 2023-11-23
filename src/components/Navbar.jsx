@@ -60,9 +60,6 @@ function Navbar() {
           <li>
             <Link to="/quemSomos">Quem somos</Link>
           </li>
-          <li>
-            <Link to="/contato">Contato</Link>
-          </li>
           <li></li>
           <Link to="/consumo">Consumo Consciente</Link>
           <li>
