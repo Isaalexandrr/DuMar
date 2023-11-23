@@ -1,4 +1,6 @@
-
+.texto{
+    font-size: 30px;
+}
 
 
 .caixa{
@@ -16,6 +18,7 @@
     height: 290px;
     justify-content: center;
     margin-top: 90px;
+    
     
 }
 
@@ -44,6 +47,7 @@
 .vendedor p{
     margin-left: 20px;
     margin-top: 5px;
+    font-size: 14px;
 }
 
 .pedido{
@@ -58,6 +62,7 @@
 .pedido p{
     margin-left: 20px;
     margin-top: 5px;
+    font-size: 14px;
 }
 
 .qnt-produto{
@@ -73,6 +78,7 @@
 .qnt-produto p{
     margin-left: 20px;
     margin-top: 5px;
+    font-size: 14px;
 }
 
 .comprar-nov{
