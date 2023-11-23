@@ -60,13 +60,13 @@ function Home() {
        </nav>
 
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-light w-auto p-0">
+     <nav class="navbar-expand-lg navbar-light bg-light w-auto p-0">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown" className={styles['personalize-bg']}>
-         <ul class="navbar-nav">
+         <ul class="navbar-nav gap-3">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Quem somos <span class="sr-only"></span></a>
             </li>
