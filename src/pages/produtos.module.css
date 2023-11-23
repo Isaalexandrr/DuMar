@@ -1,0 +1,122 @@
+
+
+
+.caixa{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    
+    
+}
+
+.grid-caixa{
+    background-color: white;
+    width: 315px;
+    height: 290px;
+    justify-content: center;
+    margin-top: 90px;
+    
+}
+
+.grid-item{
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.data{
+    text-align: center;
+}
+
+
+.vendedor{
+    display: flex; 
+
+}
+
+.vendedor svg{
+    width: 30px;
+    height: 30px;
+}
+
+.vendedor p{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.pedido{
+    display: flex;
+}
+
+.pedido svg{
+    width: 30px;
+    height: 30px;
+}
+
+.pedido p{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.qnt-produto{
+    display: flex; 
+}
+
+.qnt-produto svg{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.qnt-produto p{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.comprar-nov{
+    text-align: center;
+    
+}
+
+.avaliacao{
+    display: flex;
+}
+
+.avaliacao ul{
+    display: flex;
+}
+
+.avaliacao li{
+    list-style-type: none;
+    cursor: pointer;
+    color: #0A376E;
+    font-size: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.avaliacao li::before{
+    content: "\2605";
+}
+
+.avaliacao li.ativo ~ .avaliacao li::before{
+    content: "\2606";
+}
+
+  
+.avaliacao:hover .avaliacao li::before{
+    content: "\2605";
+}
+
+.avaliacao li:hover ~ .avaliacao li::before{
+    content: "\2606";
+}
+
+
+h1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
