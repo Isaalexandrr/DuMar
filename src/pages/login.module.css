@@ -22,11 +22,18 @@
     border-color: white;
     margin-top: 15px;
 }
+.icone{
+    display: flex;
+}
+.icones{
+    display: flex;
+}
 .esqueceuSenha small{
 justify-content: end;
 margin-top: 15px;
 text-decoration:underline;
 text-decoration-color: #a8f2fe;
+margin-left: 15px;
 }
 
 .entrar{
@@ -62,6 +69,10 @@ small a {
     font-size: 20px;
     margin-top: 20px;
     border-color: #a8f2fe;
+}
+
+.onda img{
+    margin: 0%;
 }
 
 
