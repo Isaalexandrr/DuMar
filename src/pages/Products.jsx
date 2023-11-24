@@ -53,13 +53,7 @@ function Products() {
 
                                 <div className={styles['avaliacao']}>
                                     <p>Avaliação</p>
-                                    <ul>
-                                        <li  data-avaliacao="1"></li>
-                                        <li  data-avaliacao="2"></li>
-                                        <li  data-avaliacao="3"></li>
-                                        <li  data-avaliacao="4"></li>
-                                        <li  data-avaliacao="5"></li>
-                                    </ul>
+                                   
                                 </div>
                                 
 
@@ -101,14 +95,8 @@ function Products() {
 
                                     <div className={styles['avaliacao']}>
                                     <p>Avaliação</p>
-                                    <ul>
-                                        <li  data-avaliacao="1"></li>
-                                        <li  data-avaliacao="2"></li>
-                                        <li  data-avaliacao="3"></li>
-                                        <li  data-avaliacao="4"></li>
-                                        <li  data-avaliacao="5"></li>
-                                    </ul>
-                                </div>
+                                 
+                                    </div>
                                 
 
                                 <div className={styles['comprar-nov']}> 
@@ -153,13 +141,7 @@ function Products() {
 
                                     <div className={styles['avaliacao']}>
                                     <p>Avaliação</p>
-                                    <ul>
-                                        <li  data-avaliacao="1"></li>
-                                        <li  data-avaliacao="2"></li>
-                                        <li  data-avaliacao="3"></li>
-                                        <li  data-avaliacao="4"></li>
-                                        <li  data-avaliacao="5"></li>
-                                    </ul>
+                                   
                                 </div>
                                 
 
@@ -201,13 +183,7 @@ function Products() {
 
                                     <div className={styles['avaliacao']}>
                                     <p>Avaliação</p>
-                                    <ul>
-                                        <li  data-avaliacao="1"></li>
-                                        <li  data-avaliacao="2"></li>
-                                        <li  data-avaliacao="3"></li>
-                                        <li  data-avaliacao="4"></li>
-                                        <li  data-avaliacao="5"></li>
-                                    </ul>
+                                   
                                 </div>
                                 
 
