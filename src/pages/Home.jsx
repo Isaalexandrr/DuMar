@@ -328,7 +328,7 @@ function Home() {
             </div>
 
             <div class="col">
-              <img src={Gerson} class="card-img-end" alt="..." />
+             <img src={Gerson} class="card-img-end" alt="..." />
               <br />
               <small> Gerson</small>
               <h3>gersononline42@gmail.com</h3>

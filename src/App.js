@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
+import Cadastro from "./pages/Cadastro";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div>
         <Navbar />
         <Routes>
+          <Route path="/Cadastro" element={<Cadastro />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
