@@ -51,9 +51,10 @@ return (
 
   
   <section>
+    
   <div className='container-poluição'style={{ display: 'flex', alignItems: 'flex-start'}}> 
    <h1>POLUIÇÃO!</h1>
-   <p>Nos mares do nosso planeta, um drama silencioso se desenrola diariamente. <br />Milhões de toneladas de plástico invadem nossos oceanos, transformando a <br />majestosa vastidão azul em um trágico cenário de poluição. A vida marinha,<br /> antes vibrante, agora luta pela sobrevivência em um mar de detritos<br /> plásticos. É hora de mudar esse enredo. Juntos, podemos recusar o uso de <br />plástico descartável, abraçar alternativas sustentáveis e restaurar a beleza <br />dos oceanos que são a essência da vida na Terra. O futuro do mar está em<br /> nossas mãos. #PareComOPlástico, #SalveOsOceanos.</p>
+   <p className={styles['paragrafo']}>Nos mares do nosso planeta, um drama silencioso se desenrola diariamente. <br />Milhões de toneladas de plástico invadem nossos oceanos, transformando a <br />majestosa vastidão azul em um trágico cenário de poluição. A vida marinha,<br /> antes vibrante, agora luta pela sobrevivência em um mar de detritos<br /> plásticos. É hora de mudar esse enredo. Juntos, podemos recusar o uso de <br />plástico descartável, abraçar alternativas sustentáveis e restaurar a beleza <br />dos oceanos que são a essência da vida na Terra. O futuro do mar está em<br /> nossas mãos. #PareComOPlástico, #SalveOsOceanos.</p>
    <img className={styles['img-tartaruga']} src={tartaruga} alt="" style={{ width: '280px', height: '150px' }}/>
    <img className={styles['img-foca']} src={foca} alt="" style={{ width: '280px', height: '150px' }}/>
 
@@ -64,11 +65,11 @@ return (
   <section>
   <div className='container-pesca'style={{ display: 'flex', alignItems: 'flex-start'}}> 
    <h1 style={{ whiteSpace: 'nowrap' }}>PESCA PROIBIDA!</h1>
-   <p>Nos vastos oceanos do mundo, muitas espécies de peixes<br /> enfrentam a ameaça iminente da extinção devido à pesca<br /> insustentável e à degradação do ambiente marinho.Entre essas <br />espécies estão aquelas cuja pesca é proibida devido à necessidade<br /> urgente de preservação.<br />
+   <p className={styles['paragrafo']}>Nos vastos oceanos do mundo, muitas espécies de peixes<br /> enfrentam a ameaça iminente da extinção devido à pesca<br /> insustentável e à degradação do ambiente marinho.Entre essas <br />espécies estão aquelas cuja pesca é proibida devido à necessidade<br /> urgente de preservação.<br />
    Medidas rigorosas de proibição da pesca são implementadas para<br /> tentar reverter o declínio dessas populações. No entanto, muitas<br /> vezes, a fiscalização inadequada e a demanda persistente por essas<br /> espécies contribuem para a pesca ilegal e o descumprimento das<br /> regulamentações.<br />
    O consumo desenfreado de peixes ameaçados de extinção <br />alimenta um ciclo perigoso. Além da redução das populações <br />dessas espécies, há impactos significativos na biodiversidade<br /> marinha, desequilibrando ecossistemas e prejudicando outras<br /> formas de vida marinha.<br />
    Além disso, a perda de peixes-chave na cadeia alimentar marinha <br />pode ter consequências graves para as comunidades humanas que <br />dependem desses recursos para alimentação e subsistência.</p>
-
+ 
    <div class="container mt-4">
   <div class="row">
     <div class="col-md-4 " >

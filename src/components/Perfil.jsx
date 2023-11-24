@@ -13,8 +13,10 @@ import styles from "./Perfil.module.css";
 
 function Perfil(){
     return(
-        <div>Perfil</div>
+        <div>
+                perfil
+        </div>
     ); 
 
 }
-export default Perfil;
+export default Perfil
