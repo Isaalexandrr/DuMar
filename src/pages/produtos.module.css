@@ -1,5 +1,8 @@
-.texto{
-    font-size: 30px;
+.texto h1{
+   margin-left: 420px;
+   margin-top: 80px;
+   font-size: 40px;
+   color: white;
 }
 
 
@@ -9,31 +12,44 @@
     gap: 100px;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     
-    
+}
+
+.sessao{
+    margin-bottom: 50px;
 }
 
 .grid-caixa{
     background-color: white;
-    width: 318px;
-    height: 316px;
+    width: 300px;
+    height: 270px;
     justify-content: center;
     margin-top: 90px;
-    
-    
+    border-radius: 30px;
+  
 }
 
 .grid-item{
     margin: 10px;
-    margin-left: 20px;
     margin-top: 20px;
-    
+    margin-left: 20px;
 }
 
 
-.data{
-    text-align: center;
+.pedido-1{
+    color: #FACC44;
+   
 }
 
+.pedido-2{
+    color: #00BF15;
+}
+.pedido-3{
+    color: #DC0032;
+}
+
+.pedido {
+    display: flex;
+}
 
 .vendedor{
     display: flex; 
@@ -87,55 +103,30 @@
     
 }
 
-.avaliacao{
-    display: flex;
-}
-
-.avaliacao p{
-    margin-top: 20px;
-}
-
-.avaliacao ul{
-    display: flex;
-   
-}
-
-
-
-
-.comprar-nov input{
-    cursor: pointer;
-    background-color: #0A376E;
+.comprar-nov button{
+    
+    background-color: white;
     justify-content: center;
     width: 270px;
     height: 40px;
-    color: white;
+    color:#0A376E;
     border-radius: 30px;
     font-size: 15px;
-    
-    margin-right: 10px;
+    border-color:#0A376E;
+     margin-right: 12px;
 
  
 }
 
-h1{
-    color: white;
-    font-size: 30px;
-    text-align: center;
+.imagem, .onda-coral{
+    height: 400px;
+    margin-right: 400px;
 }
 
-.imagens{
-    display: flex;
 
-}
+.onda-estrela{
+    margin-left: 1265px;
+    height: 400px;
+}  
 
-.ondacoral{
-    height: 500px;
-    margin-bottom: 30px;
-}
 
-.ondaestrela{
-    height: 350px;
-    padding-left: 1130px;
-  
-}

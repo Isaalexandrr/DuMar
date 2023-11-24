@@ -19,7 +19,7 @@ function Login() {
 
                         <form class="p-5 p-md-6">
                     <div class="form-floating mb-3 justify-content-center">
-                        <input className={styles.email} type="email"  placeholder="E-mail"/>
+                        <input className={styles.email} type="email"  placeholder="E-mail" />
                     </div>
 
                     <div class= "form-group m-3 justify-content-center" >
