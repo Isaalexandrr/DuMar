@@ -128,30 +128,58 @@ function Home() {
                 <div className={styles["box"]}>
                   <div className={styles["grid-caixa"]}>
                     <img src={camarao} alt="Salmão" />
-                    <h3>Salmão</h3>
-                    <p>R$ 40,00</p>
-                    <input type="button" name="" id="" value="Comprar" />
+                    <div className={styles["texto"]}>
+                      <h3>Salmão</h3>
+                      <h3>R$ 69,90</h3>
+                    </div>
+                    <input
+                      type="button"
+                      name=""
+                      id=""
+                      value="Adicionar à sacola"
+                    />
                   </div>
 
                   <div className={styles["grid-caixa"]}>
                     <img src={camarao} alt="Camarão" />
-                    <h3>Camarão</h3>
-                    <p>R$ 25,00</p>
-                    <input type="button" name="" id="" value="Comprar" />
+                    <div className={styles["texto"]}>
+                      <h3>Camarão</h3>
+                      <h3>R$ 35,00</h3>
+                    </div>
+                    <input
+                      type="button"
+                      name=""
+                      id=""
+                      value="Adicionar à sacola"
+                    />
                   </div>
 
                   <div className={styles["grid-caixa"]}>
                     <img src={camarao} alt="Tilapia" />
-                    <h3>Tilapia</h3>
-                    <p>R$ 45,00</p>
-                    <input type="button" name="" id="" value="Comprar" />
+                    <div className={styles["texto"]}>
+                      <h3>Tilápia</h3>
+                      <h3>R$ 20,00</h3>
+                    </div>
+                    <input
+                      type="button"
+                      name=""
+                      id=""
+                      value="Adicionar à sacola"
+                    />
                   </div>
 
                   <div className={styles["grid-caixa"]}>
                     <img src={camarao} alt="Lagosta" />
-                    <h3>Lagosta</h3>
-                    <p>R$ 70,00</p>
-                    <input type="button" name="" id="" value="Comprar" />
+                    <div className={styles["texto"]}>
+                      <h3>Lagosta</h3>
+                      <h3>R$ 69,90</h3>
+                    </div>
+                    <input
+                      type="button"
+                      name=""
+                      id=""
+                      value="Adicionar à sacola"
+                    />
                   </div>
 
                   <button
@@ -194,30 +222,58 @@ function Home() {
               <div className={styles["box"]}>
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Atum" />
-                  <h3>Atum</h3>
-                  <p>R$ 30,00</p>
-                  <input type="button" name="" id="" value="Comprar" />
+                  <div className={styles["texto"]}>
+                    <h3>Atum</h3>
+                    <h3>R$ 30,49</h3>
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Bacalhau" />
-                  <h3>Bacalhau</h3>
-                  <p>R$ 20,00</p>
-                  <input type="button" name="" id="" value="Comprar" />
+                  <div className={styles["texto"]}>
+                    <h3>Bacalhau</h3>
+                    <h3>R$ 79,90</h3>
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Corvina" />
-                  <h3>Corvina</h3>
-                  <p>R$ 20,00</p>
-                  <input type="button" name="" id="" value="Comprar" />
+                  <div className={styles["texto"]}>
+                    <h3>Corvina</h3>
+                    <h3>R$ 18,90</h3>
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="arenque" />
-                  <h3>Arenque</h3>
-                  <p>R$ 12,00</p>
-                  <input type="button" name="" id="" value="Comprar" />
+                  <div className={styles["texto"]}>
+                    <h3>Albacora</h3>
+                    <h3>R$ 20,00</h3>
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
                 </div>
               </div>
             </div>
@@ -234,30 +290,58 @@ function Home() {
               <div className={styles["box"]}>
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Atum" />
-                  <h3>Lulas</h3>
-                  <p>R$ 45,00</p>
-                  <input type="button" name="" id="" value="Comprar" />
+                  <div className={styles["texto"]}>
+                    <h3>Lula</h3>
+                    <h3>R$ 29,90</h3>
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Bacalhau" />
-                  <h3>Polvo</h3>
-                  <p>R$ 25,00</p>
-                  <input type="button" name="" id="" value="Comprar" />
+                  <div className={styles["texto"]}>
+                    <h3>Polvo</h3>
+                    <h3>R$ 65,00</h3>
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Corvina" />
-                  <h3>Merluza</h3>
-                  <p>R$ 15,00</p>
-                  <input type="button" name="" id="" value="Comprar" />
+                  <div className={styles["texto"]}>
+                    <h3>Merluza</h3>
+                    <h3>R$ 14,90</h3>
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="arenque" />
-                  <h3>Caranguejo</h3>
-                  <p>R$ 16,00</p>
-                  <input type="button" name="" id="" value="Comprar" />
+                  <div className={styles["texto"]}>
+                    <h3>Carangueijo</h3>
+                    <h3>R$ 35,00</h3>
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
                 </div>
               </div>
             </div>
@@ -328,7 +412,7 @@ function Home() {
             </div>
 
             <div class="col">
-             <img src={Gerson} class="card-img-end" alt="..." />
+              <img src={Gerson} class="card-img-end" alt="..." />
               <br />
               <small> Gerson</small>
               <h3>gersononline42@gmail.com</h3>
