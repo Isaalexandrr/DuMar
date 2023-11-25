@@ -24,7 +24,7 @@ function Login() {
                     <label htmlFor="senha"><a href="" className="link-info">Esqueceu a senha?</a></label>
                 </div>
                 <div className="mx-auto w-50 mt-5">
-                    <input type="submit" id="entrar" className="form-control rounded-pill" value="Entrar"/>
+                    <input type="submit" className="form-control rounded-pill" value="Entrar"/>
                     <label className="mt-2">Ainda não tem uma conta?</label>
                     <button className="form-control rounded-pill bg-transparent border border-info border-3 text-dark mt-2">Inscreva-se</button>
                 </div>
