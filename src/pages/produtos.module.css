@@ -1,131 +1,131 @@
 .texto h1{
    
-    margin-top: 80px;
-    font-size: 40px;
-    color: white;
- }
- 
- 
- #caixa{
-     display: flex;
-     justify-content: center;
-     gap: 100px;
-     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-     
- }
- 
- .sessao{
-     margin-bottom: 50px;
- }
- 
- #grid-caixa{
-     background-color: white;
-     width: 300px;
-     height: 270px;
-     justify-content: center;
-     margin-top: 90px;
-     border-radius: 30px;
-   
- }
- 
- .grid-item{
-     margin: 10px;
-     margin-top: 20px;
-     margin-left: 20px;
- }
- 
- 
- .pedido-1{
-     color: #FACC44;
+   margin-top: 80px;
+   font-size: 40px;
+   color: white;
+}
+
+
+#caixa{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     
- }
- 
- .pedido-2{
-     color: #00BF15;
- }
- .pedido-3{
-     color: #DC0032;
- }
- 
- .pedido {
-     display: flex;
- }
- 
- .vendedor{
-     display: flex; 
- 
- }
- 
- .vendedor svg{
-     width: 30px;
-     height: 30px;
- }
- 
- .vendedor p{
-     margin-left: 20px;
-     margin-top: 5px;
-     font-size: 14px;
- }
- 
- .pedido{
-     display: flex;
- }
- 
- .pedido svg{
-     width: 30px;
-     height: 30px;
- }
- 
- .pedido p{
-     margin-left: 20px;
-     margin-top: 5px;
-     font-size: 14px;
- }
- 
- .qnt-produto{
-     display: flex; 
- }
- 
- .qnt-produto svg{
-     width: 25px;
-     height: 25px;
-     margin-left: 5px;
- }
- 
- .qnt-produto p{
-     margin-left: 20px;
-     margin-top: 5px;
-     font-size: 14px;
- }
- 
- .comprar-nov{
-     text-align: center;
-     
- }
- 
- .comprar-nov button{
-     
-     background-color: white;
-     justify-content: center;
-     width: 270px;
-     height: 40px;
-     color:#0A376E;
-     border-radius: 30px;
-     font-size: 15px;
-     border-color:#0A376E;
-     margin-right: 40px;
- 
+}
+
+.sessao{
+    margin-bottom: 50px;
+}
+
+#grid-caixa{
+    background-color: white;
+    width: 300px;
+    height: 270px;
+    justify-content: center;
+    margin-top: 90px;
+    border-radius: 30px;
   
- }
+}
+
+.grid-item{
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.pedido-1{
+    color: #FACC44;
+   
+}
+
+.pedido-2{
+    color: #00BF15;
+}
+.pedido-3{
+    color: #DC0032;
+}
+
+.pedido {
+    display: flex;
+}
+
+.vendedor{
+    display: flex; 
+
+}
+
+.vendedor svg{
+    width: 30px;
+    height: 30px;
+}
+
+.vendedor p{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.pedido{
+    display: flex;
+}
+
+.pedido svg{
+    width: 30px;
+    height: 30px;
+}
+
+.pedido p{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.qnt-produto{
+    display: flex; 
+}
+
+.qnt-produto svg{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.qnt-produto p{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.comprar-nov{
+    text-align: center;
+    
+}
+
+.comprar-nov button{
+    
+    background-color: white;
+    justify-content: center;
+    width: 270px;
+    height: 40px;
+    color:#0A376E;
+    border-radius: 30px;
+    font-size: 15px;
+    border-color:#0A376E;
+    margin-right: 40px;
+
  
- .onda-coral{
-     height: 400px;
-  
- }
+}
+
+.onda-coral{
+    height: 400px;
  
- 
- .onda-estrela{
-     height: 400px;
- }  
+}
+
+
+.onda-estrela{
+    height: 400px;
+}  
 
 
