@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from './login.module.css';
 import ondaestrela3 from "../imagens/onda-estrela-3.png";
 import ondacoral from "../imagens/onda-coral.png";
-
+import { Link } from "react-router-dom";
 
 
 function Login() {
@@ -14,19 +14,21 @@ function Login() {
           <img src={ondacoral} className={styles["ondacoral"]}/>
         </div>
         <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
-            <h1 id={styles["tittle"]} className="fs-3 fw-bold">Bem-vindo(a). <br/> Acesse sua conta!</h1>
+            <h1 id={styles["tittle"]} className="fs-2 fw-bold mx-auto">Bem-vindo(a). <br/> Acesse sua conta!</h1>
             <form className="text-center mt-4" action="">
                 <div className=" mx-auto w-50 mt-5">
                 <input type="text" className="form-control rounded-pill" placeholder="E-mail"/>
                 </div>
                 <div className="mx-auto text-end w-50 mt-4">
                     <input type="passowrd" id="senha" className="form-control rounded-pill" placeholder="Senha"/>
-                    <label htmlFor="senha"><a href="" className="link-info">Esqueceu a senha?</a></label>
+                    <label class="mt-3" htmlFor="senha"><a href="" className={styles["esqueceu"]}>Esqueceu a senha?</a></label>
                 </div>
                 <div className="mx-auto w-50 mt-5">
-                    <input type="submit" className="form-control rounded-pill" value="Entrar"/>
+                    <input type="submit" className="form-control rounded-pill fw-bold" id={styles["Entrar"]} value="Entrar"/>
                     <label className="mt-2">Ainda não tem uma conta?</label>
-                    <button className="form-control rounded-pill bg-transparent border border-info border-3 text-dark mt-2">Inscreva-se</button>
+                    <Link className={styles["link"]} to="/Cadastro">
+                    <button className="form-control rounded-pill bg-transparent  mt-2" id={styles["cadastro"]}>Inscreva-se</button>
+                    </Link>
                 </div>
             </form>
         </div>

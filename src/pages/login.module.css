@@ -1,6 +1,21 @@
 #tittle {
     color: #A8F2FE;
 }
+#Entrar{
+    background-color: #A8F2FE;
+}
+.link{
+    text-decoration: none;
+}
+.esqueceu{
+    color: #A8F2FE;
+    
+}
+#cadastro{
+    color: #A8F2FE;
+    border: 3px solid #A8F2FE;
+   text-decoration: none;
+}
 
 .ondacoral {
     height: 300px;
