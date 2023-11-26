@@ -35,23 +35,6 @@
   color: #0a376e;
 }
 
-<<<<<<< HEAD
-.pessoa-carro button:nth-child(1) {
-  background-color: #0a376e;
-  border-radius: 40px;
-  border: none;
-  display: flex;
-  align-items: center;
-  width: 100px;
-  height: 35px;
-  justify-content: center;
-  cursor: pointer;
-  color: white;
-  gap: 7px;
-}
-
-=======
->>>>>>> 8c40d163a31c3a5ff4ff9a83bdc0480c7f150643
 .pessoa-carro button:nth-child(2) {
   background-color: #0a376e;
   color: white;

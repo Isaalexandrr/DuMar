@@ -4,13 +4,9 @@ import Dropdown from "react-bootstrap/Dropdown";
 import logo1 from "../imagens/logo1.png";
 import logo2 from "../imagens/logo2.png";
 import styles from "./Navbar.module.css";
-<<<<<<< HEAD
-import { IoSearch, IoCartSharp, IoPersonSharp } from "react-icons/io5";
-=======
 import { IoSearch, IoCartOutline } from "react-icons/io5";
 import Entrar from "./Entrar";
 import Logado from "./Logado";
->>>>>>> 8c40d163a31c3a5ff4ff9a83bdc0480c7f150643
 
 function Navbar() {
   const logado = true;
