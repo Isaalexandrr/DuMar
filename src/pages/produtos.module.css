@@ -1,12 +1,12 @@
 .texto h1{
-   margin-left: 420px;
+   
    margin-top: 80px;
    font-size: 40px;
    color: white;
 }
 
 
-.caixa{
+#caixa{
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -18,7 +18,7 @@
     margin-bottom: 50px;
 }
 
-.grid-caixa{
+#grid-caixa{
     background-color: white;
     width: 300px;
     height: 270px;
@@ -113,19 +113,18 @@
     border-radius: 30px;
     font-size: 15px;
     border-color:#0A376E;
-     margin-right: 12px;
+    margin-right: 40px;
 
  
 }
 
-.imagem, .onda-coral{
+.onda-coral{
     height: 400px;
-    margin-right: 400px;
+ 
 }
 
 
 .onda-estrela{
-    margin-left: 1265px;
     height: 400px;
 }  
 
