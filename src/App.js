@@ -13,6 +13,12 @@ function App() {
     <Router>
       <div>
         <Navbar />
+<<<<<<< HEAD
+=======
+
+        <nav></nav>
+
+>>>>>>> 8c40d163a31c3a5ff4ff9a83bdc0480c7f150643
         <Routes>
           <Route path="/Cadastro" element={<Cadastro />} />
           <Route path="/Login" element={<Login />} />

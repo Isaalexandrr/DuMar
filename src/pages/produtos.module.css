@@ -1,25 +1,31 @@
-.texto{
-    font-size: 30px;
+.texto h1{
+   
+   margin-top: 80px;
+   font-size: 40px;
+   color: white;
 }
 
 
-.caixa{
+#caixa{
     display: flex;
     justify-content: center;
     gap: 100px;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     
-    
 }
 
-.grid-caixa{
+.sessao{
+    margin-bottom: 50px;
+}
+
+#grid-caixa{
     background-color: white;
-    width: 315px;
-    height: 290px;
+    width: 300px;
+    height: 270px;
     justify-content: center;
     margin-top: 90px;
-    
-    
+    border-radius: 30px;
+  
 }
 
 .grid-item{
@@ -29,10 +35,21 @@
 }
 
 
-.data{
-    text-align: center;
+.pedido-1{
+    color: #FACC44;
+   
 }
 
+.pedido-2{
+    color: #00BF15;
+}
+.pedido-3{
+    color: #DC0032;
+}
+
+.pedido {
+    display: flex;
+}
 
 .vendedor{
     display: flex; 
@@ -86,43 +103,29 @@
     
 }
 
-.avaliacao{
-    display: flex;
-}
-
-.avaliacao ul{
-    display: flex;
-}
-
-.avaliacao li{
-    list-style-type: none;
-    cursor: pointer;
-    color: #0A376E;
-    font-size: 20px;
-    margin-bottom: 40px;
+.comprar-nov button{
     
+    background-color: white;
+    justify-content: center;
+    width: 270px;
+    height: 40px;
+    color:#0A376E;
+    border-radius: 30px;
+    font-size: 15px;
+    border-color:#0A376E;
+    margin-right: 40px;
+
+ 
 }
 
-.avaliacao li::before{
-    content: "\2605";
-}
-
-.avaliacao li.ativo ~ .avaliacao li::before{
-    content: "\2606";
-}
-
-  
-.avaliacao:hover .avaliacao li::before{
-    content: "\2605";
-}
-
-.avaliacao li:hover ~ .avaliacao li::before{
-    content: "\2606";
+.onda-coral{
+    height: 400px;
+ 
 }
 
 
-h1{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-}
+.onda-estrela{
+    height: 400px;
+}  
+
+

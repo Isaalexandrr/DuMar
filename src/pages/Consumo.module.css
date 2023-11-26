@@ -212,11 +212,8 @@ h2{
     
 
 }
-
-p{
-    margin-top:80px;
-   
-
+.paragrafo{
+    margin-top: 80px;
 }
 
 h1{
@@ -234,7 +231,6 @@ h4{
 
 
 html {
-    background-color: black;
     color: white;
   }
   
