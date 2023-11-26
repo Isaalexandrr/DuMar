@@ -9,7 +9,7 @@ import ondacoral from "../imagens/onda-coral.png";
 function Login() {
     return (
         <div className="Container-fluid">
-      <div className="row m-0 p-0">
+      <div className="row m-0 p-0 justify-content-center">
         <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block align-self-end m-0 p-0">
           <img src={ondacoral} className={styles["ondacoral"]}/>
         </div>

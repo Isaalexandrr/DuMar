@@ -1,6 +1,12 @@
 #tittle {
     color: #A8F2FE;
+    justify-content: center;
+
 }
+.text{
+    height:60px;
+}
+
 
 .ondacoral {
     height: 300px;
