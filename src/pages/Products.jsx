@@ -16,22 +16,22 @@ import ondaestrela from "../imagens/onda-estrela-3.png";
 
 function Products() {
     return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid ">
         <main>
            
-            <section> 
-                <div class="col-8">
-                    <img src={ondaestrela} className={styles['onda-estrela']} alt="DUMAR" />
-                    
+            <div class="row h-100"> 
+                <div class="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block align-self-end m-0 p-0" >
+                    <img src={ondacoral} className={styles['onda-coral']} alt="DUMAR" /> 
                 </div>
-                <div class="col-12" className={styles['sessao']}>
-                    <div className={styles['texto']}>
-                        <h1>MEUS PEDIDOS</h1> 
-                    </div>
 
-                    <div className={styles['caixa']} >
+                <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div className={styles['texto']}>
+                        <h1 class="ms-2 fw-bold">MEUS PEDIDOS</h1> 
+                    </div>
+                 
+                    <div id={styles['caixa']} class="row">
                         
-                        <div className={styles['grid-caixa']}>
+                        <div id={styles['grid-caixa']} class="col-6 m-0 p-0 mt-4">
                             <div className={styles['grid-item']} > 
                                 <div className={styles['pedido']}>
                                     <div className={styles['pedido-1']}>
@@ -72,7 +72,7 @@ function Products() {
                             </div>
                         </div>
 
-                        <div className={styles['grid-caixa']}>
+                        <div id={styles['grid-caixa']} class="col-6 m-0 p-0 mt-4">
                                 <div className={styles['grid-item']}>
                                     
                                    <div className={styles['pedido']}>
@@ -114,9 +114,10 @@ function Products() {
                             </div>
                         </div>
                     </div>
-                    <div className={styles['caixa']} >
 
-                        <div className={styles['grid-caixa']}>
+                    <div id={styles['caixa']} class="row " >
+
+                        <div id={styles['grid-caixa']} class="col-6 m-0 p-0 mt-4">
                             <div className={styles['grid-item']} > 
                                 <div className={styles['pedido']}>
                                     <div className={styles['pedido-3']}>
@@ -157,7 +158,7 @@ function Products() {
                             </div>
                         </div>
 
-                        <div className={styles['grid-caixa']}>
+                        <div id={styles['grid-caixa']} class="col-6 m-0 p-0 mt-4">
                                 <div className={styles['grid-item']}>
                                     
                                 <div className={styles['pedido']}>
@@ -197,11 +198,14 @@ function Products() {
                             </div>
                         </div>
                     </div>
-                    <div className={styles['imagem']}>
-                            <img src={ondacoral} className={styles['onda-coral']} alt="DUMAR" /> 
-                    </div>
+                    
+
+                   
+                </div> 
+                <div class="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block text-end m-0 p-0 ">
+                            <img src={ondaestrela} class="h-25" alt="DUMAR" />
                 </div>
-            </section>
+            </div>
         </main>
   
     </div>
