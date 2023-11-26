@@ -32,18 +32,7 @@
     color: #0a376e;
   }
   
-  .pessoa-carro button:nth-child(1) {
-    background-color: #0a376e;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    justify-content: center;
-    cursor: pointer;
-    color: white;
-    gap: 7px;
-  }
+
   .pessoa{
     display: flex;
   }
@@ -51,7 +40,7 @@
     margin-right: 10px;
   }
   
-  .pessoa-carro button:nth-child(2) {
+  .entrar {
     background-color: #0a376e;
     color: white;
     align-items: center;
@@ -61,12 +50,27 @@
     cursor: pointer;
     height: 35px;
     width: 35px;
-    font-size: 30px;
+    font-size: 20px;
   }
   
-  .pessoa-carro {
+  .carrinho{
+    background-color: #0a376e;
+    color: white;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    gap: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+
+  }
+  
+ 
+  .pessoa-carro-nome {
+    display: flex;
+    gap: 10px;
     margin-right: 10%;
     align-items: center;
   }
@@ -94,4 +98,114 @@
     border: none;
     box-shadow: 0 0 0 0;
   }
+  
 
+  .usuario{
+    display: flex;
+    margin: 25px;
+}
+
+.usuario svg{
+    width: 82px;
+    height: 82px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.usuario-nome{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.usuario-nome a{
+    color: #0A376E;
+    font-size: 20px;
+}
+
+.usuario-email{
+    color: black;
+}
+
+.usuario-email{
+  color: black;
+}
+
+.compras{
+  display: flex;
+  margin: 20px;
+}
+
+.compras svg{
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+.compras p{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+
+}
+
+.dados{
+  display: flex;
+  margin: 20px;
+}
+
+.dados svg{
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.dados p{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.conf{
+  display: flex;
+  margin: 20px;
+}
+
+.conf svg{
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.conf p{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.sair{
+  display: flex;
+  margin: 20px;
+}
+
+.sair svg{
+  height: 40px;
+  width: 60px;
+  color: #DC0032;
+  cursor: pointer;
+  
+}
+
+.sair p{
+  color: #DC0032;
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+.pessoa-nome{
+  display: flex;
+}
+
+.seu-nome{
+  border: none;
+  box-shadow: 0 0 0 0;
+}

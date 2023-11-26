@@ -26,7 +26,7 @@ function Products() {
 
                 <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div className={styles['texto']}>
-                        <h1 class="ms-2 fw-bold">MEUS PEDIDOS</h1> 
+                        <h1 class="ms-2 fw-bold">MINHAS COMPRAS</h1> 
                     </div>
                  
                     <div id={styles['caixa']} class="row">
@@ -66,8 +66,10 @@ function Products() {
                                 </div>
                                 
 
-                                <div className={styles['comprar-nov']}> 
-                                  <button type="submit">Comprar novamente</button>
+                                <div className={styles['comprar-nov']}>  
+                                    <Link to="/Carrinho">
+                                        <button type="submit">Comprar novamente</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +111,9 @@ function Products() {
                                 
 
                                 <div className={styles['comprar-nov']}> 
-                                  <button type="submit">Comprar novamente</button>
+                                    <Link to="/Carrinho">
+                                        <button type="submit">Comprar novamente</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +157,9 @@ function Products() {
                                 
 
                                 <div className={styles['comprar-nov']}> 
-                                <button type="submit">Comprar novamente</button>
+                                    <Link to="/Carrinho">
+                                        <button type="submit">Comprar novamente</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +199,9 @@ function Products() {
                                 
 
                                 <div className={styles['comprar-nov']}> 
-                                <button type="submit">Comprar novamente</button>
+                                    <Link to="/Carrinho">
+                                        <button type="submit">Comprar novamente</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
