@@ -7,15 +7,13 @@ import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
-import NavPerfil from "./components/NavPerfil"
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
-        <NavPerfil />
-       
+
         <nav></nav>
 
         <Routes>
@@ -24,8 +22,6 @@ function App() {
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/" element={<Home />} />
-        
-        
         </Routes>
       </div>
     </Router>
