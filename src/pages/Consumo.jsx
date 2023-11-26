@@ -15,7 +15,7 @@ const Consumo = () => {
 
 return (
 <div>
-<section style={{ backgroundColor: 'black', color: 'white' }} className={`mx-5 ${styles['background-section']}`}>
+<section style={{ color: 'white' }} className={`mx-5 ${styles['background-section']}`}>
 
 
 <div className='container-fluid p-0' >
@@ -27,11 +27,11 @@ return (
   
  <section className={styles.sectionBlue}>
 
- <div className="row px-5 gap-4" style={{ position: "absolute", top: "220%", transform: "translateY(-50%)", width: "80%"}}>
+ <div className="row px-5 gap-4" style={{ position: "absolute", top: "160%", transform: "translateY(-50%)", width: "95%", right:10}}>
  <div className='container-consumo' style={{ display: 'flex', alignItems: 'flex-start' }}>
     <h1>CONSUMO CONSCIENTE!</h1>
   </div>  
-  <div className="col-md-3 "style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "15px",display: "flex", flexDirection: "column", alignItems: "center" }}>
+  <div className="col-md-3 "style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "15px",display: "flex", flexDirection: "column", alignItems: "center"}}>
    <img className={styles['img-inter']} src={icon} alt="" />
    <div className={styles['texto-sobre']}>O que?</div>
    <p>Consumo consciente é fazer escolhas de compra considerando o impacto ambiental e social dos produtos. Envolve preferir opções sustentáveis e éticas para promover um estilo de vida mais responsável.</p>
@@ -67,15 +67,12 @@ return (
   <section className={styles.sectionLightBlue}>
   <div className='container-pesca'style={{ display: 'flex', alignItems: 'flex-start'}}> 
    <h1 style={{ whiteSpace: 'nowrap' }}>PESCA PROIBIDA!</h1>
-   <p>Nos vastos oceanos do mundo, muitas espécies de peixes<br /> enfrentam a ameaça iminente da extinção devido à pesca<br /> insustentável e à degradação do ambiente marinho.Entre essas <br />espécies estão aquelas cuja pesca é proibida devido à necessidade<br /> urgente de preservação.<br />
-   Medidas rigorosas de proibição da pesca são implementadas para<br /> tentar reverter o declínio dessas populações. No entanto, muitas<br /> vezes, a fiscalização inadequada e a demanda persistente por essas<br /> espécies contribuem para a pesca ilegal e o descumprimento das<br /> regulamentações.<br />
-   O consumo desenfreado de peixes ameaçados de extinção <br />alimenta um ciclo perigoso. Além da redução das populações <br />dessas espécies, há impactos significativos na biodiversidade<br /> marinha, desequilibrando ecossistemas e prejudicando outras<br /> formas de vida marinha.<br />
-   Além disso, a perda de peixes-chave na cadeia alimentar marinha <br />pode ter consequências graves para as comunidades humanas que <br />dependem desses recursos para alimentação e subsistência.</p>
+   <p></p>
 
    <div class="container mt-4">
   <div class="row">
     <div class="col-md-4 " >
-      <div class="card" style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "15px",display: "flex", flexDirection: "column", alignItems: "center", left:200, top:'30%', width:250, height:400 }}>
+      <div class="card" style={{ backgroundColor: "rgba(255, 255, 255, 0.5)", borderRadius: "15px",display: "flex", flexDirection: "column", alignItems: "center", right:120, top:'10%', width:470, height:400 }}>
       
         <div class="card-body d-flex flex-column align-items-start">
           <h1 class="card-title font-weight-bold text-dark custom-text-size text-center "  style={{
