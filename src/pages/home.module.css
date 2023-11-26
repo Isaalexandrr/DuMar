@@ -6,12 +6,17 @@ body {
   background-color: #538aad;
 }
 
+.ofertas h3 {
+  margin-left: 10%;
+  color: white;
+}
 .grid-caixa {
   background-color: white;
   width: 300px;
   height: 400px;
   justify-content: center;
   border-top: 5px solid #0a376e;
+  border-radius: 5%;
 }
 
 .box {
@@ -33,6 +38,16 @@ body {
   font-size: 18px;
 }
 
+.maisDetalhes p {
+  color: black;
+  margin: 10% 0 0 0;
+  font-size: 14px;
+}
+
+.estrela {
+  margin-bottom: 5%;
+}
+
 .grid-caixa input {
   background-color: #0a376e;
   color: white;
@@ -49,6 +64,7 @@ body {
   height: 225px;
   object-fit: cover;
   margin-top: 10px;
+  border-radius: 5%;
 }
 
 * {

@@ -18,6 +18,7 @@ function Login() {
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="inputEmail" placeholder="E-mail"/>
                         <label for="inputEmail">E-mail</label>
+                        
                     </div>
                     <div class="form-floating mb-4">
                         <input type="password" class="form-control" id="inputPassword" placeholder="Senha"/>

@@ -13,6 +13,7 @@ import Gabii from "../imagens/Gabii.jpeg";
 import ISABELA from "../imagens/ISABELA (1).png";
 import Andrezaa from "../imagens/Andrezaa.jpg";
 import Gerson from "../imagens/Gerson.jpeg";
+import { IoStar, IoStarOutline } from "react-icons/io5";
 
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -118,6 +119,9 @@ function Home() {
 
       <main>
         <section>
+          <div className={styles["ofertas"]}>
+            <h3>Confira os Destaques da semana:</h3>
+          </div>
           <div
             id="carouselExampleInterval"
             class="carousel slide"
@@ -132,12 +136,24 @@ function Home() {
                       <h3>Salmão</h3>
                       <h3>R$ 69,90</h3>
                     </div>
+                    <div className={styles["estrela"]}>
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStarOutline />
+                    </div>
                     <input
                       type="button"
                       name=""
                       id=""
                       value="Adicionar à sacola"
                     />
+                    <div className={styles["maisDetalhes"]}>
+                      <Link to="">
+                        <p>Ver mais detalhes</p>
+                      </Link>
+                    </div>
                   </div>
 
                   <div className={styles["grid-caixa"]}>
@@ -146,12 +162,24 @@ function Home() {
                       <h3>Camarão</h3>
                       <h3>R$ 35,00</h3>
                     </div>
+                    <div className={styles["estrela"]}>
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStarOutline />
+                    </div>
                     <input
                       type="button"
                       name=""
                       id=""
                       value="Adicionar à sacola"
                     />
+                    <div className={styles["maisDetalhes"]}>
+                      <Link to="">
+                        <p>Ver mais detalhes</p>
+                      </Link>
+                    </div>
                   </div>
 
                   <div className={styles["grid-caixa"]}>
@@ -160,12 +188,24 @@ function Home() {
                       <h3>Tilápia</h3>
                       <h3>R$ 20,00</h3>
                     </div>
+                    <div className={styles["estrela"]}>
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStarOutline />
+                    </div>
                     <input
                       type="button"
                       name=""
                       id=""
                       value="Adicionar à sacola"
                     />
+                    <div className={styles["maisDetalhes"]}>
+                      <Link to="">
+                        <p>Ver mais detalhes</p>
+                      </Link>
+                    </div>
                   </div>
 
                   <div className={styles["grid-caixa"]}>
@@ -174,12 +214,24 @@ function Home() {
                       <h3>Lagosta</h3>
                       <h3>R$ 69,90</h3>
                     </div>
+                    <div className={styles["estrela"]}>
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStarOutline />
+                    </div>
                     <input
                       type="button"
                       name=""
                       id=""
                       value="Adicionar à sacola"
                     />
+                    <div className={styles["maisDetalhes"]}>
+                      <Link to="">
+                        <p>Ver mais detalhes</p>
+                      </Link>
+                    </div>
                   </div>
 
                   <button
@@ -226,12 +278,24 @@ function Home() {
                     <h3>Atum</h3>
                     <h3>R$ 30,49</h3>
                   </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
                   <input
                     type="button"
                     name=""
                     id=""
                     value="Adicionar à sacola"
                   />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
                 </div>
 
                 <div className={styles["grid-caixa"]}>
@@ -240,12 +304,24 @@ function Home() {
                     <h3>Bacalhau</h3>
                     <h3>R$ 79,90</h3>
                   </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
                   <input
                     type="button"
                     name=""
                     id=""
                     value="Adicionar à sacola"
                   />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
                 </div>
 
                 <div className={styles["grid-caixa"]}>
@@ -254,12 +330,24 @@ function Home() {
                     <h3>Corvina</h3>
                     <h3>R$ 18,90</h3>
                   </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
                   <input
                     type="button"
                     name=""
                     id=""
                     value="Adicionar à sacola"
                   />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
                 </div>
 
                 <div className={styles["grid-caixa"]}>
@@ -268,12 +356,24 @@ function Home() {
                     <h3>Albacora</h3>
                     <h3>R$ 20,00</h3>
                   </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
                   <input
                     type="button"
                     name=""
                     id=""
                     value="Adicionar à sacola"
                   />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -294,12 +394,24 @@ function Home() {
                     <h3>Lula</h3>
                     <h3>R$ 29,90</h3>
                   </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
                   <input
                     type="button"
                     name=""
                     id=""
                     value="Adicionar à sacola"
                   />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
                 </div>
 
                 <div className={styles["grid-caixa"]}>
@@ -308,12 +420,24 @@ function Home() {
                     <h3>Polvo</h3>
                     <h3>R$ 65,00</h3>
                   </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
                   <input
                     type="button"
                     name=""
                     id=""
                     value="Adicionar à sacola"
                   />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
                 </div>
 
                 <div className={styles["grid-caixa"]}>
@@ -322,12 +446,24 @@ function Home() {
                     <h3>Merluza</h3>
                     <h3>R$ 14,90</h3>
                   </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
                   <input
                     type="button"
                     name=""
                     id=""
                     value="Adicionar à sacola"
                   />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
                 </div>
 
                 <div className={styles["grid-caixa"]}>
@@ -336,12 +472,24 @@ function Home() {
                     <h3>Carangueijo</h3>
                     <h3>R$ 35,00</h3>
                   </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
                   <input
                     type="button"
                     name=""
                     id=""
                     value="Adicionar à sacola"
                   />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
