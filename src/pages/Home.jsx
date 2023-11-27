@@ -13,8 +13,6 @@ import Gabii from "../imagens/Gabii.jpeg";
 import ISABELA from "../imagens/ISABELA (1).png";
 import Andrezaa from "../imagens/Andrezaa.jpg";
 import Gerson from "../imagens/Gerson.jpeg";
-import { IoStar, IoStarOutline } from "react-icons/io5";
-import { destaques } from "../mock/home";
 
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -120,9 +118,6 @@ function Home() {
 
       <main>
         <section>
-          <div className={styles["ofertas"]}>
-            <h3>Confira os Destaques da semana:</h3>
-          </div>
           <div
             id="carouselExampleInterval"
             class="carousel slide"
@@ -133,106 +128,30 @@ function Home() {
                 <div className={styles["box"]}>
                   <div className={styles["grid-caixa"]}>
                     <img src={camarao} alt="Salmão" />
-                    <div className={styles["texto"]}>
-                      <h3>Salmão</h3>
-                      <h3>R$ 69,90</h3>
-                    </div>
-                    <div className={styles["estrela"]}>
-                      <IoStar />
-                      <IoStar />
-                      <IoStar />
-                      <IoStar />
-                      <IoStarOutline />
-                    </div>
-                    <input
-                      type="button"
-                      name=""
-                      id=""
-                      value="Adicionar à sacola"
-                    />
-                    <div className={styles["maisDetalhes"]}>
-                      <Link to="">
-                        <p>Ver mais detalhes</p>
-                      </Link>
-                    </div>
+                    <h3>Salmão</h3>
+                    <p>R$ 40,00</p>
+                    <input type="button" name="" id="" value="Comprar" />
                   </div>
 
                   <div className={styles["grid-caixa"]}>
                     <img src={camarao} alt="Camarão" />
-                    <div className={styles["texto"]}>
-                      <h3>Camarão</h3>
-                      <h3>R$ 35,00</h3>
-                    </div>
-                    <div className={styles["estrela"]}>
-                      <IoStar />
-                      <IoStar />
-                      <IoStar />
-                      <IoStar />
-                      <IoStarOutline />
-                    </div>
-                    <input
-                      type="button"
-                      name=""
-                      id=""
-                      value="Adicionar à sacola"
-                    />
-                    <div className={styles["maisDetalhes"]}>
-                      <Link to="">
-                        <p>Ver mais detalhes</p>
-                      </Link>
-                    </div>
+                    <h3>Camarão</h3>
+                    <p>R$ 25,00</p>
+                    <input type="button" name="" id="" value="Comprar" />
                   </div>
 
                   <div className={styles["grid-caixa"]}>
                     <img src={camarao} alt="Tilapia" />
-                    <div className={styles["texto"]}>
-                      <h3>Tilápia</h3>
-                      <h3>R$ 20,00</h3>
-                    </div>
-                    <div className={styles["estrela"]}>
-                      <IoStar />
-                      <IoStar />
-                      <IoStar />
-                      <IoStar />
-                      <IoStarOutline />
-                    </div>
-                    <input
-                      type="button"
-                      name=""
-                      id=""
-                      value="Adicionar à sacola"
-                    />
-                    <div className={styles["maisDetalhes"]}>
-                      <Link to="">
-                        <p>Ver mais detalhes</p>
-                      </Link>
-                    </div>
+                    <h3>Tilapia</h3>
+                    <p>R$ 45,00</p>
+                    <input type="button" name="" id="" value="Comprar" />
                   </div>
 
                   <div className={styles["grid-caixa"]}>
                     <img src={camarao} alt="Lagosta" />
-                    <div className={styles["texto"]}>
-                      <h3>Lagosta</h3>
-                      <h3>R$ 69,90</h3>
-                    </div>
-                    <div className={styles["estrela"]}>
-                      <IoStar />
-                      <IoStar />
-                      <IoStar />
-                      <IoStar />
-                      <IoStarOutline />
-                    </div>
-                    <input
-                      type="button"
-                      name=""
-                      id=""
-                      value="Adicionar à sacola"
-                    />
-                    <div className={styles["maisDetalhes"]}>
-                      <Link to="">
-                        <p>Ver mais detalhes</p>
-                      </Link>
-                    </div>
+                    <h3>Lagosta</h3>
+                    <p>R$ 70,00</p>
+                    <input type="button" name="" id="" value="Comprar" />
                   </div>
 
                   <button
@@ -273,35 +192,33 @@ function Home() {
           <div class="carousel-inner justify-content-center">
             <div class="carousel-item active">
               <div className={styles["box"]}>
-                {destaques.forEach((el) => {
-                  return (
-                    <div className={styles["grid-caixa"]}>
-                      <img src={camarao} alt="Atum" />
-                      <div className={styles["texto"]}>
-                        <h3>{el.name}</h3>
-                        <h3>{el.preco}</h3>
-                      </div>
-                      <div className={styles["estrela"]}>
-                        <IoStar />
-                        <IoStar />
-                        <IoStar />
-                        <IoStar />
-                        <IoStarOutline />
-                      </div>
-                      <input
-                        type="button"
-                        name=""
-                        id=""
-                        value="Adicionar à sacola"
-                      />
-                      <div className={styles["maisDetalhes"]}>
-                        <Link to="">
-                          <p>Ver mais detalhes</p>
-                        </Link>
-                      </div>
-                    </div>
-                  );
-                })}
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Atum" />
+                  <h3>Atum</h3>
+                  <p>R$ 30,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Bacalhau" />
+                  <h3>Bacalhau</h3>
+                  <p>R$ 20,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Corvina" />
+                  <h3>Corvina</h3>
+                  <p>R$ 20,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="arenque" />
+                  <h3>Arenque</h3>
+                  <p>R$ 12,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
+                </div>
               </div>
             </div>
           </div>
@@ -317,106 +234,30 @@ function Home() {
               <div className={styles["box"]}>
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Atum" />
-                  <div className={styles["texto"]}>
-                    <h3>Lula</h3>
-                    <h3>R$ 29,90</h3>
-                  </div>
-                  <div className={styles["estrela"]}>
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarOutline />
-                  </div>
-                  <input
-                    type="button"
-                    name=""
-                    id=""
-                    value="Adicionar à sacola"
-                  />
-                  <div className={styles["maisDetalhes"]}>
-                    <Link to="">
-                      <p>Ver mais detalhes</p>
-                    </Link>
-                  </div>
+                  <h3>Lulas</h3>
+                  <p>R$ 45,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Bacalhau" />
-                  <div className={styles["texto"]}>
-                    <h3>Polvo</h3>
-                    <h3>R$ 65,00</h3>
-                  </div>
-                  <div className={styles["estrela"]}>
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarOutline />
-                  </div>
-                  <input
-                    type="button"
-                    name=""
-                    id=""
-                    value="Adicionar à sacola"
-                  />
-                  <div className={styles["maisDetalhes"]}>
-                    <Link to="">
-                      <p>Ver mais detalhes</p>
-                    </Link>
-                  </div>
+                  <h3>Polvo</h3>
+                  <p>R$ 25,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="Corvina" />
-                  <div className={styles["texto"]}>
-                    <h3>Merluza</h3>
-                    <h3>R$ 14,90</h3>
-                  </div>
-                  <div className={styles["estrela"]}>
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarOutline />
-                  </div>
-                  <input
-                    type="button"
-                    name=""
-                    id=""
-                    value="Adicionar à sacola"
-                  />
-                  <div className={styles["maisDetalhes"]}>
-                    <Link to="">
-                      <p>Ver mais detalhes</p>
-                    </Link>
-                  </div>
+                  <h3>Merluza</h3>
+                  <p>R$ 15,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
                 </div>
 
                 <div className={styles["grid-caixa"]}>
                   <img src={camarao} alt="arenque" />
-                  <div className={styles["texto"]}>
-                    <h3>Carangueijo</h3>
-                    <h3>R$ 35,00</h3>
-                  </div>
-                  <div className={styles["estrela"]}>
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarOutline />
-                  </div>
-                  <input
-                    type="button"
-                    name=""
-                    id=""
-                    value="Adicionar à sacola"
-                  />
-                  <div className={styles["maisDetalhes"]}>
-                    <Link to="">
-                      <p>Ver mais detalhes</p>
-                    </Link>
-                  </div>
+                  <h3>Caranguejo</h3>
+                  <p>R$ 16,00</p>
+                  <input type="button" name="" id="" value="Comprar" />
                 </div>
               </div>
             </div>
@@ -487,7 +328,7 @@ function Home() {
             </div>
 
             <div class="col">
-              <img src={Gerson} class="card-img-end" alt="..." />
+             <img src={Gerson} class="card-img-end" alt="..." />
               <br />
               <small> Gerson</small>
               <h3>gersononline42@gmail.com</h3>

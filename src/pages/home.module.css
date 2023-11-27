@@ -6,19 +6,13 @@ body {
   background-color: #538aad;
 }
 
-.ofertas h3 {
-  margin-left: 10%;
-  color: white;
-}
 .grid-caixa {
   background-color: white;
   width: 300px;
   height: 400px;
   justify-content: center;
   border-top: 5px solid #0a376e;
-  border-radius: 5%;
 }
-
 .box {
   display: flex;
   text-align: center;
@@ -28,43 +22,28 @@ body {
   margin: 5% 10% 5% 10%;
 }
 
-.texto {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-}
-
-.texto h3 {
-  font-size: 18px;
-}
-
-.maisDetalhes p {
-  color: black;
-  margin: 10% 0 0 0;
-  font-size: 14px;
-}
-
-.estrela {
-  margin-bottom: 5%;
-}
-
 .grid-caixa input {
-  background-color: #0a376e;
-  color: white;
+  background-color: #94c3c9;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
   border: 0;
-  width: 70%;
-  height: 8%;
-  border-radius: 30px;
-  font-size: 16px;
-  text-align: center;
+  outline: 0;
+  padding: 4px 120px 4px 60px;
+  width: 120px;
+  height: 30px;
+  flex-shrink: 0;
 }
 
+.grid-caixa input:hover {
+  box-shadow: 0px 0px 8px #94c3c9;
+  transform: scale(1.05);
+}
 .grid-caixa img {
   width: 225px;
   height: 225px;
   object-fit: cover;
   margin-top: 10px;
-  border-radius: 5%;
 }
 
 * {
@@ -78,13 +57,11 @@ body {
   font-size: 16px;
   font-family: open Sans;
 }
-
 .container p {
   font-size: 14px;
   font-family: open Sans;
   color: black;
 }
-
 footer {
   background-color: white;
   height: auto;
@@ -95,19 +72,16 @@ footer {
   color: black;
   margin-top: 10%;
 }
-
 footer h2 {
   font-size: 16px;
   color: #0a376e;
   font-weight: bold;
 }
-
 footer p {
   text-align: justify;
   font-family: open Sans;
   letter-spacing: 2px;
 }
-
 small {
   font-size: 16px;
   font-weight: bold;
@@ -115,14 +89,12 @@ small {
   display: flex;
   justify-content: center;
 }
-
 footer h3 {
   font-size: 14px;
   color: black;
   display: flex;
   justify-content: center;
 }
-
 footer img {
   display: flex;
   border-radius: 50px;

@@ -9,15 +9,13 @@
 
 .pesquisar {
   border: 2px solid #0a376e;
-  border-radius: 40px;
-  width: 300px;
+  border-radius: 10px;
 }
 
 .pesquisar input {
   border: none;
   background-color: transparent;
-  padding-left: 20px;
-  margin-top: 5px;
+  padding-left: 5px;
 }
 
 .pesquisar input:focus {
@@ -29,10 +27,22 @@
 .pesquisar button {
   border: none;
   background-color: transparent;
+  padding-right: 5px;
   margin-bottom: 5px;
-  margin-left: 20%;
-  margin-bottom: 8px;
   color: #0a376e;
+}
+
+.pessoa-carro button:nth-child(1) {
+  background-color: #0a376e;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  gap: 7px;
 }
 
 .pessoa-carro button:nth-child(2) {
@@ -42,7 +52,6 @@
   justify-content: center;
   display: flex;
   border-radius: 40px;
-  border: none;
   cursor: pointer;
   height: 35px;
   width: 35px;

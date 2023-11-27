@@ -4,15 +4,11 @@ import Dropdown from "react-bootstrap/Dropdown";
 import logo1 from "../imagens/logo1.png";
 import logo2 from "../imagens/logo2.png";
 import styles from "./Navbar.module.css";
-import { IoSearch, IoCartOutline, IoCartSharp } from "react-icons/io5";
-import Entrar from "./Entrar";
-import Logado from "./Logado";
+import { IoSearch, IoCartOutline, IoPersonSharp } from "react-icons/io5";
 
 function Navbar() {
-  const logado = true;
-
   return (
-    <div className={styles["nav-bar grid-caixa"]}>
+    <div className={styles ["nav-bar grid-caixa"]}>
       <nav class="navbar navbar-light bg-light ">
         <a class="navbar-brand" href="#">
           <div className="logos" class="grid text-center mx-4">
@@ -39,13 +35,19 @@ function Navbar() {
         </nav>
 
         <div className={styles["pessoa-carro"]}>
-          {logado ? <Entrar /> : <Logado />}
+          <Link to="/login">
+            <button type="button" className={styles["entrar"]}>
+              <IoPersonSharp />
+              Entrar
+            </button>
+          </Link>
+
           <button
             type="button"
             class="btn-secondary btn-sm"
             className={styles["carrinho"]}
           >
-            <IoCartSharp />
+            <IoCartOutline />
           </button>
         </div>
       </nav>
