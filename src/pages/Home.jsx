@@ -14,6 +14,7 @@ import ISABELA from "../imagens/ISABELA (1).png";
 import Andrezaa from "../imagens/Andrezaa.jpg";
 import Gerson from "../imagens/Gerson.jpeg";
 import { IoStar, IoStarOutline } from "react-icons/io5";
+import { destaques } from "../mock/home";
 
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -272,109 +273,35 @@ function Home() {
           <div class="carousel-inner justify-content-center">
             <div class="carousel-item active">
               <div className={styles["box"]}>
-                <div className={styles["grid-caixa"]}>
-                  <img src={camarao} alt="Atum" />
-                  <div className={styles["texto"]}>
-                    <h3>Atum</h3>
-                    <h3>R$ 30,49</h3>
-                  </div>
-                  <div className={styles["estrela"]}>
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarOutline />
-                  </div>
-                  <input
-                    type="button"
-                    name=""
-                    id=""
-                    value="Adicionar à sacola"
-                  />
-                  <div className={styles["maisDetalhes"]}>
-                    <Link to="">
-                      <p>Ver mais detalhes</p>
-                    </Link>
-                  </div>
-                </div>
-
-                <div className={styles["grid-caixa"]}>
-                  <img src={camarao} alt="Bacalhau" />
-                  <div className={styles["texto"]}>
-                    <h3>Bacalhau</h3>
-                    <h3>R$ 79,90</h3>
-                  </div>
-                  <div className={styles["estrela"]}>
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarOutline />
-                  </div>
-                  <input
-                    type="button"
-                    name=""
-                    id=""
-                    value="Adicionar à sacola"
-                  />
-                  <div className={styles["maisDetalhes"]}>
-                    <Link to="">
-                      <p>Ver mais detalhes</p>
-                    </Link>
-                  </div>
-                </div>
-
-                <div className={styles["grid-caixa"]}>
-                  <img src={camarao} alt="Corvina" />
-                  <div className={styles["texto"]}>
-                    <h3>Corvina</h3>
-                    <h3>R$ 18,90</h3>
-                  </div>
-                  <div className={styles["estrela"]}>
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarOutline />
-                  </div>
-                  <input
-                    type="button"
-                    name=""
-                    id=""
-                    value="Adicionar à sacola"
-                  />
-                  <div className={styles["maisDetalhes"]}>
-                    <Link to="">
-                      <p>Ver mais detalhes</p>
-                    </Link>
-                  </div>
-                </div>
-
-                <div className={styles["grid-caixa"]}>
-                  <img src={camarao} alt="arenque" />
-                  <div className={styles["texto"]}>
-                    <h3>Albacora</h3>
-                    <h3>R$ 20,00</h3>
-                  </div>
-                  <div className={styles["estrela"]}>
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarOutline />
-                  </div>
-                  <input
-                    type="button"
-                    name=""
-                    id=""
-                    value="Adicionar à sacola"
-                  />
-                  <div className={styles["maisDetalhes"]}>
-                    <Link to="">
-                      <p>Ver mais detalhes</p>
-                    </Link>
-                  </div>
-                </div>
+                {destaques.forEach((el) => {
+                  return (
+                    <div className={styles["grid-caixa"]}>
+                      <img src={camarao} alt="Atum" />
+                      <div className={styles["texto"]}>
+                        <h3>{el.name}</h3>
+                        <h3>{el.preco}</h3>
+                      </div>
+                      <div className={styles["estrela"]}>
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStar />
+                        <IoStarOutline />
+                      </div>
+                      <input
+                        type="button"
+                        name=""
+                        id=""
+                        value="Adicionar à sacola"
+                      />
+                      <div className={styles["maisDetalhes"]}>
+                        <Link to="">
+                          <p>Ver mais detalhes</p>
+                        </Link>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
