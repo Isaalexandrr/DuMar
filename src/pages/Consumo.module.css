@@ -19,6 +19,9 @@
     height: 50px;
     width: 70px;
     padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
    
    
 }
@@ -42,8 +45,8 @@ h2{
 p{
     margin-top:80px;
     text-align: left;
-    
    
+      
 
 }
 
@@ -52,6 +55,7 @@ h1{
     margin-top: 30px;
     font-size: 16px;
     color: white;
+
     
 }
 
@@ -71,14 +75,17 @@ html {
   
 body {
    margin: 0;
-   padding: 0;
-   height: 100vh; 
-   background: linear-gradient(to bottom, blue,#0F5387, #2573A0,#0A376E,blue
-   ); 
-   font-family: Arial, sans-serif; 
-   color: #fff; 
+   
 
 }
+
+.consumoBody {
+    background: radial-gradient(circle, #538AAD, #2573A0,#0F5387,#538AAD);
+
+    color: white;
+
+  }
+
 
 
 .img-tartaruga{
@@ -169,6 +176,10 @@ h2{
     margin-left: -290px;
 
 }
+
+
+  
+
 
 
 
