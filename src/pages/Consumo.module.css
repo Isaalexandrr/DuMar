@@ -14,40 +14,46 @@
   padding-top: 20px;
   font-weight: bold;
   font-size: 18px;
-  color: white;
+  color: black;
 }
 
 .img-inter {
   padding-top: 30px;
 }
 
-/* h2{
-    font-size: 16px;
-    margin-left: -10px;
-    margin-top: 170px;
+.poluicao{
+  margin-top: 30px;
 }
 
-p{
-    margin-top:80px;
-    text-align: left;
-} */
-
-/* h1{
-    margin-left: -50px;
-    margin-top: 30px;
-    font-size: 16px;
-    color: white;   
+.poluicao-texto{
+  margin-top: 90px;
+ 
 }
 
-h4{
-    font-size: 16px;
-    margin-left: 160px;
-    margin-top: 40px;
-} */
+.pesca-texto{
+  font-size: 18px;
+  margin-top: 80px;
 
-html {
-  color: white;
 }
+
+.texto-especie{
+  font-size: 16px;
+}
+
+.span text-danger{
+  font-size: 16px;
+}
+
+.preserv-texto{
+  font-size: 18px;
+  margin-top: 100px;
+
+}
+
+.consumo{
+  color: black;
+}
+
 
 body {
   margin: 0;
@@ -61,14 +67,14 @@ body {
 
 .img-tartaruga {
   position: absolute;
-  top: 530px;
+  top: 650px;
   right: 290px;
   border-radius: 10px;
 }
 
 .img-foca {
   position: absolute;
-  top: 680px;
+  top: 800px;
   right: 290px;
   border-radius: 10px;
 }
@@ -81,60 +87,85 @@ body {
 }
 
 .img-lixo {
-  width: 800px;
+  width: 700px;
   margin-left: -400px;
-  margin-top: -100px;
+  margin-bottom: 50px;
 }
 
-/* h4{
-    margin-top: -180px;
-    margin-left: auto;  
+.consumo-c{
+  font-size: 18px;
+  margin-top: 200px;
 }
 
-h3{
-    font-size: 16px;
-    margin-top: -400px;
-    margin-left: -200px;
-} */
+.poluicao{
+  font-size: 18px;
+  
+
+}
+
+.lixo-texto{
+  font-size: 14px;
+  margin-top: -200px;
+  margin-left: -70px;
+}
 
 .img-jogandolixo {
   width: 900px;
   margin-left: -600px;
-  margin-top: -10px;
+  margin-top: 60px;
 }
 
 .img-limpandolixo {
   width: 900px;
   margin-left: -700px;
-  margin-top: -120px;
+  margin-top: -60px;
 }
 
-/* h5{
-    font-size: 16px;
-    margin-top: -200px;
-    margin-left: -290px;
-} */
+.jogandolixo-texto{
+  font-size: 14px;
+  margin-top: -400px;
+  margin-left: -200px;
 
-.img-reciclavel {
-  width: 920px;
-  margin-left: -700px;
-  margin-top: -30px;
 }
-/* 
-h6{
-    font-size: 16px;
-    margin-top: -400px;
-    margin-left: -300px;
-} */
+
+.limpandolixo-texto{
+  font-size: 14px;
+  margin-top: -160px;
+  margin-left: -300px;
+}
+
+
+.img-reciclavel{
+  width: 1020px;
+  margin-left: -730px;
+  top: 40px;
+}
+
+.reciclavel-texto{
+  font-size: 14px;
+  margin-top: -400px;
+  margin-left: -300px;
+}
+
 
 .img-proibidonadar {
   width: 920px;
-  margin-left: -700px;
-  margin-top: -130px;
+  margin-left: -800px;
+  margin-top: -60px;
 }
 
-/* h2{
-    margin-top: -180px;
-    margin-left: -290px;
+.proibidonadar-texto{
+  font-size: 14px;
+  margin-top: -190px;
+  margin-left: -390px;
 
-} */
+}
+
+.pesca-textodois{
+  margin-top: 140px;
+  margin-right: 200px;
+  padding-right: 90px;
+
+}
+
+
