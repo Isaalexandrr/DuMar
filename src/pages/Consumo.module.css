@@ -1,207 +1,139 @@
 * {
-    box-sizing: border-box;
-
-    
-}
-  
-
-
-.container-consumo{
-    display: flex;
-    text-align: center;
-   
-  
-    
+  box-sizing: border-box;
 }
 
-.texto-sobre{
-    text-align: center;
-    height: 50px;
-    width: 70px;
-    padding-top: 20px;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-   
-   
+.container-consumo {
+  display: flex;
+  text-align: center;
 }
 
-.img-inter{
-    padding-top: 30px;
-
+.texto-sobre {
+  text-align: center;
+  height: 50px;
+  width: 70px;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
 }
 
-
-
-h2{
-    font-size: 16px;
-    margin-left: -10px;
-    margin-top: 170px;
-
-    
-
+.img-inter {
+  padding-top: 30px;
 }
 
-p{
-    margin-top:80px;
-    text-align: left;
-   
-      
-
+h2 {
+  font-size: 16px;
+  margin-left: -10px;
+  margin-top: 170px;
 }
 
-h1{
-    margin-left: -50px;
-    margin-top: 30px;
-    font-size: 16px;
-    color: white;
-
-    
+p {
+  margin-top: 80px;
+  text-align: left;
 }
 
-h4{
-    font-size: 16px;
-    margin-left: 160px;
-    margin-top: 40px;
+h1 {
+  margin-left: -50px;
+  margin-top: 30px;
+  font-size: 16px;
+  color: white;
 }
 
-
-
+h4 {
+  font-size: 16px;
+  margin-left: 160px;
+  margin-top: 40px;
+}
 
 html {
-  
-    color: white;
+  color: white;
 }
-  
-body {
-   margin: 0;
-   
 
+body {
+  margin: 0;
 }
 
 .consumoBody {
-    background: radial-gradient(circle, #538AAD, #2573A0,#0F5387,#538AAD);
+  background: radial-gradient(circle, #538aad, #2573a0, #0f5387, #538aad);
 
-    color: white;
-
-  }
-
-
-
-.img-tartaruga{
-   position: absolute;
-   top: 530px;
-   right:290px;
-   border-radius: 10px;
-  
+  color: white;
 }
 
-.img-foca{
-    position: absolute;
-    top: 680px;
-    right: 290px;
-    border-radius: 10px;
-   
-   
+.img-tartaruga {
+  position: absolute;
+  top: 530px;
+  right: 290px;
+  border-radius: 10px;
+}
+
+.img-foca {
+  position: absolute;
+  top: 680px;
+  right: 290px;
+  border-radius: 10px;
 }
 
 .img-peixes {
-    width: 900px; 
-    height:600px;
-    margin-left: -10px;
-    margin-top: -130px;
-
-
+  width: 900px;
+  height: 600px;
+  margin-left: -10px;
+  margin-top: -130px;
 }
 
-.img-lixo{
-    width: 800px;
-    margin-left: -400px;
-    margin-top: -100px;
-
-
+.img-lixo {
+  width: 800px;
+  margin-left: -400px;
+  margin-top: -100px;
 }
 
-h4{
-    margin-top: -180px;
-    margin-left: auto;
-   
+h4 {
+  margin-top: -180px;
+  margin-left: auto;
 }
 
-h3{
-    font-size: 16px;
-    margin-top: -400px;
-    margin-left: -200px;
+h3 {
+  font-size: 16px;
+  margin-top: -400px;
+  margin-left: -200px;
 }
 
-.img-jogandolixo{
-    width: 900px;
-    margin-left: -600px;
-    margin-top: -10px;
+.img-jogandolixo {
+  width: 900px;
+  margin-left: -600px;
+  margin-top: -10px;
 }
 
-.img-limpandolixo{
-    width: 900px;
-    margin-left: -700px;
-    margin-top: -120px;
+.img-limpandolixo {
+  width: 900px;
+  margin-left: -700px;
+  margin-top: -120px;
 }
 
-h5{
-    font-size: 16px;
-    margin-top: -200px;
-    margin-left: -290px;
-
+h5 {
+  font-size: 16px;
+  margin-top: -200px;
+  margin-left: -290px;
 }
 
-.img-reciclavel{
-    width: 920px;
-    margin-left: -700px;
-    margin-top: -30px;
+.img-reciclavel {
+  width: 920px;
+  margin-left: -700px;
+  margin-top: -30px;
 }
 
-h6{
-    font-size: 16px;
-    margin-top: -400px;
-    margin-left: -300px;
+h6 {
+  font-size: 16px;
+  margin-top: -400px;
+  margin-left: -300px;
 }
 
-.img-proibidonadar{
-    width: 920px;
-    margin-left: -700px;
-    margin-top: -130px;
+.img-proibidonadar {
+  width: 920px;
+  margin-left: -700px;
+  margin-top: -130px;
 }
 
-h2{
-    margin-top: -180px;
-    margin-left: -290px;
-
+h2 {
+  margin-top: -180px;
+  margin-left: -290px;
 }
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-
-
-  
-
