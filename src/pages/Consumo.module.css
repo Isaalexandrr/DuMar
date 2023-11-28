@@ -21,29 +21,29 @@
   padding-top: 30px;
 }
 
-h2 {
-  font-size: 16px;
-  margin-left: -10px;
-  margin-top: 170px;
+/* h2{
+    font-size: 16px;
+    margin-left: -10px;
+    margin-top: 170px;
 }
 
-p {
-  margin-top: 80px;
-  text-align: left;
+p{
+    margin-top:80px;
+    text-align: left;
+} */
+
+/* h1{
+    margin-left: -50px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: white;   
 }
 
-h1 {
-  margin-left: -50px;
-  margin-top: 30px;
-  font-size: 16px;
-  color: white;
-}
-
-h4 {
-  font-size: 16px;
-  margin-left: 160px;
-  margin-top: 40px;
-}
+h4{
+    font-size: 16px;
+    margin-left: 160px;
+    margin-top: 40px;
+} */
 
 html {
   color: white;
@@ -86,16 +86,16 @@ body {
   margin-top: -100px;
 }
 
-h4 {
-  margin-top: -180px;
-  margin-left: auto;
+/* h4{
+    margin-top: -180px;
+    margin-left: auto;  
 }
 
-h3 {
-  font-size: 16px;
-  margin-top: -400px;
-  margin-left: -200px;
-}
+h3{
+    font-size: 16px;
+    margin-top: -400px;
+    margin-left: -200px;
+} */
 
 .img-jogandolixo {
   width: 900px;
@@ -109,23 +109,23 @@ h3 {
   margin-top: -120px;
 }
 
-h5 {
-  font-size: 16px;
-  margin-top: -200px;
-  margin-left: -290px;
-}
+/* h5{
+    font-size: 16px;
+    margin-top: -200px;
+    margin-left: -290px;
+} */
 
 .img-reciclavel {
   width: 920px;
   margin-left: -700px;
   margin-top: -30px;
 }
-
-h6 {
-  font-size: 16px;
-  margin-top: -400px;
-  margin-left: -300px;
-}
+/* 
+h6{
+    font-size: 16px;
+    margin-top: -400px;
+    margin-left: -300px;
+} */
 
 .img-proibidonadar {
   width: 920px;
@@ -133,7 +133,8 @@ h6 {
   margin-top: -130px;
 }
 
-h2 {
-  margin-top: -180px;
-  margin-left: -290px;
-}
+/* h2{
+    margin-top: -180px;
+    margin-left: -290px;
+
+} */

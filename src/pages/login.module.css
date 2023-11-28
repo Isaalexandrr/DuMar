@@ -1,89 +1,24 @@
-.container{
-    background-color: #538aad;
+#tittle {
+  color: #a8f2fe;
 }
-.welcome{
-    color: #a8f2fe;
-    font-size: 40px;
-    font-family: Open Sans;
-    justify-content: center;
+#Entrar {
+  background-color: #a8f2fe;
 }
-
-.email, .senha {
-    justify-content: center;
-    width: 400px;
-    height: 60px;
-    border-radius: 25px;
-    font-size: 15px;
+.link {
+  text-decoration: none;
 }
-
-.button{
-    justify-content: center;
-    width: 400px;
-    height: 60px;
-    background-color: #a8f2fe;
-    color: black;
-    border-radius: 40px;
-    font-size: 20px;
-    margin-top: 20px;
+.esqueceu {
+  color: #a8f2fe;
 }
-small a {
-    justify-content:center;
-    color: #a8f2fe;
-    text-decoration: none;
+#cadastro {
+  color: #a8f2fe;
+  border: 3px solid #a8f2fe;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 576px) {
-    .email, .senha {
-        width: 90%;
-        height: 40px;
-        border-radius: 15px;
-        font-size: 15px;
-    }
-    .entrar {
-        width: 70%;
-        height: 40px;
-        font-size: 15px;
-    }
-    .welcome {
-        font-size: 40px;
-    }
+.ondacoral {
+  height: 300px;
 }
-
-@media screen and (min-width: 577px) and (max-width: 767px) {
-    .email, .senha {
-        width: 90%;
-        height: 40px;
-        border-radius: 15px;
-        font-size: 15px;
-    }
-    .entrar {
-        width: 70%;
-        height: 40px;
-        font-size: 15px;
-    }
-    .welcome {
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .email, .senha {
-        width: 60%;
-        height: 40px;
-        border-radius: 15px;
-        font-size: 15px;
-    }
-    .entrar {
-        width: 50%;
-        height: 40px;
-        font-size: 15px;
-    }
-    .welcome {
-        font-size: 40px;
-    }
-
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    
+.ondaestrela {
+  height: 300px;
 }
