@@ -1,4 +1,4 @@
-.pessoa .entrar {
+.saibaMais {
   background-color: #0a376e;
   border-radius: 40px;
   display: flex;
@@ -8,9 +8,6 @@
   justify-content: center;
   cursor: pointer;
   color: white;
-  gap: 7px;
-  border: none;
-}
-.link {
-  text-decoration: none;
+  margin-left: 5.5%;
+  margin-bottom: 2%;
 }

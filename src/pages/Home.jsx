@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import CarroselPrincipal from "../components/CarroselPrincipal";
 
 import styles from "./home.module.css";
 
@@ -14,7 +15,6 @@ import ISABELA from "../imagens/ISABELA (1).png";
 import Andrezaa from "../imagens/Andrezaa.jpg";
 import Gerson from "../imagens/Gerson.jpeg";
 import { IoStar, IoStarOutline } from "react-icons/io5";
-import { destaques } from "../mock/home";
 
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -24,87 +24,8 @@ import { destaques } from "../mock/home";
 function Home() {
   return (
     <div className="container-fluid p-0">
+      <CarroselPrincipal />
       <header>
-        <main>
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide mt-0"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators mt-0">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src={carrosel1} class="d-block w-100" alt="foto" />
-                <div class="carousel-caption d-none d-md-block"></div>
-              </div>
-              <div class="carousel-item">
-                <img src={carrosel2} class="d-block w-100" alt="foto" />
-                <div class="carousel-caption d-none d-md-block"></div>
-              </div>
-              <div class="carousel-item">
-                <img src={carrosel1} class="d-block w-100" alt="foto" />
-                <div class="carousel-caption d-none d-md-block"></div>
-              </div>
-
-              <div class="carousel-item active">
-                <img src={carrosel2} class="d-block w-100" alt="foto" />
-                <div class="carousel-caption d-none d-md-block"></div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </main>
-
         <div className="row m-0 p-0">
           <div className="col w-xs-100 w-sm-100 m-0 p-0">
             <img
@@ -273,35 +194,109 @@ function Home() {
           <div class="carousel-inner justify-content-center">
             <div class="carousel-item active">
               <div className={styles["box"]}>
-                {destaques.forEach((el) => {
-                  return (
-                    <div className={styles["grid-caixa"]}>
-                      <img src={camarao} alt="Atum" />
-                      <div className={styles["texto"]}>
-                        <h3>{el.name}</h3>
-                        <h3>{el.preco}</h3>
-                      </div>
-                      <div className={styles["estrela"]}>
-                        <IoStar />
-                        <IoStar />
-                        <IoStar />
-                        <IoStar />
-                        <IoStarOutline />
-                      </div>
-                      <input
-                        type="button"
-                        name=""
-                        id=""
-                        value="Adicionar à sacola"
-                      />
-                      <div className={styles["maisDetalhes"]}>
-                        <Link to="">
-                          <p>Ver mais detalhes</p>
-                        </Link>
-                      </div>
-                    </div>
-                  );
-                })}
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Atum" />
+                  <div className={styles["texto"]}>
+                    <h3>Atum</h3>
+                    <h3>R$ 30,49</h3>
+                  </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Bacalhau" />
+                  <div className={styles["texto"]}>
+                    <h3>Bacalhau</h3>
+                    <h3>R$ 79,90</h3>
+                  </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="Corvina" />
+                  <div className={styles["texto"]}>
+                    <h3>Corvina</h3>
+                    <h3>R$ 18,90</h3>
+                  </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
+                </div>
+
+                <div className={styles["grid-caixa"]}>
+                  <img src={camarao} alt="arenque" />
+                  <div className={styles["texto"]}>
+                    <h3>Albacora</h3>
+                    <h3>R$ 20,00</h3>
+                  </div>
+                  <div className={styles["estrela"]}>
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStar />
+                    <IoStarOutline />
+                  </div>
+                  <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="Adicionar à sacola"
+                  />
+                  <div className={styles["maisDetalhes"]}>
+                    <Link to="">
+                      <p>Ver mais detalhes</p>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

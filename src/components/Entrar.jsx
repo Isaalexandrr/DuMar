@@ -8,7 +8,7 @@ import { IoPersonSharp } from "react-icons/io5";
 function Entrar() {
   return (
     <div className={styles["pessoa"]}>
-      <Link to="/login">
+      <Link className={styles["link"]} to="/login">
         <button type="button" className={styles["entrar"]}>
           <IoPersonSharp />
           Entrar
