@@ -1,0 +1,13 @@
+.saibaMais {
+  background-color: #0a376e;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  margin-left: 5.5%;
+  margin-bottom: 2%;
+}

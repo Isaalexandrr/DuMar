@@ -7,17 +7,12 @@ import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
-import Perfil from "./components/Perfil";
-import NavPerfil from "./components/NavPerfil"
-import QuemSomos from "./pages/QuemSomos";
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
-        {/* <NavPerfil /> */}
-       
         <nav></nav>
 
         <Routes>
@@ -26,8 +21,6 @@ function App() {
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/" element={<Home />} />
-          <Route path="/Perfil" element={<Perfil />} />
-          <Route path="/QuemSomos" element={<QuemSomos />} />
         </Routes>
       </div>
     </Router>
