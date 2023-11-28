@@ -1,0 +1,35 @@
+.container{
+    background-color: white;
+    border-radius: 20px;
+    border-bottom: 10px;
+}
+.sobre{
+    
+    background-color: white;
+}
+.sobre h2{
+    color:#538aad;
+    font-size: 16px;
+   padding: 10px;
+   margin-right:50px
+}
+.missão{
+    background-color: white;
+}
+.missão h2{
+    color:#538aad;
+    font-size: 16px;
+    padding: 10px;
+}
+.equipe{
+    margin-bottom: 19px;
+    border-radius: 15px;
+}
+.equipe h2{
+    color: #538aad;
+    font-size: 16px;
+    justify-content: center;
+}
+.equipe small{
+    color: #538aad;
+}
