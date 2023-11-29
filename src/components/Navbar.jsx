@@ -21,7 +21,9 @@ function Navbar() {
             <Link to="/">
               <img src={logo1} className={styles["img-logo1"]} alt="DUMAR" />
             </Link>
+            <Link to="/">
             <img src={logo2} className={styles["img-logo2"]} alt="DUMAR" />
+            </Link>
           </div>
         </a>
 
