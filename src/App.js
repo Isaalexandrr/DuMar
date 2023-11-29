@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
 import Carrinho from "./pages/Carrinho"
+import QuemSomos from "./pages/QuemSomos";
+import EsqueceuSenha from "./pages/EsqueceuSenha";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Carrinho" element={<Carrinho />} />
 
+          <Route path= "/QuemSomos" element={<QuemSomos />} />
+          <Route path= "/.EsqueceuSenha" element={<EsqueceuSenha />} />
         </Routes>
       </div>
     </Router>
