@@ -7,6 +7,7 @@ import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
+import QuemSomos from "./pages/QuemSomos";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/" element={<Home />} />
+          <Route path= "/QuemSomos" element={<QuemSomos />} />
         </Routes>
       </div>
     </Router>
