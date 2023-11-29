@@ -25,7 +25,7 @@ function App() {
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/" element={<Home />} />
           <Route path= "/QuemSomos" element={<QuemSomos />} />
-          <Route path= "/.EsqueceuSenha" element={<EsqueceuSenha />} />
+          <Route path= "/EsqueceuSenha" element={<EsqueceuSenha />} />
           <Route path="/Carrinho" element={<Carrinho />} />
 
         </Routes>
