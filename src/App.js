@@ -7,6 +7,7 @@ import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
+import Carrinho from "./pages/Carrinho"
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/" element={<Home />} />
+          <Route path="/Carrinho" element={<Carrinho />} />
+
         </Routes>
       </div>
     </Router>
