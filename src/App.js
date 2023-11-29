@@ -10,7 +10,7 @@ import Cadastro from "./pages/Cadastro";
 import Carrinho from "./pages/Carrinho"
 import QuemSomos from "./pages/QuemSomos";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
-import Carrinho from "./pages/Carrinho"
+
 
 function App() {
   return (
