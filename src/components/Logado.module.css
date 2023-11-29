@@ -1,0 +1,211 @@
+.img-logo1 {
+    height: 50px;
+    margin-left: 55%;
+  }
+  .img-logo2 {
+    height: 20px;
+    margin-left: 20px;
+  }
+  
+  .pesquisar {
+    border: 2px solid #0a376e;
+    border-radius: 10px;
+  }
+  
+  .pesquisar input {
+    border: none;
+    background-color: transparent;
+    padding-left: 5px;
+  }
+  
+  .pesquisar input:focus {
+    border: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+  }
+  
+  .pesquisar button {
+    border: none;
+    background-color: transparent;
+    padding-right: 5px;
+    margin-bottom: 5px;
+    color: #0a376e;
+  }
+  
+
+  .pessoa{
+    display: flex;
+  }
+  .pessoa a{
+    margin-right: 10px;
+  }
+  
+  .entrar {
+    background-color: #0a376e;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+  }
+  
+  .carrinho{
+    background-color: #0a376e;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+
+  }
+  
+ 
+  .pessoa-carro-nome {
+    display: flex;
+    gap: 10px;
+    margin-right: 10%;
+    align-items: center;
+  }
+  
+  .menu ul {
+    background-color: #b0c5d1;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    height: 30px;
+    align-items: center;
+  }
+  
+  .menu li {
+    margin-left: 6.5%;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+  }
+  .menu .categoria {
+    border: none;
+    box-shadow: 0 0 0 0;
+  }
+  
+
+  .usuario{
+    display: flex;
+    margin: 25px;
+}
+
+.usuario svg{
+    width: 82px;
+    height: 82px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.usuario-nome{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.usuario-nome a{
+    color: #0A376E;
+    font-size: 20px;
+}
+
+.usuario-email{
+    color: black;
+}
+
+.usuario-email{
+  color: black;
+}
+
+.compras{
+  display: flex;
+  margin: 20px;
+}
+
+.compras svg{
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+.compras p{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+
+}
+
+.dados{
+  display: flex;
+  margin: 20px;
+}
+
+.dados svg{
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.dados p{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.conf{
+  display: flex;
+  margin: 20px;
+}
+
+.conf svg{
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.conf p{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.sair{
+  display: flex;
+  margin: 20px;
+}
+
+.sair svg{
+  height: 40px;
+  width: 60px;
+  color: #DC0032;
+  cursor: pointer;
+  
+}
+
+.sair p{
+  color: #DC0032;
+  text-decoration: none;
+  font-size: 25px;
+
+}
+
+.pessoa-nome{
+  display: flex;
+}
+
+.seu-nome{
+  border: none;
+  box-shadow: 0 0 0 0;
+}
