@@ -10,6 +10,7 @@ import Cadastro from "./pages/Cadastro";
 import Carrinho from "./pages/Carrinho"
 import QuemSomos from "./pages/QuemSomos";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
+import Carrinho from "./pages/Carrinho"
 
 function App() {
   return (
@@ -24,10 +25,10 @@ function App() {
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/" element={<Home />} />
+          <Route path= "/QuemSomos" element={<QuemSomos />} />
+          <Route path= "/EsqueceuSenha" element={<EsqueceuSenha />} />
           <Route path="/Carrinho" element={<Carrinho />} />
 
-          <Route path= "/QuemSomos" element={<QuemSomos />} />
-          <Route path= "/.EsqueceuSenha" element={<EsqueceuSenha />} />
         </Routes>
       </div>
     </Router>

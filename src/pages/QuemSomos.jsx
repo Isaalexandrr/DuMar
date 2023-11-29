@@ -17,12 +17,12 @@ function QuemSomos() {
         <section className={styles["sobre"]} >
 
 
-          <h2>
+          <h2 className={styles['h2']}>
             Sobre Nós:
             
           </h2>
 
-          <p>
+          <p className={styles['p']}>
           <strong>“DuMar”</strong> é um E-commerce (comércio eletrônico)
           que oferece serviços de compra e venda de peixes
           e frutos do mar.
@@ -34,11 +34,11 @@ function QuemSomos() {
 
 
 
-          <h2>
+          <h2 className={styles['h2']}>
             Propósito e missão:
 
           </h2>
-          <p>
+          <p className={styles['p']}>
           No DuMar, nossa missão é oferecer peixes frescos
           diretamente de pescadores locais, contribuindo
           para a saúde dos consumidores e preservando os
@@ -55,7 +55,7 @@ function QuemSomos() {
 
 
         <section className={styles["equipe"]} >
-        <h2>Nossa Equipe: </h2>
+        <h2 className={styles['h2']}>Nossa Equipe: </h2>
           <div className={styles["eqp"]} >
             
             <div class="col">
