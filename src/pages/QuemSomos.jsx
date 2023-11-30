@@ -11,8 +11,8 @@ import Gerson from "../imagens/Gerson.jpeg";
 function QuemSomos() {
   return (
 
-    <main className={styles["container"]}>
-     
+      <main className={styles["container"]}>
+      <div class="row">
         <article className={styles["primeiraparte"]} >
         <section className={styles["sobre"]} >
 
@@ -51,15 +51,21 @@ function QuemSomos() {
           mais preservado.
           </p>
         </section>
+
         </article>
-
-
+      </div>
+          
         <section className={styles["equipe"]} >
         <h2>Nossa Equipe: </h2>
-          <div className={styles["eqp"]} >
+          <div className="row">
             
             <div class="col">
-              <img src={Alanes} class="card-img-end" alt="..." />
+            <a href="https://www.linkedin.com/in/alanesgomes" target="_blank" rel="noopener noreferrer" >
+              <img src={Alanes} class="card-img-end" alt="...">
+
+            </img>
+            </a>
+             
               <p>Alanes</p>
               <a href="mailto: alanesGsilva@gmail.com">alanesGsilva@gmail.com</a>
             </div>
@@ -89,7 +95,7 @@ function QuemSomos() {
             </div>
           </div>
         </section>
-
+      
      
     </main>
 
