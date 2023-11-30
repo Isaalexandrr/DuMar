@@ -11,7 +11,7 @@ import Publicar from "./pages/Publicar";
 import QuemSomos from "./pages/QuemSomos";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Carrinho from "./pages/Carrinho";
-import Carrinho from "./pages/Carrinho"
+import Carrinho from "./pages/Carrinho";
 import Pagamento from "./pages/Pagamento";
 
 function App() {
