@@ -18,7 +18,7 @@ const RodaPe = () => {
           width: "80%",
           height: "auto",
           display: "block",
-          margin: "auto"
+          margin: "auto",
         }}
       />
       <button
@@ -34,7 +34,9 @@ const RodaPe = () => {
           borderRadius: "30px",
           cursor: "pointer",
         }}
-        onClick={() => {}}
+        onClick={() => {
+          window.location.href = "/QuemSomos";
+        }}
       >
         Saiba Mais
       </button>
