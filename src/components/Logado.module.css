@@ -116,9 +116,8 @@
  /*perfil*/
   .usuario{
     display: flex;
-    margin: 25px;
-  height: 50px;
-  margin-left: 55%;
+   
+  
 }
 
 
@@ -167,18 +166,6 @@
   font-size: 20px;
 }
 
-.carrinho {
-  background-color: #0a376e;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-radius: 40px;
-  cursor: pointer;
-  height: 35px;
-  width: 35px;
-  font-size: 20px;
-}
 
 .pessoa-carro-nome {
   display: flex;

@@ -52,8 +52,9 @@ function Logado() {
             </div>
          
 
-          
-             <DropdownItem to="/Products">
+            
+             <DropdownItem href="/Products">
+             
               <div className={styles["compras"]}>
              
               <svg
@@ -161,7 +162,7 @@ function Logado() {
               </svg>
                   <div className={styles['info']}>
                     <p>Salmão</p>
-                    <p>R$00,00</p>
+                    <p>R$59,90</p>
                   </div>
                 
                   <div className={styles['botao']}>
@@ -180,23 +181,23 @@ function Logado() {
           <div className={styles['valor']}>
             <div className={styles['sub-valor']}>
               <p>Subtotal:</p>
-              <p>R$ 00,00</p>
+              <p>R$ 59,90</p>
             </div>
             <div className={styles['entrega-valor']}>
               <p>Entrega:</p>
-              <p>R$ 00,00</p>
+              <p>R$ 9,99</p>
             </div>
             <div className={styles['desconto-valor']}>
               <p>Desconto:</p>
-              <p>-R$ 00,00</p>
+              <p>-R$ 5,99</p>
             </div>
             <div className={styles['total-valor']}>
               <p>Total:</p>
-              <p className={styles['total']}>R$ 00,00</p>
+              <p className={styles['total']}>R$ 63,90</p>
             </div>
           </div>
           <div className={styles["finalizar"]}>
-            <Link to="/Carrinho">
+            <Link to="/Pagamento">
              <button type="submit">Finalizar compra</button>
             </Link> 
           <div className={styles['continuar']}>
