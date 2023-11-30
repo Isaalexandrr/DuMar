@@ -79,7 +79,7 @@ function QuemSomos() {
             <div class="col ">
               <img src={Gerson} class="card-img-end" alt="..." />
               <p> Gerson</p>
-              <a href="mailto:gersononline42@gmail.com "> gersononline42@gmail.com </a>
+              <a href="mailto:gersononline42@gmail.com "> gersononline42</a>
             </div>
 
             <div class="col">
