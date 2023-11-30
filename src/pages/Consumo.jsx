@@ -32,7 +32,7 @@ const Consumo = () => {
 
         <section>
           <div
-            className="row px-5 gap-4"
+            className="row px-2 gap-4"
             style={{
               position: "absolute",
               top: "160%",
@@ -48,7 +48,7 @@ const Consumo = () => {
             <h1  className={styles["consumo-c"]}>CONSUMO CONSCIENTE!</h1>
             </div>
             <div
-              className="col-md-3 "
+              className="col-md-3 col-sm-12 "
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.363)",
                 borderRadius: "15px",
@@ -68,7 +68,7 @@ const Consumo = () => {
             </div>
 
             <div
-              className="col-md-3 "
+              className="col-md-3 col-sm-12 "
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.363)",
                 borderRadius: "15px",
@@ -87,7 +87,7 @@ const Consumo = () => {
             </div>
 
             <div
-              className="col-md-3 "
+              className="col-md-3 col-sm-12"
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.363)",
                 borderRadius: "15px",
@@ -129,18 +129,27 @@ const Consumo = () => {
                   mar está em
                   <br /> nossas mãos. #PareComOPlástico, #SalveOsOceanos.
                 </p>
+                <div className="row">
+                <div className="col-md-6">
                 <img
-                  className={styles["img-tartaruga"]}
+                  className={`${styles["img-tartaruga"]} img-fluid`}
                   src={tartaruga}
                   alt=""
                   style={{ width: "280px", height: "150px" }}
                 />
+                </div>
+                </div>
+
+                <div className="row">
+                <div className="col-md-6">
                 <img
-                  className={styles["img-foca"]}
+                  className={`${styles["img-foca"]} img-fluid`}
                   src={foca}
                   alt=""
                   style={{ width: "280px", height: "150px" }}
                 />
+                </div>
+                </div>
               </div>
             </section>
 
@@ -156,7 +165,7 @@ const Consumo = () => {
 
                 <div className="container mt-4">
                   <div className="row">
-                    <div className="col-md-4 ">
+                    <div className="col-md-4 col-sm-12 ">
                       <div
                         className="card"
                         style={{
