@@ -1,0 +1,57 @@
+.teste {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.box {
+  display: flex;
+  text-align: center;
+  gap: 15px;
+  width: 270px;
+  height: 400px;
+  justify-content: center;
+  border-top: 5px solid #0a376e;
+  border-radius: 5%;
+  flex-direction: column;
+  background-color: white;
+}
+.box input {
+  background-color: #0a376e;
+  color: white;
+  border: 0;
+  width: 70%;
+  height: 20%;
+  border-radius: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.box img {
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 5%;
+}
+
+.texto {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.texto h3 {
+  font-size: 18px;
+  justify-content: center;
+}
+
+.maisDetalhes p {
+  color: black;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.estrela {
+  margin-bottom: 5%;
+  justify-content: center;
+}

@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>
-      <nav class="navbar navbar-light bg-light " className={styles["navogo"]}>
+      <nav class="navbar navbar-light bg-light " className={styles["navLogo"]}>
         <a class="navbar-brand" href="#">
           <div className="logos" class="grid text-center mx-4">
             <Link to="/">

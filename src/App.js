@@ -7,19 +7,20 @@ import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
+import Publicar from "./pages/Publicar";
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
-        <nav></nav>
 
         <Routes>
           <Route path="/Cadastro" element={<Cadastro />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
+          <Route path="/Publicar" element={<Publicar />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
