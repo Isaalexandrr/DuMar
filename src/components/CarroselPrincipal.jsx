@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
 
 import styles from "./CarroselPrincipal.module.css";
 
@@ -20,7 +21,9 @@ function CarroselPrincipal() {
       <Carousel.Item>
         <ImagemA text="First slide" />
         <Carousel.Caption className={styles["saibaMais"]}>
-          <input type="button" name="" id="" value="Saiba Mais" />
+          <Link className={styles["link"]} to="/consumo">
+            <input type="button" name="" id="" value="Saiba Mais" />
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
