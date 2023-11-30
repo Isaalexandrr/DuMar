@@ -32,7 +32,7 @@ function Login() {
                 placeholder="Senha"
               />
               <label class="mt-3" htmlFor="senha">
-                <a href="" className={styles["esqueceu"]}>
+                <a href="/EsqueceuSenha" className={styles["esqueceu"]}>
                   Esqueceu a senha?
                 </a>
               </label>

@@ -45,7 +45,7 @@ const Consumo = () => {
               className="container-consumo"
               style={{ display: "flex", alignItems: "flex-start" }}
             >
-              <h1>CONSUMO CONSCIENTE!</h1>
+            <h1  className={styles["consumo-c"]}>CONSUMO CONSCIENTE!</h1>
             </div>
             <div
               className="col-md-3 "
@@ -59,7 +59,7 @@ const Consumo = () => {
             >
               <img className={styles["img-inter"]} src={icon} alt="" />
               <div className={styles["texto-sobre"]}>O que?</div>
-              <p>
+              <p className={styles["consumo"]}>
                 Consumo consciente é fazer escolhas de compra considerando o
                 impacto ambiental e social dos produtos. Envolve preferir opções
                 sustentáveis e éticas para promover um estilo de vida mais
@@ -79,7 +79,7 @@ const Consumo = () => {
             >
               <img className={styles["img-inter"]} src={icon} alt="" />
               <div className={styles["texto-sobre"]}>Como?</div>
-              <p>
+              <p className={styles["consumo"]}>
                 Pratique o consumo consciente ao optar por produtos duráveis e
                 sustentáveis. Reduza o desperdício ao reciclar e reutilizar
                 sempre que possível.
@@ -98,7 +98,7 @@ const Consumo = () => {
             >
               <img className={styles["img-inter"]} src={icon} alt="" />
               <div className={styles["texto-sobre"]}>Porque?</div>
-              <p>
+              <p className={styles["consumo"]}>
                 Adotar o consumo consciente preserva recursos naturais e
                 contribui para um meio ambiente mais saudável. Além disso,
                 promove uma sociedade mais equitativa, apoiando práticas
@@ -111,8 +111,8 @@ const Consumo = () => {
                 className="container-poluição"
                 style={{ display: "flex", alignItems: "flex-start" }}
               >
-                <h1>POLUIÇÃO!</h1>
-                <p>
+                <h1 className={styles["poluicao"]}>POLUIÇÃO!</h1>
+                <p className={styles["poluicao-texto"]}>
                   Nos mares do nosso planeta, um drama silencioso se desenrola
                   diariamente. <br />
                   Milhões de toneladas de plástico invadem nossos oceanos,
@@ -149,8 +149,10 @@ const Consumo = () => {
                 className="container-pesca"
                 style={{ display: "flex", alignItems: "flex-start" }}
               >
-                <h1 style={{ whiteSpace: "nowrap" }}>PESCA PROIBIDA!</h1>
-                <p></p>
+                <h1 className={styles["pesca-texto"]} style={{ whiteSpace: "nowrap" }}>PESCA PROIBIDA!</h1>
+
+                <p className={styles["pesca-textodois"]}> 
+                     Nos oceanos globais, várias espécies de peixes enfrentam extinção devido à pesca insustentável e degradação marinha.Algumas são proibidas devido à necessidade de preservação. Apesar de medidas rigorosas, fiscalização inadequada e demanda persistente levam à pesca ilegal. O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, desequilibrando ecossistemas marinhos.</p>
 
                 <div className="container mt-4">
                   <div className="row">
@@ -163,9 +165,9 @@ const Consumo = () => {
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
-                          right: 120,
-                          top: "10%",
-                          width: 470,
+                          right: 170,
+                          top: "20%",
+                          width: 370,
                           height: 400,
                         }}
                       >
@@ -177,10 +179,9 @@ const Consumo = () => {
                               margin: "0 auto",
                             }}
                           >
-                            ESPÉCIES SERIAMENTES AMEAÇADAS DE <br />
-                            EXTINÇÃO <br />
+                            <div className={styles["texto-especie"]}>ESPÉCIES SERIAMENTES AMEAÇADAS DE EXTINÇÃO </div>
                             <strong>
-                              <span className="text-danger">
+                            <span className="text-danger" style={{ fontSize: '16px' }}>
                                 !!PESCA PROIBIDA!!
                               </span>
                             </strong>
@@ -204,14 +205,14 @@ const Consumo = () => {
                   className="container-pesca"
                   style={{ display: "flex", alignItems: "flex-start" }}
                 >
-                  <h1 style={{ whiteSpace: "nowrap" }}>DICAS DE PRESERVAÇÃO</h1>
+                  <h1 className={styles["preserv-texto"]} style={{ whiteSpace: "nowrap" }}>DICAS DE PRESERVAÇÃO!</h1>
                   <div className="lixo">
                     <img className={styles["img-lixo"]} src={lixo} alt=""></img>
-                    <h4>
-                      1- troque <br /> objetos <br /> descartáveis de <br />
+
+                    <h1 className={styles["lixo-texto"]} style={{ whiteSpace: "nowrap" }}> 1- troque <br /> objetos <br /> descartáveis de <br />
                       plástico por <br /> objetos de <br />
-                      papeis
-                    </h4>
+                      papeis</h1>
+            
                   </div>
                   <div className="jogandolixo">
                     <img
@@ -219,10 +220,9 @@ const Consumo = () => {
                       src={jogandolixo}
                       alt=""
                     ></img>
-                    <h3>
-                      2 - Recolha <br /> todo seu lixo, não <br /> deixe na
-                      praia
-                    </h3>
+                    <h1 className={styles["jogandolixo-texto"]} style={{ whiteSpace: "nowrap" }}> 2 - Recolha <br /> todo seu lixo, não <br /> deixe na
+                      praia</h1>
+
                   </div>
 
                   <div className="limpandolixo">
@@ -231,10 +231,9 @@ const Consumo = () => {
                       src={limpandolixo}
                       alt=""
                     ></img>
-                    <h5>
-                      3 - Participe de <br />
-                      movimentos de <br /> limpezas <br /> costeiras
-                    </h5>
+                    <h1 className={styles["limpandolixo-texto"]} style={{ whiteSpace: "nowrap" }}> 3 - Participe de <br />
+                      movimentos de <br /> limpezas <br /> costeiras </h1>
+
                   </div>
 
                   <div className="reciclavel">
@@ -243,13 +242,10 @@ const Consumo = () => {
                       src={reciclavel}
                       alt=""
                     ></img>
-                    <h6>
-                      4 - Recicle seu <br />
-                      lixo, separe seu <br />
-                      lixo por categoria, <br />
-                      isso facilita na <br />
-                      hora da reciclagem
-                    </h6>
+                    <h1 className={styles["reciclavel-texto"]} style={{ whiteSpace: "nowrap" }}>
+                    4 - Recicle seu lixo, <br />separe seu lixo por  <br />categoria, isso facilita <br /> na hora da reciclagem
+                    </h1>
+
                   </div>
 
                   <div className="proibidonadar">
@@ -258,12 +254,12 @@ const Consumo = () => {
                       src={proibidonadar}
                       alt=""
                     ></img>
-                    <h2>
+                    <h1 className={styles["proibidonadar-texto"]} style={{ whiteSpace: "nowrap" }}>
                       5 - Respeite as <br />
                       sinalizações de <br />
                       praia, preserve sua <br /> vida e a vida dos <br />{" "}
                       oceanos, <br /> respeitando as <br /> instruções
-                    </h2>
+                    </h1>
                   </div>
                 </div>
               </div>
