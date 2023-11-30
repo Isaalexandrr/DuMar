@@ -117,109 +117,203 @@
   .usuario{
     display: flex;
     margin: 25px;
+  height: 50px;
+  margin-left: 55%;
 }
 
-.usuario svg{
-    width: 82px;
-    height: 82px;
-    margin-top: 10px;
-    cursor: pointer;
+
+.pesquisar {
+  border: 2px solid #0a376e;
+  border-radius: 10px;
 }
 
-.usuario-nome{
-    margin-left: 20px;
-    margin-top: 30px;
+.pesquisar input {
+  border: none;
+  background-color: transparent;
+  padding-left: 5px;
 }
 
-.usuario-nome a{
-    color: #0A376E;
-    font-size: 20px;
+.pesquisar input:focus {
+  border: none;
+  outline: 0;
+  box-shadow: 0 0 0 0;
 }
 
-.usuario-email{
-    color: black;
+.pesquisar button {
+  border: none;
+  background-color: transparent;
+  padding-right: 5px;
+  margin-bottom: 5px;
+  color: #0a376e;
 }
 
-.usuario-email{
+.pessoa {
+  display: flex;
+}
+.pessoa a {
+  margin-right: 10px;
+}
+
+.entrar {
+  background-color: #0a376e;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+}
+
+.carrinho {
+  background-color: #0a376e;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+}
+
+.pessoa-carro-nome {
+  display: flex;
+  gap: 10px;
+  margin-right: 10%;
+  align-items: center;
+}
+
+.menu ul {
+  background-color: #b0c5d1;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  height: 30px;
+  align-items: center;
+}
+
+.menu li {
+  margin-left: 6.5%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu .categoria {
+  border: none;
+  box-shadow: 0 0 0 0;
+}
+
+.usuario {
+  display: flex;
+  margin: 25px;
+}
+
+.usuario svg {
+  width: 82px;
+  height: 82px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.usuario-nome {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.usuario-nome a {
+  color: #0a376e;
+  font-size: 20px;
+}
+
+.usuario-email {
   color: black;
 }
 
-.compras{
+.usuario-email {
+  color: black;
+}
+
+.compras {
   display: flex;
   margin: 20px;
 }
 
-.compras svg{
+.compras svg {
   height: 40px;
   width: 60px;
   cursor: pointer;
 }
-.compras p{
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-
-}
-
-.dados{
-  display: flex;
-  margin: 20px;
-}
-
-.dados svg{
-  height: 40px;
-  width: 60px;
-  cursor: pointer;
-}
-
-.dados p{
+.compras p {
   text-decoration: none;
   color: black;
   font-size: 25px;
 }
 
-.conf{
+.dados {
   display: flex;
   margin: 20px;
 }
 
-.conf svg{
+.dados svg {
   height: 40px;
   width: 60px;
   cursor: pointer;
 }
 
-.conf p{
+.dados p {
   text-decoration: none;
   color: black;
   font-size: 25px;
 }
 
-.sair{
+.conf {
   display: flex;
   margin: 20px;
 }
 
-.sair svg{
+.conf svg {
   height: 40px;
   width: 60px;
-  color: #DC0032;
   cursor: pointer;
-  
 }
 
-.sair p{
-  color: #DC0032;
+.conf p {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.sair {
+  display: flex;
+  margin: 20px;
+}
+
+.sair svg {
+  height: 40px;
+  width: 60px;
+  color: #dc0032;
+  cursor: pointer;
+}
+
+.sair p {
+  color: #dc0032;
   text-decoration: none;
   font-size: 25px;
-
 }
 
-.pessoa-nome{
+.pessoa-nome {
   display: flex;
 }
 
-.seu-nome{
+.seu-nome {
   border: none;
   box-shadow: 0 0 0 0;
 }

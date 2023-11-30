@@ -11,7 +11,7 @@ import Gerson from "../imagens/Gerson.jpeg";
 function QuemSomos() {
   return (
 
-    <main className={styles["container"]}>
+    <main className={styles["container"]} >
      
         <article className={styles["primeiraparte"]} >
         <section className={styles["sobre"]} >
@@ -59,31 +59,31 @@ function QuemSomos() {
           <div className={styles["eqp"]} >
             
             <div class="col">
-              <img src={Alanes} class="card-img-end" alt="..." />
+              <a href="https://www.linkedin.com/in/alanesgomes" img src={Alanes} class="card-img-end" alt="..." />
               <p>Alanes</p>
               <a href="mailto: alanesGsilva@gmail.com">alanesGsilva@gmail.com</a>
             </div>
 
             <div class="col">
-              <img src={Andrezaa} class="card-img-end" alt="..." />
+              <a href="https://www.linkedin.com/in/andreza-caldeira-8236841b6/" img src={Andrezaa} class="card-img-end" alt="..." />
               <p>Andreza</p>
               <a href="mailto: Andrezacalderamorais@hotmail.com"> Andrezacalderamorais@hotmail.com </a>
             </div>
 
             <div class="col ">
-              <img src={Gabii} class="card-img-end" alt="..." />
+              <a href="https://www.linkedin.com/in/gabriela-gouveia-mota/" img src={Gabii} class="card-img-end" alt="..." />
               <p>Gabriela</p>
               <a href="mailto: gabii77leone@gmail.com"> gabii77leone@gmail.com </a>
             </div>
 
             <div class="col ">
-              <img src={Gerson} class="card-img-end" alt="..." />
+              <a href="https://www.linkedin.com/in/gersonbarbosajunior/" img src={Gerson} class="card-img-end" alt="..." />
               <p> Gerson</p>
-              <a href="mailto:gersononline42@gmail.com "> gersononline42@gmail.com </a>
+              <a href="mailto:gersononline42@gmail.com "> gersononline42</a>
             </div>
 
             <div class="col">
-              <img src={ISABELA} class="card-img-end" alt="..." />
+              <a href="https://www.linkedin.com/in/isabela-alexandre-4069a1272/" img src={ISABELA} class="card-img-end" alt="..." />
               <p>Isabela</p>
               <a href="mailto: isabelaalexandre8@gmail.com<"> isabelaalexandre8@gmail.com </a>
             </div>
