@@ -65,6 +65,7 @@ function Home() {
                       <IoStar />
                       <IoStarOutline />
                     </div>
+                    
                     <input
                       type="button"
                       name=""

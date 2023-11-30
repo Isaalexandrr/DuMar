@@ -4,10 +4,17 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 import styles from "./Logado.module.css";
 
-import { IoPersonSharp } from "react-icons/io5";
+
+import BotaoAdicionar from "../components/Botao/BotaoAdicionar";
+import BotaoApagarItem from "../components/Botao/BotaoApagarItem";
+import { IoPersonSharp, IoCartSharp} from "react-icons/io5";
+import { DropdownItem } from "react-bootstrap";
+
+
 
 function Logado() {
-  return (
+  return ( 
+    <div class="row">
     <div className={styles["pessoa-carro-nome"]}>
       <Dropdown>
         <Dropdown.Toggle
@@ -18,8 +25,8 @@ function Logado() {
           Seu nome
         </Dropdown.Toggle>
 
-        <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">
+        <Dropdown.Menu className={styles['edit']}>
+          
             <div className={styles["usuario"]}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,10 +50,12 @@ function Logado() {
                 </p>
               </div>
             </div>
-          </Dropdown.Item>
+         
 
-          <Dropdown.Item href="/Products">
-            <div className={styles["compras"]}>
+          
+             <DropdownItem to="/Products">
+              <div className={styles["compras"]}>
+             
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -59,10 +68,12 @@ function Logado() {
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
               </svg>
               <p>Minhas compras</p>
-            </div>
-          </Dropdown.Item>
+              
+              </div>
+            </DropdownItem>
+          
 
-          <Dropdown.Item href="#/action-3">
+          <DropdownItem to="#/action-3">
             <div className={styles["dados"]}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,9 +88,9 @@ function Logado() {
               </svg>
               <p>Meus dados</p>
             </div>
-          </Dropdown.Item>
+          </DropdownItem>
 
-          <Dropdown.Item href="#/action-3">
+          <DropdownItem to="#/action-3">
             <div className={styles["conf"]}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +105,9 @@ function Logado() {
               </svg>
               <p>Configuração</p>
             </div>
-          </Dropdown.Item>
-          <Dropdown.Item href="#/action-3">
+          </DropdownItem>
+
+          <DropdownItem to="#/action-3">
             <div className={styles["sair"]}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,14 +129,121 @@ function Logado() {
               </svg>
               <p>Sair</p>
             </div>
-          </Dropdown.Item>
+          </DropdownItem>
         </Dropdown.Menu>
       </Dropdown>
 
       <button type="button" className={styles["entrar"]}>
         <IoPersonSharp />
       </button>
+    <Dropdown>
+
+          
+        <Dropdown.Toggle
+          variant="action"
+          id="dropdown-basic"
+          className={styles["car"]}
+        ><IoCartSharp />
+         
+        </Dropdown.Toggle>
+          <Dropdown.Menu>
+            
+              <div className={styles["carrinho"]}>
+              <h4>Meu carrinho</h4>
+              </div>
+            <div className={styles['box']}>
+              <form className={styles['produto']}>
+                <input type="checkbox" className={styles['produto-input']} />
+                <div className={styles["produto-info"]}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" color="#0A376E" class="bi bi-card-image" viewBox="0 0 16 16">
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+                  <div className={styles['info']}>
+                    <p>Salmão</p>
+                    <p>R$00,00</p>
+                  </div>
+                
+                  <div className={styles['botao']}>
+                    <BotaoAdicionar/>
+                  </div>
+                  <div className={styles['apagar']}>
+                    <BotaoApagarItem/>
+                  </div>
+                </div> 
+              </form>
+
+          
+          <div className={styles['cupom']}>
+            <input type="Search" placeholder="Cupom:" aria-label="Search" />
+          </div>
+          <div className={styles['valor']}>
+            <div className={styles['sub-valor']}>
+              <p>Subtotal:</p>
+              <p>R$ 00,00</p>
+            </div>
+            <div className={styles['entrega-valor']}>
+              <p>Entrega:</p>
+              <p>R$ 00,00</p>
+            </div>
+            <div className={styles['desconto-valor']}>
+              <p>Desconto:</p>
+              <p>-R$ 00,00</p>
+            </div>
+            <div className={styles['total-valor']}>
+              <p>Total:</p>
+              <p className={styles['total']}>R$ 00,00</p>
+            </div>
+          </div>
+          <div className={styles["finalizar"]}>
+            <Link to="/Carrinho">
+             <button type="submit">Finalizar compra</button>
+            </Link> 
+          <div className={styles['continuar']}>
+            <a href="/">Continuar comprando</a>
+          </div>
+          </div>
+            </div>
+          </Dropdown.Menu>
+       
+      </Dropdown> 
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+
+
+      
+
+    
+
+
   );
 }
 export default Logado;

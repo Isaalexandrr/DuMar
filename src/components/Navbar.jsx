@@ -44,13 +44,7 @@ function Navbar() {
 
         <div className={styles["pessoa-carro"]}>
           {logado ? <Entrar /> : <Logado />}
-          <button
-            type="button"
-            class="btn-secondary btn-sm"
-            className={styles["carrinho"]}
-          >
-            <IoCartSharp />
-          </button>
+         
         </div>
       </nav>
 

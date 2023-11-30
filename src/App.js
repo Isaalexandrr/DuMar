@@ -7,7 +7,7 @@ import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
-import Carrinho from "./pages/Carrinho"
+
 import QuemSomos from "./pages/QuemSomos";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
 
@@ -27,7 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path= "/QuemSomos" element={<QuemSomos />} />
           <Route path= "/EsqueceuSenha" element={<EsqueceuSenha />} />
-          <Route path="/Carrinho" element={<Carrinho />} />
+         
 
         </Routes>
       </div>
