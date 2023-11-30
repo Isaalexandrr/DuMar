@@ -27,6 +27,7 @@
 
 .poluicao-texto{
   margin-top: 90px;
+  color: white;
  
 }
 
@@ -67,15 +68,15 @@ body {
 
 .img-tartaruga {
   position: absolute;
-  top: 650px;
-  right: 290px;
+  top: 750px;
+  right: 190px;
   border-radius: 10px;
 }
 
 .img-foca {
   position: absolute;
-  top: 800px;
-  right: 290px;
+  top: 900px;
+  right: 190px;
   border-radius: 10px;
 }
 
@@ -104,7 +105,7 @@ body {
 }
 
 .lixo-texto{
-  font-size: 14px;
+  font-size: 16px;
   margin-top: -200px;
   margin-left: -70px;
 }
@@ -122,14 +123,14 @@ body {
 }
 
 .jogandolixo-texto{
-  font-size: 14px;
+  font-size: 16px;
   margin-top: -400px;
   margin-left: -200px;
 
 }
 
 .limpandolixo-texto{
-  font-size: 14px;
+  font-size: 16px;
   margin-top: -160px;
   margin-left: -300px;
 }
@@ -142,7 +143,7 @@ body {
 }
 
 .reciclavel-texto{
-  font-size: 14px;
+  font-size: 16px;
   margin-top: -400px;
   margin-left: -300px;
 }
@@ -155,7 +156,7 @@ body {
 }
 
 .proibidonadar-texto{
-  font-size: 14px;
+  font-size: 16px;
   margin-top: -190px;
   margin-left: -390px;
 
@@ -165,7 +166,7 @@ body {
   margin-top: 140px;
   margin-right: 200px;
   padding-right: 90px;
+  color: white;
 
 }
-
 

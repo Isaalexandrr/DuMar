@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
 import QuemSomos from "./pages/QuemSomos";
+import Pagamento from "./pages/Pagamento";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/" element={<Home />} />
           <Route path= "/QuemSomos" element={<QuemSomos />} />
+          <Route path="/Pagamento" element={<Pagamento/>} />
         </Routes>
       </div>
     </Router>

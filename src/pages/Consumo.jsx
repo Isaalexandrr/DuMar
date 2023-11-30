@@ -152,7 +152,7 @@ const Consumo = () => {
                 <h1 className={styles["pesca-texto"]} style={{ whiteSpace: "nowrap" }}>PESCA PROIBIDA!</h1>
 
                 <p className={styles["pesca-textodois"]}> 
-                     Nos oceanos globais, várias espécies de peixes enfrentam extinção devido à pesca insustentável e degradação marinha.Algumas são proibidas devido à necessidade de preservação. Apesar de medidas rigorosas, fiscalização inadequada e demanda persistente levam à pesca ilegal. O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, desequilibrando ecossistemas marinhos.</p>
+                     Nos oceanos globais, várias espécies de peixes enfrentam extinção devido à pesca insustentável e degradação marinha. Algumas são proibidas devido à necessidade de preservação. Apesar de medidas rigorosas, fiscalização inadequada e demanda persistente levam à pesca ilegal. O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, desequilibrando ecossistemas marinhos.</p>
 
                 <div className="container mt-4">
                   <div className="row">
