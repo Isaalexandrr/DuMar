@@ -5,6 +5,7 @@
 .container-consumo {
   display: flex;
   text-align: center;
+  
 }
 
 .texto-sobre {
@@ -68,14 +69,14 @@ body {
 
 .img-tartaruga {
   position: absolute;
-  top: 750px;
+  top: 680px;
   right: 190px;
   border-radius: 10px;
 }
 
 .img-foca {
   position: absolute;
-  top: 900px;
+  top: 830px;
   right: 190px;
   border-radius: 10px;
 }
@@ -95,7 +96,7 @@ body {
 
 .consumo-c{
   font-size: 18px;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .poluicao{
