@@ -68,14 +68,14 @@ body {
 
 .img-tartaruga {
   position: absolute;
-  top:500px;
+  top: 750px;
   right: 190px;
   border-radius: 10px;
 }
 
 .img-foca {
   position: absolute;
-  top:650px;
+  top: 900px;
   right: 190px;
   border-radius: 10px;
 }
@@ -95,7 +95,7 @@ body {
 
 .consumo-c{
   font-size: 18px;
-  margin-top: 90px;
+  margin-top: 200px;
 }
 
 .poluicao{
@@ -169,3 +169,6 @@ body {
   color: white;
 
 }
+
+
+
