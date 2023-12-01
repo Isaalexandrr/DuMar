@@ -1,3 +1,12 @@
+import atum from "../../imagens/atum.jpeg";
+import bacalhau from "../../imagens/bacalhau.jpg";
+import corvina from "../../imagens/corvina.webp";
+import camarao from "../../imagens/camarao.jpg";
+import salmao from "../../imagens/salmao.jpg";
+import polvo from "../../imagens/polvo.webp";
+import tilapia from "../../imagens/tilapia.jpg";
+import lula from "../../imagens/lula.png";
+
 export const ProductService = {
   getProductsData() {
     return [
@@ -8,7 +17,7 @@ export const ProductService = {
         price: 30.49,
         category: "Peixe",
         quantity: 24,
-        Image: "../imagens/atum.jpeg",
+        image: atum,
       },
       {
         id: "1001",
@@ -17,7 +26,7 @@ export const ProductService = {
         price: 79.9,
         category: "Peixe",
         quantity: 61,
-        image: "../imagens/bacalhau.jpg",
+        image: bacalhau,
       },
       {
         id: "1002",
@@ -26,7 +35,7 @@ export const ProductService = {
         price: 18.9,
         category: "Peixe",
         quantity: 24,
-        image: "../imagens/corvina.webp",
+        image: corvina,
       },
       {
         id: "1003",
@@ -35,7 +44,7 @@ export const ProductService = {
         price: 34.9,
         category: "Crustáceos",
         quantity: 39,
-        image: "../imagens/camarao.jpg",
+        image: camarao,
       },
       {
         id: "1004",
@@ -44,7 +53,7 @@ export const ProductService = {
         price: 79.9,
         category: "Peixe",
         quantity: 68,
-        image: "../imagens/salmao.jpg",
+        image: salmao,
       },
       {
         id: "1005",
@@ -53,7 +62,7 @@ export const ProductService = {
         price: 65,
         category: "Moluscos",
         quantity: 8,
-        image: "../imagens/polvo.webp",
+        image: polvo,
       },
       {
         id: "1006",
@@ -62,7 +71,7 @@ export const ProductService = {
         price: 26.9,
         category: "Peixe",
         quantity: 56,
-        image: "../imagens/tilapia.jpg",
+        image: tilapia,
       },
       {
         id: "1007",
@@ -71,7 +80,7 @@ export const ProductService = {
         price: 29.9,
         category: "Moluscos",
         quantity: 27,
-        image: "../imagens/lula.png",
+        image: lula,
       },
     ];
   },

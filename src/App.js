@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
-import Carrinho from "./pages/Carrinho";
 import Publicar from "./pages/Publicar";
 import Pagamento from "./pages/Pagamento";
 import QuemSomos from "./pages/QuemSomos";

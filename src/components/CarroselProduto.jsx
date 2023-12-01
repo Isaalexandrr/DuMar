@@ -9,6 +9,7 @@ import camarao from "../imagens/camarao.jpg";
 import { IoStar } from "react-icons/io5";
 
 export default function CarroselProduto() {
+  const importImages = [];
   const [products, setProducts] = useState([]);
   const responsiveOptions = [
     {
@@ -29,9 +30,9 @@ export default function CarroselProduto() {
   ];
 
   useEffect(() => {
-    ProductService.getProductsSmall().then((data) =>
-      setProducts(data.slice(0, 9))
-    );
+    ProductService.getProductsSmall().then((data) => {
+      setProducts(data.slice(0, 9));
+    });
   }, []);
 
   const productTemplate = (product) => {
@@ -43,7 +44,7 @@ export default function CarroselProduto() {
               <div className={styles["grid-caixa"]}>
                 <img
                   src={product.image}
-                  alt="product.name"
+                  alt={product.name}
                   className="w-6 shadow-2"
                 />
               </div>
