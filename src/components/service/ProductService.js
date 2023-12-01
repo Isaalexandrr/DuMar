@@ -8,6 +8,7 @@ export const ProductService = {
         price: 30.49,
         category: "Peixe",
         quantity: 24,
+        Image: "../imagens/atum.jpeg",
       },
       {
         id: "1001",
@@ -16,6 +17,7 @@ export const ProductService = {
         price: 79.9,
         category: "Peixe",
         quantity: 61,
+        image: "../imagens/bacalhau.jpg",
       },
       {
         id: "1002",
@@ -24,6 +26,7 @@ export const ProductService = {
         price: 18.9,
         category: "Peixe",
         quantity: 24,
+        image: "../imagens/corvina.webp",
       },
       {
         id: "1003",
@@ -32,6 +35,7 @@ export const ProductService = {
         price: 34.9,
         category: "Crustáceos",
         quantity: 39,
+        image: "../imagens/camarao.jpg",
       },
       {
         id: "1004",
@@ -40,6 +44,7 @@ export const ProductService = {
         price: 79.9,
         category: "Peixe",
         quantity: 68,
+        image: "../imagens/salmao.jpg",
       },
       {
         id: "1005",
@@ -48,6 +53,7 @@ export const ProductService = {
         price: 65,
         category: "Moluscos",
         quantity: 8,
+        image: "../imagens/polvo.webp",
       },
       {
         id: "1006",
@@ -56,6 +62,7 @@ export const ProductService = {
         price: 26.9,
         category: "Peixe",
         quantity: 56,
+        image: "../imagens/tilapia.jpg",
       },
       {
         id: "1007",
@@ -64,6 +71,7 @@ export const ProductService = {
         price: 29.9,
         category: "Moluscos",
         quantity: 27,
+        image: "../imagens/lula.png",
       },
     ];
   },
