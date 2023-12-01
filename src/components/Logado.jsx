@@ -4,7 +4,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 import styles from "./Logado.module.css";
 
-import salmao from "../imagens/download.jpeg"
+import salmao from "../imagens/salmao.jpg";
 import BotaoAdicionar from "../components/Botao/BotaoAdicionar";
 import BotaoApagarItem from "../components/Botao/BotaoApagarItem";
 import { IoPersonSharp, IoCartSharp } from "react-icons/io5";
@@ -144,8 +144,8 @@ function Logado() {
               <form className={styles["produto"]}>
                 <input type="checkbox" className={styles["produto-input"]} />
                 <div className={styles["produto-info"]}>
-                <img src={salmao} alt=""  width="70" height="70"/>
-                  <div className={styles['info']}>
+                  <img src={salmao} alt="" width="70" height="70" />
+                  <div className={styles["info"]}>
                     <p>Salmão</p>
                     <p>R$59,90</p>
                   </div>
