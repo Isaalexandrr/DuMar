@@ -11,7 +11,7 @@ import logo2 from "../imagens/logo2.png";
 import { IoSearch, IoCartSharp } from "react-icons/io5";
 
 function Navbar() {
-  const logado = true;
+  const logado = false;
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>
