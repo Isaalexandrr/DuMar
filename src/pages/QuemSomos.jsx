@@ -11,18 +11,18 @@ import Gerson from "../imagens/Gerson.jpeg";
 function QuemSomos() {
   return (
 
-    <main className={styles["container"]} >
+    <main className={styles["container"]}>
      
         <article className={styles["primeiraparte"]} >
         <section className={styles["sobre"]} >
 
 
-          <h2 className={styles['h2']}>
+          <h2>
             Sobre Nós:
             
           </h2>
 
-          <p className={styles['p']}>
+          <p>
           <strong>“DuMar”</strong> é um E-commerce (comércio eletrônico)
           que oferece serviços de compra e venda de peixes
           e frutos do mar.
@@ -34,11 +34,11 @@ function QuemSomos() {
 
 
 
-          <h2 className={styles['h2']}>
+          <h2>
             Propósito e missão:
 
           </h2>
-          <p className={styles['p']}>
+          <p>
           No DuMar, nossa missão é oferecer peixes frescos
           diretamente de pescadores locais, contribuindo
           para a saúde dos consumidores e preservando os
@@ -51,39 +51,40 @@ function QuemSomos() {
           mais preservado.
           </p>
         </section>
+
         </article>
 
 
         <section className={styles["equipe"]} >
-        <h2 className={styles['h2']}>Nossa Equipe: </h2>
+        <h2>Nossa Equipe: </h2>
           <div className={styles["eqp"]} >
             
             <div class="col">
-              <a href="https://www.linkedin.com/in/alanesgomes" img src={Alanes} class="card-img-end" alt="..." />
+              <img src={Alanes} class="card-img-end" alt="..." />
               <p>Alanes</p>
               <a href="mailto: alanesGsilva@gmail.com">alanesGsilva@gmail.com</a>
             </div>
 
             <div class="col">
-              <a href="https://www.linkedin.com/in/andreza-caldeira-8236841b6/" img src={Andrezaa} class="card-img-end" alt="..." />
+              <img src={Andrezaa} class="card-img-end" alt="..." />
               <p>Andreza</p>
               <a href="mailto: Andrezacalderamorais@hotmail.com"> Andrezacalderamorais@hotmail.com </a>
             </div>
 
             <div class="col ">
-              <a href="https://www.linkedin.com/in/gabriela-gouveia-mota/" img src={Gabii} class="card-img-end" alt="..." />
+              <img src={Gabii} class="card-img-end" alt="..." />
               <p>Gabriela</p>
               <a href="mailto: gabii77leone@gmail.com"> gabii77leone@gmail.com </a>
             </div>
 
             <div class="col ">
-              <a href="https://www.linkedin.com/in/gersonbarbosajunior/" img src={Gerson} class="card-img-end" alt="..." />
+              <img src={Gerson} class="card-img-end" alt="..." />
               <p> Gerson</p>
-              <a href="mailto:gersononline42@gmail.com "> gersononline42</a>
+              <a href="mailto:gersononline42@gmail.com "> gersononline42@gmail.com </a>
             </div>
 
             <div class="col">
-              <a href="https://www.linkedin.com/in/isabela-alexandre-4069a1272/" img src={ISABELA} class="card-img-end" alt="..." />
+              <img src={ISABELA} class="card-img-end" alt="..." />
               <p>Isabela</p>
               <a href="mailto: isabelaalexandre8@gmail.com<"> isabelaalexandre8@gmail.com </a>
             </div>
@@ -98,3 +99,11 @@ function QuemSomos() {
 
 }
 export default QuemSomos;
+
+
+
+
+
+
+
+
