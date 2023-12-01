@@ -153,12 +153,101 @@ function Pagamento() {
     
                 }
 
+              if (email==''){
+                    
+                  setMsg('Preencha o email')
+                  return false
+  
+              }
+
+              
+              if (endereco==''){
+                    
+                setMsg('Preencha o endereço')
+                return false
+
+              }
+
+            
+               if (cidade==''){
+                    
+                setMsg('Preencha sua cidade')
+                return false
+
+              }
+          
+             if (estado==''){
+                    
+               setMsg('Preencha seu estado')
+               return false
+
+              }
+
+        
+             if (cep==''){
+                    
+              setMsg('Preencha o CEP ')
+               return false
+
+              }
+      
+              if (pix==''){
+                    
+               setMsg('Preencha sua chave PIX')
+                return false
+               }
+
+    
+              if (nomecartao==''){
+                    
+                  setMsg('Preencha o nome do seu cartaõ')
+                   return false
+
+              }
+
+  
+              if (numerocartao==''){
+                    
+                  setMsg('Preencha o número do seu cartão')
+                  return false
+
+              }
+
+
+              if (mesexpiracao==''){
+                    
+                   setMsg('Preencha o mês da expedição do seu cartão')
+                   return false
+
+              }
+
+
+               if (anoexpiracao==''){
+                    
+                setMsg('Preencha o ano da expedição do seu cartão')
+                return false
+
+               }
+
+
+              if (cvv==''){
+                    
+               setMsg('Preencha o CVV do cartão')
+                return false
+
+              }
+
+              setMsg('')
+
+              //Aqui chama a API
+
 
             }}
           />
         </form>
         <div className='row-mt-3'>
             <div className='col'>
+              {msg}
                 <alert variant= 'warning'>
                     {msg}
 
