@@ -9,7 +9,7 @@ import { Consumo } from "./pages/Consumo";
 import Cadastro from "./pages/Cadastro";
 import QuemSomos from "./pages/QuemSomos";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
-import Carrinho from "./pages/Carrinho"
+import Carrinho from "./pages/Carrinho";
 
 function App() {
   return (
