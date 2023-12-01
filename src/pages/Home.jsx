@@ -89,7 +89,7 @@ function Home() {
                       <IoStar />
                       <IoStar />
                     </div>
-                    
+
                     <input
                       type="button"
                       name=""
