@@ -103,7 +103,7 @@
   color: #0a376e;
   border-radius: 30px;
   font-size: 15px;
-  border-color: #0a376e;
+  border: 2px solid #0a376e;
   margin-right: 40px;
 }
 
@@ -113,4 +113,13 @@
 
 .onda-estrela {
   height: 400px;
+}
+
+.estrela{
+  color: #0a376e;
+  margin-left: 70px;
+}
+
+.avaliacao{
+  display: flex;
 }

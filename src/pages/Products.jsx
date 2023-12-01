@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import styles from "./produtos.module.css";
 import ondacoral from "../imagens/onda-coral.png";
 import ondaestrela from "../imagens/onda-estrela-3.png";
+import { IoStar, IoStarOutline } from "react-icons/io5";
 
 function Products() {
   return (
@@ -69,9 +70,9 @@ function Products() {
                   </div>
 
                   <div className={styles["comprar-nov"]}>
-                    <Link to="/Carrinho">
+                   
                       <button type="submit">Comprar novamente</button>
-                    </Link>
+                    
                   </div>
                 </div>
               </div>
@@ -121,6 +122,13 @@ function Products() {
 
                   <div className={styles["avaliacao"]}>
                     <p>Avaliação</p>
+                    <div className={styles["estrela"]}>
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStarOutline />
+                    </div>
                   </div>
 
                   <div className={styles["comprar-nov"]}>
@@ -231,6 +239,13 @@ function Products() {
 
                   <div className={styles["avaliacao"]}>
                     <p>Avaliação</p>
+                    <div className={styles["estrela"]}>
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStarOutline />
+                    </div>
                   </div>
 
                   <div className={styles["comprar-nov"]}>

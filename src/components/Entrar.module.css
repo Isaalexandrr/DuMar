@@ -14,3 +14,21 @@
 .link {
   text-decoration: none;
 }
+.car{
+  background-color: #0a376e;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;;
+}
+.pessoa{
+  display: flex;
+  gap: 10px;
+}
+

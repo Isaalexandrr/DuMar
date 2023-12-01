@@ -13,7 +13,7 @@ function Login() {
           <img src={ondacoral} className={styles["ondacoral"]} />
         </div>
         <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
-          <h1 id={styles["tittle"]} className="fs-2 fw-bold mx-auto">
+          <h1 id={styles["tittle"]} className="fs-2 fw-bold mx-auto mt-5">
             Bem-vindo(a). <br /> Acesse sua conta!
           </h1>
           <form className="text-center mt-4" action="">
@@ -32,9 +32,10 @@ function Login() {
                 placeholder="Senha"
               />
               <label class="mt-3" htmlFor="senha">
-                <a href="" className={styles["esqueceu"]}>
-                  Esqueceu a senha?
-                </a>
+               <Link to="/EsqueceuSenha" className={styles["link"]}> 
+               Esqueceu a senha?
+               </Link>
+                
               </label>
             </div>
             <div className="mx-auto w-50 mt-5">

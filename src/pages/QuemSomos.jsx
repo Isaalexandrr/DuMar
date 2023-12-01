@@ -60,36 +60,41 @@ function QuemSomos() {
           <div className="row">
             
             <div class="col">
-            <a href="https://www.linkedin.com/in/alanesgomes" target="_blank" rel="noopener noreferrer" >
-              <img src={Alanes} class="card-img-end" alt="...">
-
-            </img>
-            </a>
-             
+              <a href="https://www.linkedin.com/in/alanesgomes" target="_blank" rel="noopener noreferrer"> 
+              <img src={Alanes} class="card-img-end" alt="..." />
+              </a> 
               <p>Alanes</p>
               <a href="mailto: alanesGsilva@gmail.com">alanesGsilva@gmail.com</a>
             </div>
 
             <div class="col">
-              <img src={Andrezaa} class="card-img-end" alt="..." />
+              <a href="https://www.linkedin.com/in/andreza-caldeira-8236841b6/" target="_blank" rel="noopener noreferrer">
+              <img src={Andrezaa} class="card-img-end" alt="..."/>
+              </a>
               <p>Andreza</p>
               <a href="mailto: Andrezacalderamorais@hotmail.com"> Andrezacalderamorais@hotmail.com </a>
             </div>
 
             <div class="col ">
-              <img src={Gabii} class="card-img-end" alt="..." />
+              <a href="https://www.linkedin.com/in/gabriela-gouveia-mota/" target="_blank" rel="noopener noreferrer">
+                <img src={Gabii} class="card-img-end" alt="..." />
+              </a> 
               <p>Gabriela</p>
               <a href="mailto: gabii77leone@gmail.com"> gabii77leone@gmail.com </a>
             </div>
 
             <div class="col ">
-              <img src={Gerson} class="card-img-end" alt="..." />
+              <a href="https://www.linkedin.com/in/gersonbarbosajunior/" target="_blank" rel="noopener noreferrer">
+                <img src={Gerson} class="card-img-end" alt="..." />
+                </a> 
               <p> Gerson</p>
               <a href="mailto:gersononline42@gmail.com "> gersononline42@gmail.com </a>
             </div>
 
             <div class="col">
+              <a href="https://www.linkedin.com/in/isabela-alexandre-4069a1272/" target="_blank" rel="noopener noreferrer">
               <img src={ISABELA} class="card-img-end" alt="..." />
+              </a>
               <p>Isabela</p>
               <a href="mailto: isabelaalexandre8@gmail.com<"> isabelaalexandre8@gmail.com </a>
             </div>
@@ -104,3 +109,11 @@ function QuemSomos() {
 
 }
 export default QuemSomos;
+
+
+
+
+
+
+
+
