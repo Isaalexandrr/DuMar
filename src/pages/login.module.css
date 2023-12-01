@@ -1,11 +1,13 @@
 #tittle {
   color: #a8f2fe;
+  padding-top: 40px;
 }
 #Entrar {
   background-color: #a8f2fe;
 }
 .link {
-  text-decoration: none;
+  
+  color: #a8f2fe;
 }
 .esqueceu {
   color: #a8f2fe;
