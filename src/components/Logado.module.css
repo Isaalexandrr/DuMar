@@ -393,6 +393,10 @@ box-shadow: 0 0 0 0;
 
 }
 
+.produto-info img{
+  border-radius: 20px;
+}
+
 .produto-info button{
   border: none;
   background-color: white;

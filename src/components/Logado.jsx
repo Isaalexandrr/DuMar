@@ -144,8 +144,8 @@ function Logado() {
               <form className={styles["produto"]}>
                 <input type="checkbox" className={styles["produto-input"]} />
                 <div className={styles["produto-info"]}>
-                  <img src={salmao} alt="" width="70" height="70" />
-                  <div className={styles["info"]}>
+                <img src={salmao} alt=""  width="80" height="80"/>
+                  <div className={styles['info']}>
                     <p>Salmão</p>
                     <p>R$59,90</p>
                   </div>
