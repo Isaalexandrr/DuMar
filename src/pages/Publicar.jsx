@@ -5,7 +5,6 @@ import styles from "./Publicar.module.css";
 
 import ondaalga from "../imagens/onda-alga-1.png";
 import ondaestrela from "../imagens/onda-estrela-3.png";
-import { IoMdImages } from "react-icons/io";
 
 function Publicar() {
   return (
@@ -14,7 +13,7 @@ function Publicar() {
         <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block align-self-end m-0 p-0">
           <img src={ondaalga} className={styles["ondaalga"]} />
         </div>
-        <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
+        <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center mt-5"> 
           <h1 id={styles["tittle"]} className="fs-3 fw-bold">
             DADOS DO PRODUTO
           </h1>
@@ -93,14 +92,11 @@ function Publicar() {
               <label className="fw-bold ms-2" htmlFor="foto">
                 Foto do Produto:
               </label>
-              <div id={styles["img-inp"]}>
-                <input
-                  type="file"
-                  className="form-control rounded-pill"
-                  id="foto"
-                />
-                <IoMdImages className={styles["foto"]} />
-              </div>
+              <input
+                type="file"
+                className="form-control rounded-pill"
+                id="foto"
+              />
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">
               <input

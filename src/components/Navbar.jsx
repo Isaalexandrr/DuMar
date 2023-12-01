@@ -8,7 +8,7 @@ import Logado from "./Logado";
 
 import logo1 from "../imagens/logo1.png";
 import logo2 from "../imagens/logo2.png";
-import { IoSearch, IoCartSharp } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
 
 function Navbar() {
   const logado = true;

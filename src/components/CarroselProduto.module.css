@@ -49,9 +49,12 @@
   color: black;
   font-size: 14px;
   justify-content: center;
+  margin-top: 7%;
 }
 
 .estrela {
+  gap: 5px;
   margin-bottom: 5%;
   justify-content: center;
+  color: #ebdb0b;
 }
