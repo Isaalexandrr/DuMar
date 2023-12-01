@@ -11,7 +11,7 @@ import logo2 from "../imagens/logo2.png";
 import { IoSearch, IoCartSharp } from "react-icons/io5";
 
 function Navbar() {
-  const logado = false;
+  const logado = true;
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>
@@ -22,7 +22,7 @@ function Navbar() {
               <img src={logo1} className={styles["img-logo1"]} alt="DUMAR" />
             </Link>
             <Link to="/">
-            <img src={logo2} className={styles["img-logo2"]} alt="DUMAR" />
+              <img src={logo2} className={styles["img-logo2"]} alt="DUMAR" />
             </Link>
           </div>
         </a>
@@ -44,7 +44,6 @@ function Navbar() {
 
         <div className={styles["pessoa-carro"]}>
           {logado ? <Entrar /> : <Logado />}
-         
         </div>
       </nav>
 

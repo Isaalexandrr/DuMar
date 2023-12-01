@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import banner from "../imagens/banner.jpg";
+import { bottom } from "@popperjs/core";
 
 const RodaPe = () => {
   return (
@@ -24,7 +25,7 @@ const RodaPe = () => {
       <button
         style={{
           position: "absolute",
-          top: "73%",
+          top: "60%",
           left: "34%",
           transform: "translate(-50%, -50%)",
           padding: "10px",
@@ -44,6 +45,7 @@ const RodaPe = () => {
         <p
           style={{
             textAlign: "center",
+            margin: "5% 0 0 0",
           }}
         >
           Copyright © 2023 Grupo Café Tech. Todos os direitos reservados

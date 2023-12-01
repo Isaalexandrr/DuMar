@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 import styles from "./CarroselProduto.module.css";
 
 import camarao from "../imagens/camarao.jpg";
-import { IoStar, IoStarOutline } from "react-icons/io5";
+import { IoStar } from "react-icons/io5";
 
 export default function CarroselProduto() {
+  const importImages = [];
   const [products, setProducts] = useState([]);
   const responsiveOptions = [
     {
@@ -29,9 +30,9 @@ export default function CarroselProduto() {
   ];
 
   useEffect(() => {
-    ProductService.getProductsSmall().then((data) =>
-      setProducts(data.slice(0, 9))
-    );
+    ProductService.getProductsSmall().then((data) => {
+      setProducts(data.slice(0, 9));
+    });
   }, []);
 
   const productTemplate = (product) => {
@@ -41,7 +42,11 @@ export default function CarroselProduto() {
           <div class="carousel-item active" className={styles["teste"]}>
             <div className={styles["box"]}>
               <div className={styles["grid-caixa"]}>
-                <img src={camarao} alt="Salmao" className="w-6 shadow-2" />
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-6 shadow-2"
+                />
               </div>
               <div>
                 <div className={styles["texto"]}>
