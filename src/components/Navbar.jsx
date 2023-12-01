@@ -11,7 +11,7 @@ import logo2 from "../imagens/logo2.png";
 import { IoSearch, IoCartSharp } from "react-icons/io5";
 
 function Navbar() {
-  const logado = true;
+  const logado = false;
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>
@@ -44,13 +44,7 @@ function Navbar() {
 
         <div className={styles["pessoa-carro"]}>
           {logado ? <Entrar /> : <Logado />}
-          <button
-            type="button"
-            class="btn-secondary btn-sm"
-            className={styles["carrinho"]}
-          >
-            <IoCartSharp />
-          </button>
+         
         </div>
       </nav>
 

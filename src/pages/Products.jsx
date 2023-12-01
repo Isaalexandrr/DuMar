@@ -70,9 +70,9 @@ function Products() {
                   </div>
 
                   <div className={styles["comprar-nov"]}>
-                    <Link to="/Carrinho">
+                   
                       <button type="submit">Comprar novamente</button>
-                    </Link>
+                    
                   </div>
                 </div>
               </div>

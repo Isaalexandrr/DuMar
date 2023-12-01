@@ -17,12 +17,12 @@ function QuemSomos() {
         <section className={styles["sobre"]} >
 
 
-          <h2 className={styles['h2']}>
+          <h2>
             Sobre Nós:
             
           </h2>
 
-          <p className={styles['p']}>
+          <p>
           <strong>“DuMar”</strong> é um E-commerce (comércio eletrônico)
           que oferece serviços de compra e venda de peixes
           e frutos do mar.
@@ -34,11 +34,11 @@ function QuemSomos() {
 
 
 
-          <h2 className={styles['h2']}>
+          <h2>
             Propósito e missão:
 
           </h2>
-          <p className={styles['p']}>
+          <p>
           No DuMar, nossa missão é oferecer peixes frescos
           diretamente de pescadores locais, contribuindo
           para a saúde dos consumidores e preservando os
@@ -51,11 +51,12 @@ function QuemSomos() {
           mais preservado.
           </p>
         </section>
+
         </article>
 
 
         <section className={styles["equipe"]} >
-        <h2 className={styles['h2']}>Nossa Equipe: </h2>
+        <h2>Nossa Equipe: </h2>
           <div className={styles["eqp"]} >
             
             <div class="col">
@@ -79,7 +80,7 @@ function QuemSomos() {
             <div class="col ">
               <img src={Gerson} class="card-img-end" alt="..." />
               <p> Gerson</p>
-              <a href="mailto:gersononline42@gmail.com "> gersononline42</a>
+              <a href="mailto:gersononline42@gmail.com "> gersononline42@gmail.com </a>
             </div>
 
             <div class="col">
@@ -98,3 +99,11 @@ function QuemSomos() {
 
 }
 export default QuemSomos;
+
+
+
+
+
+
+
+
