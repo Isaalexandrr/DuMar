@@ -1,11 +1,13 @@
 #tittle {
   color: #a8f2fe;
+  padding-top: 40px;
 }
 #Entrar {
   background-color: #a8f2fe;
 }
 .link {
-  text-decoration: none;
+  
+  color: #a8f2fe;
 }
 .esqueceu {
   color: #a8f2fe;
@@ -15,6 +17,10 @@
   border: 3px solid #a8f2fe;
   text-decoration: none;
 }
+.text{
+    height:60px;
+}
+
 
 .ondacoral {
   height: 300px;

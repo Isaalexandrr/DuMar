@@ -8,20 +8,22 @@ import Logado from "./Logado";
 
 import logo1 from "../imagens/logo1.png";
 import logo2 from "../imagens/logo2.png";
-import { IoSearch, IoCartSharp } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
 
 function Navbar() {
   const logado = true;
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>
-      <nav class="navbar navbar-light bg-light " className={styles["navogo"]}>
+      <nav class="navbar navbar-light bg-light " className={styles["navLogo"]}>
         <a class="navbar-brand" href="#">
           <div className="logos" class="grid text-center mx-4">
             <Link to="/">
               <img src={logo1} className={styles["img-logo1"]} alt="DUMAR" />
             </Link>
-            <img src={logo2} className={styles["img-logo2"]} alt="DUMAR" />
+            <Link to="/">
+              <img src={logo2} className={styles["img-logo2"]} alt="DUMAR" />
+            </Link>
           </div>
         </a>
 
@@ -42,13 +44,6 @@ function Navbar() {
 
         <div className={styles["pessoa-carro"]}>
           {logado ? <Entrar /> : <Logado />}
-          <button
-            type="button"
-            class="btn-secondary btn-sm"
-            className={styles["carrinho"]}
-          >
-            <IoCartSharp />
-          </button>
         </div>
       </nav>
 

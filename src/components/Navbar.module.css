@@ -10,7 +10,7 @@
 
 .img-logo1 {
   height: 50px;
-  margin-left: 55%;
+  margin-left: 20%;
 }
 .img-logo2 {
   height: 20px;
@@ -63,7 +63,7 @@
 .pessoa-carro {
   display: flex;
   gap: 30px;
-  margin-right: 10%;
+  margin-right: 5%;
   align-items: center;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .menu li {
-  margin-left: 6.5%;
+  margin-left: 2.5%;
 }
 
 .menu a {

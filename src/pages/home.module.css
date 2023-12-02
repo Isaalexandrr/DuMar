@@ -1,14 +1,25 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   background-color: #538aad;
 }
+#imgs {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
 
-.ofertas h3 {
-  margin-left: 10%;
+.onda-estrela {
+  height: 200px;
+}
+.cardumeBolha {
+  height: 185px;
+}
+.destaques h3 {
+  margin: 0% 0% 3% 5%;
   color: white;
+  font-size: 40px;
 }
 .grid-caixa {
   background-color: white;
@@ -18,36 +29,31 @@ body {
   border-top: 5px solid #0a376e;
   border-radius: 5%;
 }
-
 .box {
   display: flex;
   text-align: center;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 30px;
   justify-content: space-evenly;
-  margin: 5% 10% 5% 10%;
+  margin: 0% 10% 5% 10%;
 }
-
 .texto {
   display: flex;
   gap: 40px;
   justify-content: center;
 }
-
 .texto h3 {
   font-size: 18px;
 }
-
 .maisDetalhes p {
   color: black;
   margin: 10% 0 0 0;
   font-size: 14px;
 }
-
 .estrela {
   margin-bottom: 5%;
+  color: #ebdb0b;
 }
-
 .grid-caixa input {
   background-color: #0a376e;
   color: white;
@@ -58,27 +64,25 @@ body {
   font-size: 16px;
   text-align: center;
 }
-
 .grid-caixa img {
   width: 225px;
   height: 225px;
   object-fit: cover;
   margin-top: 10px;
   border-radius: 5%;
+  justify-content: center;
+  align-items: center;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 .container h2 {
   color: #0a376e;
   font-size: 16px;
   font-family: open Sans;
 }
-
 .container p {
   font-size: 14px;
   font-family: open Sans;

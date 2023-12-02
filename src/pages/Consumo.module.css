@@ -22,40 +22,37 @@
   padding-top: 30px;
 }
 
-.poluicao{
+.poluicao {
   margin-top: 30px;
 }
 
-.poluicao-texto{
+.poluicao-texto {
   margin-top: 90px;
   color: white;
  
 }
 
-.pesca-texto{
+.pesca-texto {
   font-size: 18px;
   margin-top: 80px;
-
 }
 
-.texto-especie{
+.texto-especie {
   font-size: 16px;
 }
 
-.span text-danger{
+.span text-danger {
   font-size: 16px;
 }
 
-.preserv-texto{
+.preserv-texto {
   font-size: 18px;
   margin-top: 100px;
-
 }
 
-.consumo{
+.consumo {
   color: black;
 }
-
 
 body {
   margin: 0;
@@ -94,15 +91,13 @@ body {
   margin-bottom: 50px;
 }
 
-.consumo-c{
+.consumo-c {
   font-size: 18px;
   margin-top: 100px;
 }
 
-.poluicao{
+.poluicao {
   font-size: 18px;
-  
-
 }
 
 .lixo-texto{
@@ -127,7 +122,6 @@ body {
   font-size: 16px;
   margin-top: -400px;
   margin-left: -200px;
-
 }
 
 .limpandolixo-texto{
@@ -136,8 +130,7 @@ body {
   margin-left: -300px;
 }
 
-
-.img-reciclavel{
+.img-reciclavel {
   width: 1020px;
   margin-left: -730px;
   top: 40px;
@@ -149,7 +142,6 @@ body {
   margin-left: -300px;
 }
 
-
 .img-proibidonadar {
   width: 920px;
   margin-left: -800px;
@@ -160,10 +152,9 @@ body {
   font-size: 16px;
   margin-top: -190px;
   margin-left: -390px;
-
 }
 
-.pesca-textodois{
+.pesca-textodois {
   margin-top: 140px;
   margin-right: 200px;
   padding-right: 90px;

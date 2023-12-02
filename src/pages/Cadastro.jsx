@@ -18,7 +18,7 @@ function Cadastro() {
           <img src={ondaalga} className={styles["ondaalga"]} />
         </div>
         <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
-          <h1 id={styles["tittle"]} className="fs-3 fw-bold">
+          <h1 id={styles["tittle"]} className="fs-3 fw-bold mt-5">
             DADOS CADASTRAIS
           </h1>
           <form className="text-start mt-4" action="">
@@ -174,7 +174,7 @@ function Cadastro() {
             </div>
             <div className="text-start w-50 mt-2">
               <h4 className="text-start p-0 ms-2 mb-0 me-0 mt-4 fw-bold">
-                Você é...
+                Qual o seu perfil ?
               </h4>
               <div class="form-check form-check-inline text-start mt-2 ms-2">
                 <input
