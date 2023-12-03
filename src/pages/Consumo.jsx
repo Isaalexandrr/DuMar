@@ -26,26 +26,26 @@ const Consumo = () => {
         style={{ color: "white" }}
         className={`mx-5 ${styles["background-section"]}`}
       >
-        <div className="container-fluid p-0">
+        <div className="container-fluid p-0 m-0">
           <div className={styles["nav-bar"]}></div>
         </div>
 
         <section>
           <div
-            className="row px-2 gap-4"
+            className="row px-4 gap-5"
             style={{
               position: "absolute",
-              top: "160%",
+              top: "200%",
               transform: "translateY(-50%)",
               width: "95%",
-              right: 10,
+              left: 170,
             }}
           >
             <div
               className="container-consumo"
-              style={{ display: "flex", alignItems: "flex-start" }}
+             
             >
-            <h1  className={styles["consumo-c"]}>CONSUMO CONSCIENTE!</h1>
+              <h1 className={styles["consumo-c"]}>CONSUMO CONSCIENTE!</h1>
             </div>
             <div
               className="col-md-3 col-sm-12 "
@@ -131,23 +131,13 @@ const Consumo = () => {
                 </p>
                 <div className="row">
                 <div className="col-md-6">
-                <img
-                  className={`${styles["img-tartaruga"]} img-fluid`}
-                  src={tartaruga}
-                  alt=""
-                  style={{ width: "280px", height: "150px" }}
-                />
+                
                 </div>
                 </div>
 
                 <div className="row">
                 <div className="col-md-6">
-                <img
-                  className={`${styles["img-foca"]} img-fluid`}
-                  src={foca}
-                  alt=""
-                  style={{ width: "280px", height: "150px" }}
-                />
+                
                 </div>
                 </div>
               </div>
@@ -158,7 +148,12 @@ const Consumo = () => {
                 className="container-pesca"
                 style={{ display: "flex", alignItems: "flex-start" }}
               >
-                <h1 className={styles["pesca-texto"]} style={{ whiteSpace: "nowrap" }}>PESCA PROIBIDA!</h1>
+                <h1
+                  className={styles["pesca-texto"]}
+                  style={{ whiteSpace: "nowrap" }}
+                >
+                  PESCA PROIBIDA!
+                </h1>
 
                 <p className={styles["pesca-textodois"]}> 
                      Nos oceanos globais, várias espécies de peixes enfrentam extinção devido à pesca insustentável e degradação marinha. Algumas são proibidas devido à necessidade de preservação. Apesar de medidas rigorosas, fiscalização inadequada e demanda persistente levam à pesca ilegal. O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, desequilibrando ecossistemas marinhos.</p>
@@ -175,7 +170,7 @@ const Consumo = () => {
                           flexDirection: "column",
                           alignItems: "center",
                           right: 170,
-                          top: "20%",
+                          top: "30%",
                           width: 370,
                           height: 400,
                         }}
@@ -188,9 +183,14 @@ const Consumo = () => {
                               margin: "0 auto",
                             }}
                           >
-                            <div className={styles["texto-especie"]}>ESPÉCIES SERIAMENTES AMEAÇADAS DE EXTINÇÃO </div>
+                            <div className={styles["texto-especie"]}>
+                              ESPÉCIES SERIAMENTES AMEAÇADAS DE EXTINÇÃO{" "}
+                            </div>
                             <strong>
-                            <span className="text-danger" style={{ fontSize: '16px' }}>
+                              <span
+                                className="text-danger"
+                                style={{ fontSize: "18px" }}
+                              >
                                 !!PESCA PROIBIDA!!
                               </span>
                             </strong>
@@ -214,14 +214,24 @@ const Consumo = () => {
                   className="container-pesca"
                   style={{ display: "flex", alignItems: "flex-start" }}
                 >
-                  <h1 className={styles["preserv-texto"]} style={{ whiteSpace: "nowrap" }}>DICAS DE PRESERVAÇÃO!</h1>
+                  <h1
+                    className={styles["preserv-texto"]}
+                    style={{ whiteSpace: "nowrap" }}
+                  >
+                    DICAS DE PRESERVAÇÃO!
+                  </h1>
                   <div className="lixo">
                     <img className={styles["img-lixo"]} src={lixo} alt=""></img>
 
-                    <h1 className={styles["lixo-texto"]} style={{ whiteSpace: "nowrap" }}> 1- troque <br /> objetos <br /> descartáveis de <br />
+                    <h1
+                      className={styles["lixo-texto"]}
+                      style={{ whiteSpace: "nowrap" }}
+                    >
+                      {" "}
+                      1- troque <br /> objetos <br /> descartáveis de <br />
                       plástico por <br /> objetos de <br />
-                      papeis</h1>
-            
+                      papeis
+                    </h1>
                   </div>
                   <div className="jogandolixo">
                     <img
@@ -229,9 +239,14 @@ const Consumo = () => {
                       src={jogandolixo}
                       alt=""
                     ></img>
-                    <h1 className={styles["jogandolixo-texto"]} style={{ whiteSpace: "nowrap" }}> 2 - Recolha <br /> todo seu lixo, não <br /> deixe na
-                      praia</h1>
-
+                    <h1
+                      className={styles["jogandolixo-texto"]}
+                      style={{ whiteSpace: "nowrap" }}
+                    >
+                      {" "}
+                      2 - Recolha <br /> todo seu lixo, não <br /> deixe na
+                      praia
+                    </h1>
                   </div>
 
                   <div className="limpandolixo">
@@ -240,21 +255,32 @@ const Consumo = () => {
                       src={limpandolixo}
                       alt=""
                     ></img>
-                    <h1 className={styles["limpandolixo-texto"]} style={{ whiteSpace: "nowrap" }}> 3 - Participe de <br />
-                      movimentos de <br /> limpezas <br /> costeiras </h1>
-
+                    <h1
+                      className={styles["limpandolixo-texto"]}
+                      style={{ whiteSpace: "nowrap" }}
+                    >
+                      {" "}
+                      3 - Participe de <br />
+                      movimentos de <br /> limpezas <br /> costeiras{" "}
+                    </h1>
                   </div>
 
                   <div className="reciclavel">
-                    <img
+                  <img
                       className={styles["img-reciclavel"]}
                       src={reciclavel}
                       alt=""
                     ></img>
-                    <h1 className={styles["reciclavel-texto"]} style={{ whiteSpace: "nowrap" }}>
-                    4 - Recicle seu lixo, <br />separe seu lixo por  <br />categoria, isso facilita <br /> na hora da reciclagem
+                    <h1
+                      className={styles["reciclavel-texto"]}
+                      style={{ whiteSpace: "nowrap" }}
+                    >
+                       {" "}
+                      4 - Recicle seu lixo, <br />
+                      separe seu lixo por <br />
+                      categoria, isso facilita <br /> na hora da reciclagem
                     </h1>
-
+                    
                   </div>
 
                   <div className="proibidonadar">
@@ -263,7 +289,10 @@ const Consumo = () => {
                       src={proibidonadar}
                       alt=""
                     ></img>
-                    <h1 className={styles["proibidonadar-texto"]} style={{ whiteSpace: "nowrap" }}>
+                    <h1
+                      className={styles["proibidonadar-texto"]}
+                      style={{ whiteSpace: "nowrap" }}
+                    >
                       5 - Respeite as <br />
                       sinalizações de <br />
                       praia, preserve sua <br /> vida e a vida dos <br />{" "}

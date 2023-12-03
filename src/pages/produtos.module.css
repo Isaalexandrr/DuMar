@@ -115,11 +115,12 @@
   height: 400px;
 }
 
-.estrela{
+.estrela {
   color: #0a376e;
   margin-left: 70px;
+  color: #ebdb0b;
 }
 
-.avaliacao{
+.avaliacao {
   display: flex;
 }

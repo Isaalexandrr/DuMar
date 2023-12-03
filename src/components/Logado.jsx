@@ -144,10 +144,10 @@ function Logado() {
               <form className={styles["produto"]}>
                 <input type="checkbox" className={styles["produto-input"]} />
                 <div className={styles["produto-info"]}>
-                <img src={salmao} alt=""  width="80" height="80"/>
-                  <div className={styles['info']}>
+                  <img src={salmao} alt="" width="80" height="80" />
+                  <div className={styles["info"]}>
                     <p>Salmão</p>
-                    <p>R$59,90</p>
+                    <p>R$79,90</p>
                   </div>
 
                   <div className={styles["botao"]}>
@@ -165,7 +165,7 @@ function Logado() {
               <div className={styles["valor"]}>
                 <div className={styles["sub-valor"]}>
                   <p>Subtotal:</p>
-                  <p>R$ 59,90</p>
+                  <p>R$ 79,90</p>
                 </div>
                 <div className={styles["entrega-valor"]}>
                   <p>Entrega:</p>
@@ -173,11 +173,11 @@ function Logado() {
                 </div>
                 <div className={styles["desconto-valor"]}>
                   <p>Desconto:</p>
-                  <p>-R$ 5,99</p>
+                  <p>-R$ 7,99</p>
                 </div>
                 <div className={styles["total-valor"]}>
                   <p>Total:</p>
-                  <p className={styles["total"]}>R$ 63,90</p>
+                  <p className={styles["total"]}>R$ 81,90</p>
                 </div>
               </div>
               <div className={styles["finalizar"]}>
