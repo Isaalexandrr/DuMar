@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Carousel } from "primereact/carousel";
 import { ProductService } from "./service/ProductService";
 import { Link } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
 
 import styles from "./CarroselProduto.module.css";
 
-import camarao from "../imagens/camarao.jpg";
 import { IoStar } from "react-icons/io5";
 
 export default function CarroselProduto() {
@@ -39,7 +39,7 @@ export default function CarroselProduto() {
     return (
       <>
         <div class="carousel-inner justify-content-center">
-          <div class="carousel-item active" className={styles["teste"]}>
+          <div class="carousel-item active ">
             <div className={styles["box"]}>
               <div className={styles["grid-caixa"]}>
                 <img
@@ -47,11 +47,9 @@ export default function CarroselProduto() {
                   alt={product.name}
                   className="w-6 shadow-2"
                 />
-              </div>
-              <div>
                 <div className={styles["texto"]}>
                   <h3>{product.name}</h3>
-                  <h3>R${product.price}</h3>
+                  <h4>R${product.price}</h4>
                 </div>
                 <div className={styles["estrela"]}>
                   <IoStar />
@@ -61,10 +59,31 @@ export default function CarroselProduto() {
                   <IoStar />
                 </div>
                 <input type="button" name="" id="" value="Adicionar à sacola" />
-                <div className={styles["maisDetalhes"]}>
-                  <Link to="">
-                    <p>Ver mais detalhes</p>
-                  </Link>
+                <div id={styles["detalhe"]} class="p-0 m-0">
+                  <ul>
+                    <li>
+                      <Dropdown>
+                        <Dropdown.Toggle
+                          variant="action"
+                          id="dropdown-basic"
+                          className={styles["detalhes"]}
+                        >
+                          Ver Mais Detalhes
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                          <Dropdown.Item href="#/action-1">
+                            Data da Pesca: {product.dete}
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#/action-2">
+                            Quantidade em estoque: {product.quantity}
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#/action-3">
+                            Medida: {product.varchar}
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

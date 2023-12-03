@@ -1,26 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #538aad;
-}
-#imgs {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-}
-
-.onda-estrela {
-  height: 200px;
-}
-.cardumeBolha {
-  height: 185px;
-}
-#destaques h1 {
-  margin: 0% 0% 3% 5%;
-  color: white;
-}
-.grid-caixa {
+#grid-caixa {
   background-color: white;
   width: 300px;
   height: 400px;
@@ -28,17 +6,15 @@ body {
   border-top: 5px solid #0a376e;
   border-radius: 5%;
 }
-.box {
+#box {
   display: flex;
+  flex-direction: column;
   text-align: center;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 30px;
   justify-content: space-evenly;
   margin: 0% 10% 5% 10%;
 }
 .texto {
-  display: flex;
-  gap: 40px;
   justify-content: center;
 }
 .texto h3 {
@@ -61,24 +37,24 @@ body {
   padding: 0%;
 }
 .estrela {
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   color: #ebdb0b;
 }
-.grid-caixa input {
+#grid-caixa input {
   background-color: #0a376e;
   color: white;
   border: 0;
   width: 70%;
   height: 8%;
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 16px;
   text-align: center;
 }
-.grid-caixa img {
-  width: 225px;
-  height: 225px;
+#grid-caixa img {
+  width: 280px;
+  height: 210px;
   object-fit: cover;
-  margin-top: 10px;
+  margin-top: 2%;
   border-radius: 5%;
   justify-content: center;
   align-items: center;
@@ -88,13 +64,15 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.container h2 {
-  color: #0a376e;
-  font-size: 16px;
-  font-family: open Sans;
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
-.container p {
-  font-size: 14px;
-  font-family: open Sans;
-  color: black;
+
+.grid-item {
+  flex: 0 0 calc(20% - 0px);
+  margin: 10px;
+  box-sizing: border-box;
 }
