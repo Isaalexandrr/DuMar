@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./login.module.css";
 import ondaestrela3 from "../imagens/onda-estrela-3.png";
 import ondacoral from "../imagens/onda-coral.png";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
+import { Button } from "bootstrap";
 
 function Login() {
+
+  function signUser(evt) {
+    if(email==='testeuser@teste.com' && senha==='teste123'){
+      alert("logado com sucesso!")
+    } else{
+      alert("email ou senha incorretos!")
+    }
+  }
+
+  const [email, setEmail] = useState()
+  const [senha, setSenha] = useState()
+
   return (
     <div className="Container-fluid">
       <div className="row m-0 p-0">
@@ -22,6 +35,7 @@ function Login() {
                 type="text"
                 className="form-control rounded-pill"
                 placeholder="E-mail"
+                onChange={(evt) => setEmail(evt.target.value)}
               />
             </div>
             <div className="mx-auto text-end w-50 mt-4">
@@ -30,6 +44,7 @@ function Login() {
                 id="senha"
                 className="form-control rounded-pill"
                 placeholder="Senha"
+                onChange={(evt) => setSenha(evt.target.value)}
               />
               <label class="mt-3" htmlFor="senha">
                <Link to="/EsqueceuSenha" className={styles["link"]}> 
@@ -39,14 +54,13 @@ function Login() {
               </label>
             </div>
             <div className="mx-auto w-50 mt-5">
-              <input
-                type="submit"
+              <button
                 className="form-control rounded-pill fw-bold"
                 id={styles["Entrar"]}
-                value="Entrar"
-              />
+                onClick={()=>signUser()}
+              >Entrar</button>
               <label className="mt-2">Ainda não tem uma conta?</label>
-              <Link className={styles["link"]} to="/Cadastro">
+              <Link className={styles["link"]} to="/TipoConta">
                 <button
                   className="form-control rounded-pill bg-transparent  mt-2"
                   id={styles["cadastro"]}
