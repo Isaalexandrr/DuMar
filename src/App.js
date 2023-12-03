@@ -11,6 +11,8 @@ import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Publicar from "./pages/Publicar";
 import Pagamento from "./pages/Pagamento";
 import QuemSomos from "./pages/QuemSomos";
+import Configuracao from "./pages/Configuracao";
+import MeusDados from "./pages/MeusDados";
 
 function App() {
   return (
@@ -19,10 +21,12 @@ function App() {
         <Navbar />
 
         <Routes>
+          <Route path="/Configuracao" element={<Configuracao /> } />
           <Route path="/Cadastro" element={<Cadastro />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
+          <Route path="/MeusDados" element={<MeusDados />} />
           <Route path="/Publicar" element={<Publicar />} />
           <Route path="/" element={<Home />} />
           <Route path= "/QuemSomos" element={<QuemSomos />} />
