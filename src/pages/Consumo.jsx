@@ -35,7 +35,7 @@ const Consumo = () => {
             className="row px-4 gap-5"
             style={{
               position: "absolute",
-              top: "200%",
+              top: "250%",
               transform: "translateY(-50%)",
               width: "95%",
               left: 170,
@@ -111,6 +111,28 @@ const Consumo = () => {
                 className="container-poluição"
                 style={{ display: "flex", alignItems: "flex-start" }}
               >
+                <div className="row">
+                <div className="col-sm-12 col-md-6 col-lg-4 mt-1">
+                 <img
+                 className={`${styles["img-tartaruga"]} img-fluid`}
+                 src={tartaruga}
+                 alt=""
+                 style={{ left:700, }}
+                
+                />
+              </div>
+                <div className="row">
+                <div className="col-sm-12 col-md-6 col-lg-4 mt-1">
+                <img
+                  className={`${styles["img-foca"]} img-fluid`}
+                  src={foca}
+                  alt=""
+               />
+               </div>
+              </div>
+              </div>
+              </div>
+              <div>
                 <h1 className={styles["poluicao"]}>POLUIÇÃO!</h1>
                 <p className={styles["poluicao-texto"]}>
                   Nos mares do nosso planeta, um drama silencioso se desenrola
@@ -129,18 +151,9 @@ const Consumo = () => {
                   mar está em
                   <br /> nossas mãos. #PareComOPlástico, #SalveOsOceanos.
                 </p>
-                <div className="row">
-                <div className="col-md-6">
+                </div>
+              
                 
-                </div>
-                </div>
-
-                <div className="row">
-                <div className="col-md-6">
-                
-                </div>
-                </div>
-              </div>
             </section>
 
             <section>

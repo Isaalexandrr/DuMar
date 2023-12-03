@@ -67,7 +67,6 @@
 
 .pesca-texto {
   font-size: 20px;
-  font-size: 20px;
   margin-top: 80px;
   
   
@@ -107,16 +106,13 @@ body {
 
 .img-peixes {
   width: 1040px;
-  width: 1040px;
   height: 600px;
   margin-left: -10px;
-  margin-top: -160px;
   margin-top: -160px;
 }
 
 .img-lixo {
   width: 700px;
-  margin-left: -500px;
   margin-left: -500px;
   margin-bottom: 50px;
 }
@@ -130,10 +126,6 @@ body {
 
 .lixo-texto{
   font-size: 18px;
-.lixo-texto{
-  font-size: 18px;
-  margin-top: -200px;
-  margin-left: -180px;
   margin-left: -180px;
 }
 
@@ -151,14 +143,10 @@ body {
 
 .jogandolixo-texto{
   font-size: 18px;
-.jogandolixo-texto{
-  font-size: 18px;
   margin-top: -400px;
   margin-left: -200px;
 }
 
-.limpandolixo-texto{
-  font-size: 18px;
 .limpandolixo-texto{
   font-size: 18px;
   margin-top: -160px;
@@ -172,32 +160,19 @@ body {
  
   
   
-  width: 1040px;
-  margin-left: -710px;
-  margin-top: 80px;
- 
-  
-  
 }
 
 .reciclavel-texto{
   font-size: 18px;
   margin-top: -470px;
   margin-left: -290px;
-.reciclavel-texto{
-  font-size: 18px;
-  margin-top: -470px;
-  margin-left: -290px;
 }
-
 .img-proibidonadar {
   width: 920px;
   margin-left: -800px;
   margin-top: -60px;
 }
 
-.proibidonadar-texto{
-  font-size: 18px;
 .proibidonadar-texto{
   font-size: 18px;
   margin-top: -190px;
