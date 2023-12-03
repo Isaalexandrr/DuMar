@@ -3,8 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Cadastro.module.css";
 import ondaalga from "../imagens/onda-alga-1.png";
 import ondaestrela from "../imagens/onda-estrela-3.png";
+import { Link } from "react-router-dom";
+import { json } from "react-router-dom";
 
-function Cadastro() {
+function CadastroVendedor() {
 
   
  
@@ -13,27 +15,6 @@ function Cadastro() {
   const handleChangeTipoUsario = (event) => {
     setTipoUsuario(event.target.value);
   };
-
-  function cadastrarUsuario(evt) {
-    evt.preventDefault(); // Evitar que o formulário seja enviado antes do fetch
-  
-    const request = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nome, email, celular, endereco, senha, data, doc, tipoConta, sexo, whatsapp })
-    };
-  
-    fetch('http://localhost:3003/insertCliente', request)
-      .then(response => response.json())
-      .then(data => {
-        // Use os setters do useState para atualizar o estado
-        // Exemplo: setPostId(data.id);
-      })
-      .catch(error => {
-        console.error('Erro ao cadastrar usuário:', error);
-        // Lide com o erro aqui, se necessário
-      });
-  }
 
   const [nome, setNome] = useState()
   const [email, setEmail] = useState()
@@ -56,7 +37,7 @@ function Cadastro() {
           <h1 id={styles["tittle"]} className="fs-3 fw-bold">
             DADOS CADASTRAIS
           </h1>
-          <form className="text-start mt-4" action="" onSubmit={cadastrarUsuario}>
+          <form className="text-start mt-4" action="">
             <div class="form-check form-check-inline text-start ms-2">
               <input
                 class="form-check-input"
@@ -217,42 +198,20 @@ function Cadastro() {
                 onChange={(evt) => setEndereco(evt.target.value)}
               />
             </div>
-            <div className="text-start w-50 mt-2">
-              <h4 className="text-start p-0 ms-2 mb-0 me-0 mt-4 fw-bold">
-                Você é...
-              </h4>
-              <div class="form-check form-check-inline text-start mt-2 ms-2">
-                <input
-                  class="form-check-input"
-                  name="tipoUsuario"
-                  id="consumidor"
-                  type="radio"
-                  value="consumidor"
-                />
-                <label class="form-check-label fw-bold" for="consumidor">
-                  Consumidor
-                </label>
-              </div>
-              <div class="form-check form-check-inline text-start m-0 ms-2">
-                <input
-                  class="form-check-input"
-                  name="tipoUsuario"
-                  id="vendedor"
-                  type="radio"
-                  value="Vendedor"
-                />
-                <label class="form-check-label fw-bold" for="vendedor">
-                  Vendedor
-                </label>
-              </div>
-            </div>
             <div className="w-50 mx-auto mt-4 mb-4">
               <input
+                type="submit"
                 id={styles["button-submit"]}
                 className="form-control rounded-pill fw-bold"
-                type="submit"
                 value="Cadastrar"
               />
+            </div>
+            <div className="w-50 mx-auto mt-4 mb-4">
+            <Link className="text-decoration-none" to='/TipoConta'>
+                <button className="form-control rounded-pill bg-Secondary  mt-2">
+                  Cancelar
+                </button>
+              </Link>
             </div>
           </form>
         </div>
@@ -264,4 +223,4 @@ function Cadastro() {
   );
 }
 
-export default Cadastro;
+export default CadastroVendedor;
