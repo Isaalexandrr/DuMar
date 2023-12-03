@@ -69,7 +69,7 @@ export const ProductService = {
         id: "1005",
         code: "zz21cz3d4",
         name: "Polvo",
-        price: 65,
+        price: 65.9,
         category: "Moluscos",
         quantity: 8,
         image: polvo,
@@ -98,6 +98,94 @@ export const ProductService = {
         dete: "05/12/2023",
         varchar: "kg",
       },
+      {
+        id: "1008",
+        code: "f230fh0g3",
+        name: "Atum",
+        price: 30.49,
+        category: "Peixe",
+        quantity: 24,
+        image: atum,
+        dete: "05/12/2023",
+        varchar: "kg",
+      },
+      {
+        id: "1009",
+        code: "nvklal433",
+        name: "Bacalhau",
+        price: 79.9,
+        category: "Peixe",
+        quantity: 61,
+        image: bacalhau,
+        dete: "03/12/2023",
+        varchar: "kg",
+      },
+      {
+        id: "1010",
+        code: "zz21cz3c1",
+        name: "Corvina",
+        price: 18.9,
+        category: "Peixe",
+        quantity: 24,
+        image: corvina,
+        dete: "04/12/2023",
+        varchar: "kg",
+      },
+      {
+        id: "1011",
+        code: "f230fh0j1",
+        name: "Camarão",
+        price: 34.9,
+        category: "Crustáceos",
+        quantity: 39,
+        image: camarao,
+        dete: "04/12/2023",
+        varchar: "kg",
+      },
+      {
+        id: "1012",
+        code: "nvklal409",
+        name: "Salmão",
+        price: 79.9,
+        category: "Peixe",
+        quantity: 68,
+        image: salmao,
+        dete: "05/12/2023",
+        varchar: "kg",
+      },
+      {
+        id: "1013",
+        code: "zz21cz3d4",
+        name: "Polvo",
+        price: 65.9,
+        category: "Moluscos",
+        quantity: 8,
+        image: polvo,
+        dete: "04/12/2023",
+        varchar: "kg",
+      },
+      {
+        id: "1014",
+        code: "nvklal793",
+        name: "Tilápia",
+        price: 26.9,
+        category: "Peixe",
+        quantity: 56,
+        image: tilapia,
+        dete: "05/12/2023",
+        varchar: "kg",
+      },
+      {
+        id: "1015",
+        code: "zz21cz3c1",
+        name: "Lula",
+        price: 29.9,
+        category: "Moluscos",
+        quantity: 27,
+        image: lula,
+        dete: "05/12/2023",
+        varchar: "kg",
+      },
     ];
   },
 
@@ -106,7 +194,7 @@ export const ProductService = {
   },
 
   getProductsSmall() {
-    return Promise.resolve(this.getProductsData().slice(0, 10));
+    return Promise.resolve(this.getProductsData().slice(0, 16));
   },
 
   getProducts() {
@@ -114,7 +202,7 @@ export const ProductService = {
   },
 
   getProductsWithOrdersSmall() {
-    return Promise.resolve(this.getProductsWithOrdersData().slice(0, 10));
+    return Promise.resolve(this.getProductsWithOrdersData().slice(0, 16));
   },
 
   getProductsWithOrders() {

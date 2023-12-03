@@ -1,60 +1,75 @@
-.teste {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.box {
-  display: flex;
-  text-align: center;
-  gap: 15px;
-  width: 270px;
+.grid-caixa {
+  background-color: white;
+  width: 300px;
   height: 400px;
   justify-content: center;
   border-top: 5px solid #0a376e;
   border-radius: 5%;
-  flex-direction: column;
-  background-color: white;
 }
-.box input {
+.box {
+  display: flex;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-content: space-evenly;
+  margin: 0% 10% 5% 10%;
+}
+.texto {
+  justify-content: center;
+}
+.texto h3 {
+  font-size: 18px;
+}
+.detalhes {
+  color: black;
+  border: none;
+  box-shadow: 0 0 0 0;
+}
+#detalhe ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  border: none;
+  box-shadow: 0 0 0 0;
+  text-align: center;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+}
+.estrela {
+  margin-bottom: 1%;
+  color: #ebdb0b;
+}
+.grid-caixa input {
   background-color: #0a376e;
   color: white;
   border: 0;
   width: 70%;
-  height: 20%;
-  border-radius: 30px;
+  height: 8%;
+  border-radius: 10px;
   font-size: 16px;
   text-align: center;
 }
-
-.box img {
-  width: 225px;
-  height: 225px;
+.grid-caixa img {
+  width: 280px;
+  height: 210px;
   object-fit: cover;
-  margin-top: 10px;
+  margin-top: 2%;
   border-radius: 5%;
-}
-
-.texto {
-  display: flex;
-  gap: 40px;
   justify-content: center;
+  align-items: center;
 }
-
-.texto h3 {
-  font-size: 18px;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.maisDetalhes p {
-  color: black;
+.container h2 {
+  color: #0a376e;
+  font-size: 16px;
+  font-family: open Sans;
+}
+.container p {
   font-size: 14px;
-  justify-content: center;
-  margin-top: 7%;
-}
-
-.estrela {
-  gap: 5px;
-  margin-bottom: 5%;
-  justify-content: center;
-  color: #ebdb0b;
+  font-family: open Sans;
+  color: black;
 }

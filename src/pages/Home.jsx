@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import CarroselPrincipal from "../components/CarroselPrincipal";
 import CarroselProduto from "../components/CarroselProduto";
 import RodaPe from "../components/RodaPe";
+import Dropdown from "react-bootstrap/Dropdown";
+import ProdutoHome from "../components/ProdutosHome";
 
 import styles from "./home.module.css";
 
@@ -40,7 +42,7 @@ function Home() {
             <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block self-end m-0 p-0">
               <img src={ondaCoral} className={styles["onda-estrela"]} />
             </div>
-            <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block text-xs-right self-end">
+            <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block text-xs-right text-end">
               <img src={cardumeBolha} className={styles["cardumeBolha"]} />
             </div>
           </div>
@@ -48,8 +50,8 @@ function Home() {
 
         <main class="m-0 p-0">
           <section>
-            <div className={styles["destaques"]}>
-              <h3>Confira os Destaques da Semana:</h3>
+            <div id={styles["destaques"]} className="fs-3 fw-bold mt-5">
+              <h1>Confira os Destaques da Semana:</h1>
             </div>
             <CarroselProduto />
           </section>
@@ -65,18 +67,19 @@ function Home() {
             </div>
           </header>
 
-          <div className={styles["destaques"]}>
-            <h3>Veja mais produtos:</h3>
+          <div id={styles["destaques"]} className="fs-3 fw-bold mt-5">
+            <h1>Veja mais produtos:</h1>
           </div>
           <div
             id="carouselExampleInterval"
             class="carousel slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-inner justify-content-center">
+            {/* <div class="carousel-inner justify-content-center">
               <div class="carousel-item active">
-                <div className={styles["box"]}>
-                  <div className={styles["grid-caixa"]}>
+                <div className={styles["box"]}> */}
+            <ProdutoHome />
+            {/* <div className={styles["grid-caixa"]}>
                     <img src={atum} alt="atum" />
                     <div className={styles["texto"]}>
                       <h3>Atum</h3>
@@ -96,10 +99,32 @@ function Home() {
                       id=""
                       value="Adicionar à sacola"
                     />
-                    <div className={styles["maisDetalhes"]}>
-                      <Link to="">
-                        <p>Ver mais detalhes</p>
-                      </Link>
+                    <div id={styles["detalhe"]} class="p-0 m-0">
+                      <ul>
+                        <li>
+                          <Dropdown>
+                            <Dropdown.Toggle
+                              variant="action"
+                              id="dropdown-basic"
+                              className={styles["detalhes"]}
+                            >
+                              Ver Mais Detalhes
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                              <Dropdown.Item href="#/action-1">
+                                Data da pesca
+                              </Dropdown.Item>
+                              <Dropdown.Item href="#/action-2">
+                                Quantidade em estoque
+                              </Dropdown.Item>
+                              <Dropdown.Item href="#/action-3">
+                                Medida
+                              </Dropdown.Item>
+                            </Dropdown.Menu>
+                          </Dropdown>
+                        </li>
+                      </ul>
                     </div>
                   </div>
 
@@ -411,10 +436,10 @@ function Home() {
                         <p>Ver mais detalhes</p>
                       </Link>
                     </div>
-                  </div>
-                </div>
+                  </div> */}
+            {/* </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </main>
       </div>
