@@ -2,10 +2,21 @@
   box-sizing: border-box;
 }
 
+.centeredContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .container-consumo {
   display: flex;
   text-align: center;
   
+}
+
+.consumo-c{
+  font-size: 20px;
 }
 
 .texto-sobre {
@@ -16,6 +27,7 @@
   font-weight: bold;
   font-size: 18px;
   color: black;
+  font-size: 20px;
 }
 
 .img-inter {
@@ -27,18 +39,22 @@
 }
 
 .poluicao-texto {
-  margin-top: 90px;
+  font-size: 18px;
+  margin-top: 170px;
+  margin-right:300px;
+  align-items:right;
   color: white;
  
 }
 
 .pesca-texto {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 80px;
+  
 }
 
 .texto-especie {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .span text-danger {
@@ -46,12 +62,13 @@
 }
 
 .preserv-texto {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 100px;
 }
 
 .consumo {
   color: black;
+  font-size: 18px;
 }
 
 body {
@@ -64,46 +81,30 @@ body {
   color: white;
 }
 
-.img-tartaruga {
-  position: absolute;
-  top: 680px;
-  right: 190px;
-  border-radius: 10px;
-}
-
-.img-foca {
-  position: absolute;
-  top: 830px;
-  right: 190px;
-  border-radius: 10px;
-}
 
 .img-peixes {
-  width: 900px;
+  width: 1040px;
   height: 600px;
   margin-left: -10px;
-  margin-top: -130px;
+  margin-top: -160px;
 }
 
 .img-lixo {
   width: 700px;
-  margin-left: -400px;
+  margin-left: -500px;
   margin-bottom: 50px;
 }
 
-.consumo-c {
-  font-size: 18px;
-  margin-top: 100px;
-}
 
 .poluicao {
   font-size: 18px;
+  margin-top: 70px;
 }
 
 .lixo-texto{
-  font-size: 16px;
+  font-size: 18px;
   margin-top: -200px;
-  margin-left: -70px;
+  margin-left: -180px;
 }
 
 .img-jogandolixo {
@@ -119,27 +120,30 @@ body {
 }
 
 .jogandolixo-texto{
-  font-size: 16px;
+  font-size: 18px;
   margin-top: -400px;
   margin-left: -200px;
 }
 
 .limpandolixo-texto{
-  font-size: 16px;
+  font-size: 18px;
   margin-top: -160px;
   margin-left: -300px;
 }
 
 .img-reciclavel {
-  width: 1020px;
-  margin-left: -730px;
-  top: 40px;
+  width: 1040px;
+  margin-left: -710px;
+  margin-top: 80px;
+ 
+  
+  
 }
 
 .reciclavel-texto{
-  font-size: 16px;
-  margin-top: -400px;
-  margin-left: -300px;
+  font-size: 18px;
+  margin-top: -470px;
+  margin-left: -290px;
 }
 
 .img-proibidonadar {
@@ -149,18 +153,18 @@ body {
 }
 
 .proibidonadar-texto{
-  font-size: 16px;
+  font-size: 18px;
   margin-top: -190px;
   margin-left: -390px;
 }
 
 .pesca-textodois {
-  margin-top: 140px;
-  margin-right: 200px;
-  padding-right: 90px;
+  font-size: 18px;
+  margin-top: 170px;
+  margin-right:300px;
   color: white;
+  
 
 }
-
 
 

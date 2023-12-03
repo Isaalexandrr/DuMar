@@ -32,18 +32,18 @@ const Consumo = () => {
 
         <section>
           <div
-            className="row px-2 gap-4"
+            className="row px-4 gap-5"
             style={{
               position: "absolute",
-              top: "160%",
+              top: "200%",
               transform: "translateY(-50%)",
               width: "95%",
-              right: 10,
+              left: 170,
             }}
           >
             <div
               className="container-consumo"
-              style={{ display: "flex", alignItems: "flex-start" }}
+             
             >
               <h1 className={styles["consumo-c"]}>CONSUMO CONSCIENTE!</h1>
             </div>
@@ -131,23 +131,13 @@ const Consumo = () => {
                 </p>
                 <div className="row">
                 <div className="col-md-6">
-                <img
-                  className={`${styles["img-tartaruga"]} img-fluid`}
-                  src={tartaruga}
-                  alt=""
-                  style={{ width: "280px", height: "150px" }}
-                />
+                
                 </div>
                 </div>
 
                 <div className="row">
                 <div className="col-md-6">
-                <img
-                  className={`${styles["img-foca"]} img-fluid`}
-                  src={foca}
-                  alt=""
-                  style={{ width: "280px", height: "150px" }}
-                />
+                
                 </div>
                 </div>
               </div>
@@ -180,7 +170,7 @@ const Consumo = () => {
                           flexDirection: "column",
                           alignItems: "center",
                           right: 170,
-                          top: "20%",
+                          top: "30%",
                           width: 370,
                           height: 400,
                         }}
@@ -199,7 +189,7 @@ const Consumo = () => {
                             <strong>
                               <span
                                 className="text-danger"
-                                style={{ fontSize: "16px" }}
+                                style={{ fontSize: "18px" }}
                               >
                                 !!PESCA PROIBIDA!!
                               </span>
@@ -276,7 +266,7 @@ const Consumo = () => {
                   </div>
 
                   <div className="reciclavel">
-                    <img
+                  <img
                       className={styles["img-reciclavel"]}
                       src={reciclavel}
                       alt=""
@@ -285,10 +275,12 @@ const Consumo = () => {
                       className={styles["reciclavel-texto"]}
                       style={{ whiteSpace: "nowrap" }}
                     >
+                       {" "}
                       4 - Recicle seu lixo, <br />
                       separe seu lixo por <br />
                       categoria, isso facilita <br /> na hora da reciclagem
                     </h1>
+                    
                   </div>
 
                   <div className="proibidonadar">
