@@ -9,12 +9,6 @@
   
 }
 
-.centeredContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
 
 .container-consumo {
   display: flex;
@@ -27,9 +21,7 @@
   
 }
 
-.consumo-c{
-  font-size: 20px;
-}
+
 
 .texto-sobre {
   text-align: center;
@@ -55,34 +47,22 @@
   font-size: 18px;
   margin-top: 170px;
   margin-right:300px;
-  align-items:right;
-  font-size: 18px;
-  margin-top: 170px;
-  margin-right:300px;
-  align-items:right;
   color: white;
- 
- 
+
 }
 
 .pesca-texto {
-  font-size: 20px;
-  margin-top: 80px;
-  
+  font-size: 18px;
+  margin-top: 80px; 
   
 }
 
 .texto-especie {
   font-size: 20px;
-  font-size: 20px;
-}
-
-.span text-danger {
-  font-size: 16px;
+  
 }
 
 .preserv-texto {
-  font-size: 20px;
   font-size: 20px;
   margin-top: 100px;
 }
@@ -119,14 +99,15 @@ body {
 
 
 .poluicao {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 70px;
-  margin-top: 70px;
+  margin-left: 10px;
 }
 
 .lixo-texto{
   font-size: 18px;
   margin-left: -180px;
+  margin-top: -170px;
 }
 
 .img-jogandolixo {
@@ -182,10 +163,7 @@ body {
 .pesca-textodois {
   font-size: 18px;
   margin-top: 170px;
-  margin-right:300px;
-  font-size: 18px;
-  margin-top: 170px;
-  margin-right:300px;
+  margin-left:-110px;
   color: white;
   
 
