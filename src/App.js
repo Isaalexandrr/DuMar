@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Products from "./pages/Products";
-import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
 import CadastroCliente from "./pages/CadastroCliente";
 import CadastroVendedor from "./pages/CadastroVendedor";
@@ -15,14 +14,13 @@ import QuemSomos from "./pages/QuemSomos";
 import TipoConta from "./pages/TipoConta";
 import Configuracao from "./pages/Configuracao";
 import MeusDados from "./pages/MeusDados";
-
+import NavbarCustomizado from "./components/NavbarCustomizado";
 
 function App() {
   return (
     <Router>
       <div>
-        <Navbar />
-
+        <NavbarCustomizado />
         <Routes>
           <Route path="/TipoConta" element={<TipoConta />} />
           <Route path="/CadastroCliente" element={<CadastroCliente />} />
@@ -32,11 +30,11 @@ function App() {
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/Publicar" element={<Publicar />} />
           <Route path="/" element={<Home />} />
-          <Route path= "/QuemSomos" element={<QuemSomos />} />
-          <Route path="/Pagamento" element={<Pagamento/>} />
-          <Route path="/EsqueceuSenha" element={<EsqueceuSenha/>} />
-          <Route path="/Configuracao" element={< Configuracao />} />
-          <Route path="/MeusDados" element={< MeusDados/>} />
+          <Route path="/QuemSomos" element={<QuemSomos />} />
+          <Route path="/Pagamento" element={<Pagamento />} />
+          <Route path="/EsqueceuSenha" element={<EsqueceuSenha />} />
+          <Route path="/Configuracao" element={<Configuracao />} />
+          <Route path="/MeusDados" element={<MeusDados />} />
         </Routes>
       </div>
     </Router>

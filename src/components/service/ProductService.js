@@ -1,11 +1,11 @@
-import atum from "../../imagens/atum.jpeg";
+import atum from "../../imagens/atum.jpg";
 import bacalhau from "../../imagens/bacalhau.jpg";
 import corvina from "../../imagens/corvina.webp";
 import camarao from "../../imagens/camarao.jpg";
 import salmao from "../../imagens/salmao.jpg";
 import polvo from "../../imagens/polvo.webp";
 import tilapia from "../../imagens/tilapia.jpg";
-import lula from "../../imagens/lula.png";
+import lula from "../../imagens/lula.jpeg";
 
 export const ProductService = {
   getProductsData() {
