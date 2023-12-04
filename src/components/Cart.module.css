@@ -1,0 +1,150 @@
+.carrinho {
+    color: #0a376e;
+    margin-left: 10px;
+  }
+  
+  .box {
+    margin: 15px;
+  }
+  
+  .produto-input {
+    margin-bottom: 170px;
+  }
+  
+  .produto button {
+    margin-top: 30px;
+  }
+  
+  .finalizar button {
+    background-color: #0a376e;
+    justify-content: center;
+    width: 490px;
+    height: 40px;
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    border: #0a376e solid;
+  }
+  
+  .finalizar:hover {
+    transition: 2s;
+    color: white;
+  }
+  
+  .produto {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .botao {
+    margin-top: 30px;
+  }
+  
+  .produto-info {
+    display: flex;
+  }
+  
+  .produto-info svg {
+    margin-left: 10px;
+  }
+  
+  .info {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .cupom input {
+    border-radius: 40px;
+    border: 2px solid #0a376e;
+    border-radius: 40px;
+    width: 380px;
+    height: 30px;
+    background-color: transparent;
+    padding-left: 10px;
+  
+    color: #0a376e;
+  }
+  
+  .cupom input:focus {
+    border: none;
+    outline-color: #0a376e;
+    box-shadow: 0 0 0 0;
+  }
+  
+  .produto-info img {
+    border-radius: 20px;
+  }
+  
+  .produto-info button {
+    border: none;
+    background-color: white;
+  }
+  
+  .sub-valor {
+    display: flex;
+    font-weight: bold;
+    gap: 340px;
+  }
+  
+  .entrega-valor {
+    display: flex;
+    gap: 355px;
+  }
+  
+  .desconto-valor {
+    display: flex;
+    color: #00bf15;
+    gap: 335px;
+  }
+  
+  .total-valor {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 340px;
+  }
+  
+  .continuar a {
+    margin-left: 170px;
+    color: #0a376e;
+  }
+  .continuar {
+    margin-top: 10px;
+  }
+  .car {
+    background-color: #0a376e;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .car:focus {
+    color: white;
+    background-color: #0a376e;
+  }
+  
+  .car:hover {
+    color: white;
+    background-color: #0a376e;
+  }
+  
+  .cart-status{
+    background-color: #82a9d8;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }

@@ -32,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path= "/QuemSomos" element={<QuemSomos />} />
           <Route path="/Pagamento" element={<Pagamento/>} />
+          <Route path="/EsqueceuSenha" element={<EsqueceuSenha/>} />
         </Routes>
       </div>
     </Router>

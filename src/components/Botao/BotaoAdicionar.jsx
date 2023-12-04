@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './BotaoAdicionar.css'; 
 import styled from '@emotion/styled';
 
-const BotaoAdicionar = () => {
+
+const BotaoAdicionar = ( ) => {
   const [quantidadeItens, setQuantidadeItens] = useState(1);
 
   const handleAdicionarItem = () => {
