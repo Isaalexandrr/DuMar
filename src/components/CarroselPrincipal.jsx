@@ -20,11 +20,13 @@ function CarroselPrincipal() {
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <ImagemA text="First slide" />
-        <Carousel.Caption className={styles["saibaMais"]}>
-          <Link className={styles["link"]} to="/consumo">
-            <input type="button" name="" id="" value="Saiba Mais" />
-          </Link>
-        </Carousel.Caption>
+        <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block align-self-end m-0 p-0">
+          <Carousel.Caption className={styles["saibaMais"]}>
+            <Link className={styles["link"]} to="/consumo">
+              <input type="button" name="" id="" value="Saiba Mais" />
+            </Link>
+          </Carousel.Caption>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
         <ImagemB text="Second slide" />
