@@ -12,6 +12,8 @@ import Publicar from "./pages/Publicar";
 import Pagamento from "./pages/Pagamento";
 import QuemSomos from "./pages/QuemSomos";
 import TipoConta from "./pages/TipoConta";
+import Configuracao from "./pages/Configuracao";
+import MeusDados from "./pages/MeusDados";
 import NavbarCustomizado from "./components/NavbarCustomizado";
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
           <Route path="/QuemSomos" element={<QuemSomos />} />
           <Route path="/Pagamento" element={<Pagamento />} />
           <Route path="/EsqueceuSenha" element={<EsqueceuSenha />} />
+          <Route path="/Configuracao" element={<Configuracao />} />
+          <Route path="/MeusDados" element={<MeusDados />} />
         </Routes>
       </div>
     </Router>
