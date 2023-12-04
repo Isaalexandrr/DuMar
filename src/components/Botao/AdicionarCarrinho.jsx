@@ -9,9 +9,7 @@ import styles from "./AdicionarCarrinho.module.css";
 function AdicionarCarrinho() {
   return (
   <div>
-     <input type="button" name="" id="" value="Adicionar à sacola" className={styles['input']} 
-     
-     />
+     <input type="button" name="" id="" value="Adicionar à sacola" className={styles['input']} />
   </div>
   );
 }
