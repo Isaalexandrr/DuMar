@@ -11,7 +11,7 @@ function MeusDados() {
         <div className="container">
             <div className="row ">
                 <div className="col-12 d-flex align-items-center justify-content-center">
-                    <img src={TubarãoChorão} className={styles["tubarao"]} alt="Tubarão Chorão"></img>
+                    <img src={TubarãoChorão} class="img-fluid mx-auto" alt="Tubarão Chorão"></img>
                 </div>
             </div>
         </div>

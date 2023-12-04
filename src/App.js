@@ -13,6 +13,8 @@ import Publicar from "./pages/Publicar";
 import Pagamento from "./pages/Pagamento";
 import QuemSomos from "./pages/QuemSomos";
 import TipoConta from "./pages/TipoConta";
+import Configuracao from "./pages/Configuracao";
+import MeusDados from "./pages/MeusDados";
 
 
 function App() {
