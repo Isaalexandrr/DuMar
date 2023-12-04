@@ -8,13 +8,12 @@ const RodaPe = () => {
   return (
     <div className="Container-fluid">
       <div className="row m-0 p-0">
-        <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block align-self-end m-0 p-0"></div>
         <div
           style={{
             position: "relative",
             margin: "100px 0 0 0",
           }}
-          class="align-items-center mx-auto mt-5"
+          className="align-items-center mx-auto mt-5"
         >
           <img
             src={banner}
@@ -26,12 +25,12 @@ const RodaPe = () => {
               margin: "auto",
             }}
           />
-          <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
+          <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block align-self-end m-0 p-0">
             <button
               className="form-control mt-2"
               style={{
                 position: "absolute",
-                top: "60%",
+                top: "55%",
                 left: "34%",
                 transform: "translate(-50%, -50%)",
                 padding: "10px",

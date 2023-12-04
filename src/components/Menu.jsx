@@ -9,7 +9,7 @@ import { IoSearch } from "react-icons/io5";
 
 import styles from "./Menu.module.css";
 
-function Menu({ handleCategorySelect }) {
+function Menu({handleCategorySelect}) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (event) => {
@@ -46,9 +46,9 @@ function Menu({ handleCategorySelect }) {
                   Crustáceo
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                  onClick={() => handleCategorySelect("Molusco")}
+                  onClick={() => handleCategorySelect("Moluscos")}
                 >
-                  Molusco
+                  Moluscos
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/consumo">Consumo Consciente</Nav.Link>
