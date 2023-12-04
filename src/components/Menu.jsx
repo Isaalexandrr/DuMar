@@ -18,7 +18,7 @@ function Menu({ handleCategorySelect }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Adicione a lógica de pesquisa aqui se necessário
+
     console.log("Pesquisar por:", searchTerm);
   };
 

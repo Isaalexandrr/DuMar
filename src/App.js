@@ -13,12 +13,13 @@ import Publicar from "./pages/Publicar";
 import Pagamento from "./pages/Pagamento";
 import QuemSomos from "./pages/QuemSomos";
 import TipoConta from "./pages/TipoConta";
+import NavbarCustomizado from "./components/Navbar";
 
 function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+        <NavbarCustomizado />
 
         <Routes>
           <Route path="/TipoConta" element={<TipoConta />} />
@@ -29,10 +30,9 @@ function App() {
           <Route path="/Consumo" element={<Consumo />} />
           <Route path="/Publicar" element={<Publicar />} />
           <Route path="/" element={<Home />} />
-          <Route path= "/QuemSomos" element={<QuemSomos />} />
-          <Route path= "/EsqueceuSenha" element={<EsqueceuSenha />} />
-          <Route path="/Pagamento" element={<Pagamento/>} />
-
+          <Route path="/QuemSomos" element={<QuemSomos />} />
+          <Route path="/EsqueceuSenha" element={<EsqueceuSenha />} />
+          <Route path="/Pagamento" element={<Pagamento />} />
         </Routes>
       </div>
     </Router>
