@@ -11,7 +11,7 @@ import limpandolixo from "../imagens/limpandolixo.png";
 import reciclavel from "../imagens/reciclavel.png";
 import proibidonadar from "../imagens/proibidonadar.png";
 import { useEffect } from "react";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 
 const Consumo = () => {
   useEffect(() => {
@@ -41,12 +41,8 @@ const Consumo = () => {
               width: "95%",
               left: 200,
             }}
-          > 
-           
-            <div
-              className="container-consumo"
-             
-            >
+          >
+            <div className="container-consumo">
               <h1 className={styles["consumo-c"]}>CONSUMO CONSCIENTE!</h1>
             </div>
             <div
@@ -106,17 +102,13 @@ const Consumo = () => {
                 promove uma sociedade mais equitativa, apoiando práticas
                 comerciais éticas e sustentáveis.
               </p>
-
-              
             </div>
-            
 
             <section>
               <div
                 className="container-poluição"
                 style={{ display: "flex", alignItems: "flex-start" }}
               >
-               
                 <h1 className={styles["poluicao"]}>POLUIÇÃO!</h1>
                 <p className={styles["poluicao-texto"]}>
                   Nos mares do nosso planeta, um drama silencioso se desenrola
@@ -135,47 +127,40 @@ const Consumo = () => {
                   mar está em
                   <br /> nossas mãos. #PareComOPlástico, #SalveOsOceanos.
                 </p>
+              </div>
+              <div className="row">
+                <div className="col-sm-12 col-md-6 col-lg-4 offset-md-1 mb-1 ">
+                  <img
+                    className={`${styles["img-tartaruga"]} img-fluid`}
+                    src={tartaruga}
+                    alt=""
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: 370,
+                      height: 260,
+                      borderRadius: "15px",
+                      marginTop: "50px",
+                    }}
+                  />
                 </div>
-                <div className="row">
-               <div className="col-sm-12 col-md-6 col-lg-4 offset-md-1 mb-1 ">
-                <img
-                className={`${styles["img-tartaruga"]} img-fluid`}
-               src={tartaruga}
-                alt=""
-               style={{
-                display: "flex",
-                flexDirection: "column",
-                width: 370,
-                height: 260,
-                borderRadius: "15px",
-                marginTop: "50px",
-                
-                
-               }}
-              />
-            </div>
 
-            <div className="col-sm-12 col-md-6 col-lg-4 ">
-             <img
-              className={`${styles["img-foca"]} img-fluid`}
-               src={foca}
-               alt=""
-              style={{
-               display: "flex",
-               flexDirection: "column",
-               width: 370,
-               height: 260,
-               borderRadius: "15px",
-               marginTop: "50px",
-              
-              }}
-              />
-           </div>
-          </div>
-
-           
-              
-                
+                <div className="col-sm-12 col-md-6 col-lg-4 ">
+                  <img
+                    className={`${styles["img-foca"]} img-fluid`}
+                    src={foca}
+                    alt=""
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      width: 370,
+                      height: 260,
+                      borderRadius: "15px",
+                      marginTop: "50px",
+                    }}
+                  />
+                </div>
+              </div>
             </section>
 
             <section>
@@ -190,9 +175,16 @@ const Consumo = () => {
                   PESCA PROIBIDA!
                 </h1>
 
-                <p className={styles["pesca-textodois"]}> 
-                     Nos oceanos globais, várias espécies de peixes enfrentam <br />extinção devido à pesca insustentável e degradação marinha. <br /> Algumas são proibidas devido à necessidade de preservação. <br />Apesar de medidas rigorosas, fiscalização inadequada e demanda <br /> persistente levam à pesca ilegal. <br /> O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, <br /> desequilibrando ecossistemas marinhos.
-
+                <p className={styles["pesca-textodois"]}>
+                  Nos oceanos globais, várias espécies de peixes enfrentam{" "}
+                  <br />
+                  extinção devido à pesca insustentável e degradação marinha.{" "}
+                  <br /> Algumas são proibidas devido à necessidade de
+                  preservação. <br />
+                  Apesar de medidas rigorosas, fiscalização inadequada e demanda{" "}
+                  <br /> persistente levam à pesca ilegal. <br /> O consumo
+                  excessivo ameaça não apenas essas espécies, mas também a
+                  biodiversidade, <br /> desequilibrando ecossistemas marinhos.
                 </p>
 
                 <div className="container mt-4 ">
@@ -303,7 +295,7 @@ const Consumo = () => {
                   </div>
 
                   <div className="reciclavel">
-                  <img
+                    <img
                       className={styles["img-reciclavel"]}
                       src={reciclavel}
                       alt=""
@@ -312,12 +304,11 @@ const Consumo = () => {
                       className={styles["reciclavel-texto"]}
                       style={{ whiteSpace: "nowrap" }}
                     >
-                       {" "}
+                      {" "}
                       4 - Recicle seu lixo, <br />
                       separe seu lixo por <br />
                       categoria, isso facilita <br /> na hora da reciclagem
                     </h1>
-                    
                   </div>
 
                   <div className="proibidonadar">

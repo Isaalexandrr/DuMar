@@ -159,7 +159,7 @@
 
 .edit{
   width: 260px;
-  height: 350px;
+  height: 390px;
 }
 
 .usuario {
@@ -250,6 +250,24 @@
 }
 
 .conf p {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.add-produto{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.add-produto svg{
+  height: 30px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.add-produto p{
   text-decoration: none;
   color: black;
   font-size: 18px;

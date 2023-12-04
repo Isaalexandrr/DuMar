@@ -13,19 +13,6 @@ import ondaCoral from "../imagens/onda-estrela.png";
 import cardumeBolha from "../imagens/cardume-bolha-cortado.png";
 import cardumeCortado from "../imagens/cardume-cortado.png";
 import ondaEstrela2 from "../imagens/onda-estrela-2.png";
-import camarao from "../imagens/camarao.jpg";
-import salmao from "../imagens/salmao.jpg";
-import merluza from "../imagens/merluza.jpg";
-import tilapia from "../imagens/tilapia.jpg";
-import lula from "../imagens/lula.png";
-import polvo from "../imagens/polvo.webp";
-import lagosta from "../imagens/lagosta.jpg";
-import carangueijo from "../imagens/carangueijo.webp";
-import atum from "../imagens/atum.jpeg";
-import albacora from "../imagens/albacora.jpg";
-import bacalhau from "../imagens/bacalhau.jpg";
-import corvina from "../imagens/corvina.webp";
-import { IoStar, IoStarOutline } from "react-icons/io5";
 
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"

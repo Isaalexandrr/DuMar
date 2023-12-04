@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 
 import styles from "./CarroselProduto.module.css";
+import AdicionarCarrinho from "./Botao/AdicionarCarrinho";
 
 import { IoStar } from "react-icons/io5";
 
@@ -49,7 +50,7 @@ export default function CarroselProduto() {
                 />
                 <div className={styles["texto"]}>
                   <h3>{product.name}</h3>
-                  <h4>R${product.price}</h4>
+                  <h4>R${product.price.toFixed(2)}</h4>
                 </div>
                 <div className={styles["estrela"]}>
                   <IoStar />
@@ -58,7 +59,7 @@ export default function CarroselProduto() {
                   <IoStar />
                   <IoStar />
                 </div>
-                <input type="button" name="" id="" value="Adicionar à sacola" />
+                <AdicionarCarrinho />
                 <div id={styles["detalhe"]} class="p-0 m-0">
                   <ul>
                     <li>

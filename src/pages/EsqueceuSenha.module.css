@@ -5,7 +5,14 @@
 #Entrar {
   background-color: #a8f2fe;
 }
-
+#voltar {
+  color: #a8f2fe;
+  border: 3px solid #a8f2fe;
+  text-decoration: none;
+}
+.link {
+  color: #a8f2fe;
+}
 .ondacoral {
   height: 300px;
 }
