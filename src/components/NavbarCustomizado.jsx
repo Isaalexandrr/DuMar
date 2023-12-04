@@ -12,7 +12,7 @@ import logo1 from "../imagens/logo1.png";
 import logo2 from "../imagens/logo2.png";
 
 function NavbarCustomizado({ handleCategorySelect }) {
-  const logado = true;
+  const logado = false;
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>
