@@ -65,7 +65,7 @@ function Logado() {
               </div>
             </DropdownItem>
 
-            <DropdownItem to="#/action-3">
+            <DropdownItem href="/MeusDados">
               <div className={styles["dados"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ function Logado() {
               </div>
             </DropdownItem>
 
-            <DropdownItem to="#/action-3">
+            <DropdownItem href="/Configuracao">
               <div className={styles["conf"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
