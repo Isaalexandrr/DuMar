@@ -3,13 +3,29 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Cadastro.module.css";
 import ondaalga from "../imagens/onda-alga-1.png";
 import ondaestrela from "../imagens/onda-estrela-3.png";
+import { Link } from "react-router-dom";
+import { json } from "react-router-dom";
 
-function Cadastro() {
-  const [tipoConta, setTipoConta] = useState("fisico");
+function CadastroVendedor() {
 
-  const handleChangeTipoConta = (event) => {
-    setTipoConta(event.target.value);
+  
+ 
+  const [tipoUsuario, setTipoUsuario] = useState("fisico");
+
+  const handleChangeTipoUsario = (event) => {
+    setTipoUsuario(event.target.value);
   };
+
+  const [nome, setNome] = useState()
+  const [email, setEmail] = useState()
+  const [celular, setCelular] = useState()
+  const [endereco, setEndereco] = useState()
+  const [senha, setSenha] = useState()
+  const [data, setData] = useState()
+  const [doc, setDoc] = useState()
+  const [tipoConta, setTipoConta] = useState()
+  const [sexo, setSexo] = useState()
+  const [whatsapp, setWhatsapp] = useState()
 
   return (
     <div className="Container-fluid">
@@ -18,19 +34,19 @@ function Cadastro() {
           <img src={ondaalga} className={styles["ondaalga"]} />
         </div>
         <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
-          <h1 id={styles["tittle"]} className="fs-3 fw-bold mt-5">
+          <h1 id={styles["tittle"]} className="fs-3 fw-bold">
             DADOS CADASTRAIS
           </h1>
           <form className="text-start mt-4" action="">
             <div class="form-check form-check-inline text-start ms-2">
               <input
                 class="form-check-input"
-                name="tipoConta"
+                name="tipoUsuario"
                 id="fisico"
                 type="radio"
                 value="fisico"
-                checked={tipoConta === "fisico"}
-                onChange={handleChangeTipoConta}
+                checked={tipoUsuario === "fisico"}
+                onChange={handleChangeTipoUsario}
               />
               <label class="form-check-label fw-bold" for="fisico">
                 Pessoa Fisíca
@@ -39,17 +55,18 @@ function Cadastro() {
             <div class="form-check form-check-inline text-start ms-2">
               <input
                 class="form-check-input"
-                name="tipoConta"
+                name="tipoUsuario"
                 id="juridico"
                 type="radio"
                 value="juridico"
-                checked={tipoConta === "juridico"}
-                onChange={handleChangeTipoConta}
+                checked={tipoUsuario === "juridico"}
+                onChange={handleChangeTipoUsario}
               />
               <label class="form-check-label fw-bold" for="juridico">
                 Pessoa Jurídica
               </label>
             </div>
+
             <div className="text-start mt-4">
               <label className="fw-bold ms-2" htmlFor="emailFisico">
                 E-mail:
@@ -59,21 +76,24 @@ function Cadastro() {
                 id="emailFisico"
                 className="form-control rounded-pill"
                 placeholder="digite seu email"
+                onChange={(evt) => setEmail(evt.target.value)}
               />
             </div>
+
             <div className="text-start mt-4">
               <label className="fw-bold ms-2" htmlFor="nomeFisico">
-                {tipoConta === "fisico" ? "Nome Completo:" : "Nome da Empresa:"}
+                {tipoUsuario === "fisico" ? "Nome Completo:" : "Nome da Empresa:"}
               </label>
               <input
                 type="text"
                 className="form-control rounded-pill"
                 id="nomeCompleto"
                 placeholder={
-                  tipoConta === "fisico"
+                  tipoUsuario === "fisico"
                     ? "Digite seu nome"
                     : "Digite o nome da empresa"
                 }
+                onChange={(evt) => setNome(evt.target.value)}
               />
             </div>
             <div className="text-start mt-4">
@@ -85,15 +105,16 @@ function Cadastro() {
                 className="form-control rounded-pill"
                 id="senhaFisico"
                 placeholder="Digite sua senha"
+                onChange={(evt) => setSenha(evt.target.value)}
               />
             </div>
             <div className="text-start d-flex mt-4">
-              {tipoConta === "fisico" && (
+              {tipoUsuario === "fisico" && (
                 <div className="d-block w-25">
                   <label className="fw-bold ms-2" htmlFor="sexo">
                     Sexo:
                   </label>
-                  <select className="form-select rounded-pill" id="sexo">
+                  <select className="form-select rounded-pill" id="sexo" onChange={(evt) => setSexo(evt.target.value)}>
                     <option selected>Selecione...</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
@@ -103,7 +124,7 @@ function Cadastro() {
               )}
               <div className="d-block w-xs-50 w-sm-50 w-md-25 w-lg-25 w-xl-25 w-xxl-25 ms-2">
                 <label className="fw-bold ms-2" htmlFor="dataNasc">
-                  {tipoConta === "fisico"
+                  {tipoUsuario === "fisico"
                     ? "Data de Nascimento"
                     : "Data de Abertura"}
                 </label>
@@ -111,28 +132,30 @@ function Cadastro() {
                   type="date"
                   className="form-control rounded-pill"
                   id="dataNasc"
+                  onChange={(evt) => setData(evt.target.value)}
                 />
               </div>
             </div>
             <div className="text-start mt-4">
               <label className="fw-bold ms-2" htmlFor="cpfCnpj">
-                {tipoConta === "fisico" ? "CPF:" : "CNPJ:"}
+                {tipoUsuario === "fisico" ? "CPF:" : "CNPJ:"}
               </label>
               <input
                 type="text"
                 className="form-control rounded-pill"
-                name={tipoConta === "fisico" ? "cpf" : "cnpj"}
+                name={tipoUsuario === "fisico" ? "cpf" : "cnpj"}
                 id="cpfCnpj"
                 pattern={
-                  tipoConta === "fisico"
+                  tipoUsuario === "fisico"
                     ? "\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}"
                     : ""
                 }
                 placeholder={
-                  tipoConta === "fisico"
+                  tipoUsuario === "fisico"
                     ? "123.456.789-01"
                     : "12.345.678/0001-90"
                 }
+                onChange={(evt) => setDoc(evt.target.value)}
                 required
               />
             </div>
@@ -146,6 +169,7 @@ function Cadastro() {
                   className="form-control rounded-pill"
                   id="numeroFisico"
                   placeholder="(81) 9 9999-9999"
+                  onChange={(evt) => setCelular(evt.target.value)}
                 />
               </div>
               <div className="text-start w-50 ms-2 d-block">
@@ -155,6 +179,7 @@ function Cadastro() {
                 <select
                   className="form-select rounded-pill w-50"
                   id="zapFisico"
+                  onChange={(evt) => setWhatsapp(evt.target.value)}
                 >
                   <option value="sim">Sim</option>
                   <option value="nao">Não</option>
@@ -170,44 +195,23 @@ function Cadastro() {
                 className="form-control rounded-pill"
                 id="enderecoFisico"
                 placeholder="Rua, Número, bairro, cidade"
+                onChange={(evt) => setEndereco(evt.target.value)}
               />
-            </div>
-            <div className="text-start w-50 mt-2">
-              <h4 className="text-start p-0 ms-2 mb-0 me-0 mt-4 fw-bold">
-                Qual o seu perfil ?
-              </h4>
-              <div class="form-check form-check-inline text-start mt-2 ms-2">
-                <input
-                  class="form-check-input"
-                  name="tipoUsuario"
-                  id="consumidor"
-                  type="radio"
-                  value="consumidor"
-                />
-                <label class="form-check-label fw-bold" for="consumidor">
-                  Consumidor
-                </label>
-              </div>
-              <div class="form-check form-check-inline text-start m-0 ms-2">
-                <input
-                  class="form-check-input"
-                  name="tipoUsuario"
-                  id="vendedor"
-                  type="radio"
-                  value="Vendedor"
-                />
-                <label class="form-check-label fw-bold" for="vendedor">
-                  Vendedor
-                </label>
-              </div>
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">
               <input
+                type="submit"
                 id={styles["button-submit"]}
                 className="form-control rounded-pill fw-bold"
-                type="submit"
                 value="Cadastrar"
               />
+            </div>
+            <div className="w-50 mx-auto mt-4 mb-4">
+            <Link className="text-decoration-none" to='/TipoConta'>
+                <button className="form-control rounded-pill bg-Secondary  mt-2">
+                  Cancelar
+                </button>
+              </Link>
             </div>
           </form>
         </div>
@@ -219,4 +223,4 @@ function Cadastro() {
   );
 }
 
-export default Cadastro;
+export default CadastroVendedor;

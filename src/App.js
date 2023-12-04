@@ -6,13 +6,14 @@ import Login from "./pages/Login";
 import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import { Consumo } from "./pages/Consumo";
-import Cadastro from "./pages/Cadastro";
+import CadastroCliente from "./pages/CadastroCliente";
+import CadastroVendedor from "./pages/CadastroVendedor";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Publicar from "./pages/Publicar";
 import Pagamento from "./pages/Pagamento";
 import QuemSomos from "./pages/QuemSomos";
-import Configuracao from "./pages/Configuracao";
-import MeusDados from "./pages/MeusDados";
+import TipoConta from "./pages/TipoConta";
+
 
 function App() {
   return (
@@ -30,9 +31,7 @@ function App() {
           <Route path="/Publicar" element={<Publicar />} />
           <Route path="/" element={<Home />} />
           <Route path= "/QuemSomos" element={<QuemSomos />} />
-          <Route path= "/EsqueceuSenha" element={<EsqueceuSenha />} />
           <Route path="/Pagamento" element={<Pagamento/>} />
-
         </Routes>
       </div>
     </Router>

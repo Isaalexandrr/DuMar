@@ -9,6 +9,7 @@
   
 }
 
+
 .container-consumo {
   display: flex;
   text-align: center;
@@ -17,7 +18,10 @@
 
 .consumo-c{
   font-size: 20px;
+  
 }
+
+
 
 .texto-sobre {
   text-align: center;
@@ -27,6 +31,7 @@
   font-weight: bold;
   font-size: 18px;
   color: black;
+  font-size: 20px;
   font-size: 20px;
 }
 
@@ -42,23 +47,19 @@
   font-size: 18px;
   margin-top: 170px;
   margin-right:300px;
-  align-items:right;
   color: white;
- 
+
 }
 
 .pesca-texto {
-  font-size: 20px;
-  margin-top: 80px;
+  font-size: 18px;
+  margin-top: 80px; 
   
 }
 
 .texto-especie {
   font-size: 20px;
-}
-
-.span text-danger {
-  font-size: 16px;
+  
 }
 
 .preserv-texto {
@@ -68,6 +69,7 @@
 
 .consumo {
   color: black;
+  font-size: 18px;
   font-size: 18px;
 }
 
@@ -97,14 +99,15 @@ body {
 
 
 .poluicao {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 70px;
+  margin-left: 10px;
 }
 
 .lixo-texto{
   font-size: 18px;
-  margin-top: -200px;
   margin-left: -180px;
+  margin-top: -170px;
 }
 
 .img-jogandolixo {
@@ -145,7 +148,6 @@ body {
   margin-top: -470px;
   margin-left: -290px;
 }
-
 .img-proibidonadar {
   width: 920px;
   margin-left: -800px;
@@ -161,8 +163,12 @@ body {
 .pesca-textodois {
   font-size: 18px;
   margin-top: 170px;
-  margin-right:300px;
+  margin-left:-110px;
   color: white;
   
 
+  
+
 }
+
+

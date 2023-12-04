@@ -1,0 +1,13 @@
+.menu1 {
+  background-color: #b0c5d1;
+}
+.pesquisar input {
+  border: none;
+  background-color: transparent;
+}
+
+.pesquisar button {
+  border: none;
+  background-color: #0a376e;
+  color: white;
+}

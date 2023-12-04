@@ -4,15 +4,16 @@
   align-items: center;
   padding: 25px;
   min-height: 100vh;
-  background: #538aad;
+  background: linear-gradient(90deg, #538aad 60%, #0f53877a 40.1%);
 }
 
 .box {
-  width: 800px;
+  width: 800px; 
   background: #ffffff91;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
-  border-radius: 30px;
+  border-radius: 30px; 
+ 
 }
 
 .row {
@@ -34,11 +35,13 @@
 
 .inputBox {
   margin: 15px 0;
+ 
 }
 
 .inputBox span {
   margin-bottom: 10px;
   display: block;
+  
 }
 
 .inputBox input {
@@ -92,13 +95,35 @@
   background: #406c86;
 }
 
+
+
 .img-card {
   height: 30px;
   margin-right: 10px;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
+  cursor: pointer; 
+  transition: box-shadow 0.3s ease; 
 }
+
 
 .img-card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+.row-mt-3 {
+    margin-top: 3rem; 
+  }
+  
+  .col {
+    width: 100%; 
+  }
+  
+  alert {
+    display: block;
+    padding: 20px;
+    color: #0a0a0a;
+    background-color: #001f3f7c; 
+    margin-top: 30px; 
+    
+  }
+
+
