@@ -1,31 +1,72 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Cadastro.module.css";
 import ondaalga from "../imagens/onda-alga-1.png";
 import ondaestrela from "../imagens/onda-estrela-3.png";
 import { Link } from "react-router-dom";
-import { json } from "react-router-dom";
+import axios from "axios";
 
 function CadastroVendedor() {
-
-  
- 
   const [tipoUsuario, setTipoUsuario] = useState("fisico");
 
   const handleChangeTipoUsario = (event) => {
     setTipoUsuario(event.target.value);
   };
 
-  const [nome, setNome] = useState()
-  const [email, setEmail] = useState()
-  const [celular, setCelular] = useState()
-  const [endereco, setEndereco] = useState()
-  const [senha, setSenha] = useState()
-  const [data, setData] = useState()
-  const [doc, setDoc] = useState()
-  const [tipoConta, setTipoConta] = useState()
-  const [sexo, setSexo] = useState()
-  const [whatsapp, setWhatsapp] = useState()
+  const [dados, setDados] = useState([])
+  const [VEN_NOME, setVEN_NOME] = useState('')
+  const [VEN_EMAIL, setVEN_EMAIL] = useState('')
+  const [VEN_TELEFONE, setVEN_TELEFONE] = useState('')
+  const [VEN_ENDERECO, setVEN_ENDERECO] = useState('')
+  const [VEN_SENHA, setVEN_SENHA] = useState('')
+  const [VEN_DATA, setVEN_DATA] = useState('')
+  const [VEN_DOCUMENTO, setVEN_DOCUMENTO] = useState('')
+  const [VEN_SEXO, setVEN_SEXO] = useState('')
+  const [VEN_WHATSAPP, setVEN_WHATSAPP] = useState('')
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3003/Vendedor")
+      .then((response) => {
+        setDados(response.data);
+      })
+      .catch((error) => {
+        console.error("Erro ao buscar os dados", error);
+      });
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:3003/inserirVendedor", {
+        VEN_NOME,
+        VEN_EMAIL,
+        VEN_DATA,
+        VEN_SEXO,
+        VEN_DOCUMENTO,
+        VEN_ENDERECO,
+        VEN_TELEFONE,
+        VEN_WHATSAPP,
+        VEN_SENHA,
+      });
+
+      console.log(VEN_NOME)
+
+      const response = await axios.get("http://localhost:3003/Vendedor");
+      setDados(response.data);
+      setVEN_NOME("");
+      setVEN_EMAIL("");
+      setVEN_DATA("");
+      setVEN_SEXO("");
+      setVEN_DOCUMENTO("");
+      setVEN_ENDERECO("");
+      setVEN_TELEFONE("");
+      setVEN_WHATSAPP("");
+      setVEN_SENHA("");
+    } catch (error) {
+      console.log("error");
+    }
+  };
 
   return (
     <div className="Container-fluid">
@@ -37,7 +78,7 @@ function CadastroVendedor() {
           <h1 id={styles["tittle"]} className="fs-3 fw-bold">
             DADOS CADASTRAIS
           </h1>
-          <form className="text-start mt-4" action="">
+          <form className="text-start mt-4" onSubmit={handleSubmit}>
             <div class="form-check form-check-inline text-start ms-2">
               <input
                 class="form-check-input"
@@ -74,9 +115,10 @@ function CadastroVendedor() {
               <input
                 type="email"
                 id="emailFisico"
+                value={VEN_EMAIL}
                 className="form-control rounded-pill"
                 placeholder="digite seu email"
-                onChange={(evt) => setEmail(evt.target.value)}
+                onChange={(e) => setVEN_EMAIL(e.target.value)}
               />
             </div>
 
@@ -86,6 +128,7 @@ function CadastroVendedor() {
               </label>
               <input
                 type="text"
+                value={VEN_NOME}
                 className="form-control rounded-pill"
                 id="nomeCompleto"
                 placeholder={
@@ -93,7 +136,7 @@ function CadastroVendedor() {
                     ? "Digite seu nome"
                     : "Digite o nome da empresa"
                 }
-                onChange={(evt) => setNome(evt.target.value)}
+                onChange={(e) => setVEN_NOME(e.target.value)}
               />
             </div>
             <div className="text-start mt-4">
@@ -104,8 +147,9 @@ function CadastroVendedor() {
                 type="passoword"
                 className="form-control rounded-pill"
                 id="senhaFisico"
+                value={VEN_SENHA}
                 placeholder="Digite sua senha"
-                onChange={(evt) => setSenha(evt.target.value)}
+                onChange={(e) => setVEN_SENHA(e.target.value)}
               />
             </div>
             <div className="text-start d-flex mt-4">
@@ -114,7 +158,7 @@ function CadastroVendedor() {
                   <label className="fw-bold ms-2" htmlFor="sexo">
                     Sexo:
                   </label>
-                  <select className="form-select rounded-pill" id="sexo" onChange={(evt) => setSexo(evt.target.value)}>
+                  <select className="form-select rounded-pill" id="sexo" value={VEN_SEXO} onChange={(e) => setVEN_SEXO(e.target.value)}>
                     <option selected>Selecione...</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
@@ -130,9 +174,10 @@ function CadastroVendedor() {
                 </label>
                 <input
                   type="date"
+                  value={VEN_DATA}
                   className="form-control rounded-pill"
                   id="dataNasc"
-                  onChange={(evt) => setData(evt.target.value)}
+                  onChange={(e) => setVEN_DATA(e.target.value)}
                 />
               </div>
             </div>
@@ -155,7 +200,8 @@ function CadastroVendedor() {
                     ? "123.456.789-01"
                     : "12.345.678/0001-90"
                 }
-                onChange={(evt) => setDoc(evt.target.value)}
+                value={VEN_DOCUMENTO}
+                onChange={(e) => setVEN_DOCUMENTO(e.target.value)}
                 required
               />
             </div>
@@ -169,7 +215,8 @@ function CadastroVendedor() {
                   className="form-control rounded-pill"
                   id="numeroFisico"
                   placeholder="(81) 9 9999-9999"
-                  onChange={(evt) => setCelular(evt.target.value)}
+                  value={VEN_TELEFONE}
+                  onChange={(e) => setVEN_TELEFONE(e.target.value)}
                 />
               </div>
               <div className="text-start w-50 ms-2 d-block">
@@ -179,7 +226,8 @@ function CadastroVendedor() {
                 <select
                   className="form-select rounded-pill w-50"
                   id="zapFisico"
-                  onChange={(evt) => setWhatsapp(evt.target.value)}
+                  value={VEN_WHATSAPP}
+                  onChange={(e) => setVEN_WHATSAPP(e.target.value)}
                 >
                   <option value="sim">Sim</option>
                   <option value="nao">Não</option>
@@ -195,7 +243,8 @@ function CadastroVendedor() {
                 className="form-control rounded-pill"
                 id="enderecoFisico"
                 placeholder="Rua, Número, bairro, cidade"
-                onChange={(evt) => setEndereco(evt.target.value)}
+                value={VEN_ENDERECO}
+                onChange={(e) => setVEN_ENDERECO(e.target.value)}
               />
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">
