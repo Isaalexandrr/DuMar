@@ -14,11 +14,7 @@ import QuemSomos from "./pages/QuemSomos";
 import TipoConta from "./pages/TipoConta";
 import Configuracao from "./pages/Configuracao";
 import MeusDados from "./pages/MeusDados";
-<<<<<<< HEAD
-
-=======
 import NavbarCustomizado from "./components/NavbarCustomizado";
->>>>>>> 204a64f4b6fffec421062ff4c44543589d1bd410
 
 function App() {
   return (
@@ -26,12 +22,12 @@ function App() {
       <div>
         <NavbarCustomizado />
         <Routes>
-          <Route path="/Configuracao" element={<Configuracao /> } />
-          <Route path="/Cadastro" element={<Cadastro />} />
+          <Route path="/TipoConta" element={<TipoConta />} />
+          <Route path="/CadastroCliente" element={<CadastroCliente />} />
+          <Route path="/CadastroVendedor" element={<CadastroVendedor />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />
-          <Route path="/MeusDados" element={<MeusDados />} />
           <Route path="/Publicar" element={<Publicar />} />
           <Route path="/" element={<Home />} />
           <Route path="/QuemSomos" element={<QuemSomos />} />
