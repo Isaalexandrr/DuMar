@@ -40,16 +40,7 @@
   margin-bottom: 1%;
   color: #ebdb0b;
 }
-#grid-caixa input {
-  background-color: #0a376e;
-  color: white;
-  border: 0;
-  width: 70%;
-  height: 8%;
-  border-radius: 10px;
-  font-size: 16px;
-  text-align: center;
-}
+
 #grid-caixa img {
   width: 280px;
   height: 210px;

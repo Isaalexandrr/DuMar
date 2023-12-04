@@ -5,7 +5,7 @@ import Menu from "./Menu";
 import { IoStar } from "react-icons/io5";
 
 import styles from "./ProdutosHome.module.css";
-
+import AdicionarCarrinho  from "./Botao/AdicionarCarrinho";
 export default function ProdutoHome() {
   const [products, setProducts] = useState([]);
 
@@ -30,7 +30,7 @@ export default function ProdutoHome() {
           <IoStar />
           <IoStar />
         </div>
-        <input type="button" name="" id="" value="Adicionar à sacola" />
+        <AdicionarCarrinho/>
         <div id={styles["detalhe"]} className="p-0 m-0">
           <ul>
             <li>

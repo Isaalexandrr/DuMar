@@ -77,6 +77,8 @@
 /*perfil*/
 .usuario {
   display: flex;
+
+
 }
 
 .pesquisar {
@@ -155,26 +157,35 @@
   box-shadow: 0 0 0 0;
 }
 
+.edit{
+  width: 260px;
+  height: 350px;
+}
+
 .usuario {
   display: flex;
-  margin: 25px;
+  margin-left: 20px;
+  margin-top: 15px;
+  gap: 10px;
+ 
 }
 
 .usuario svg {
-  width: 82px;
-  height: 82px;
-  margin-top: 10px;
+  width: 62px;
+  height: 62px;
   cursor: pointer;
 }
 
+
+
 .usuario-nome {
-  margin-left: 20px;
-  margin-top: 30px;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .usuario-nome a {
   color: #0a376e;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .usuario-email {
@@ -187,62 +198,74 @@
 
 .compras {
   display: flex;
-  margin: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+ 
 }
 
 .compras svg {
-  height: 40px;
-  width: 60px;
+  height: 30px;
+  width: 50px;
   cursor: pointer;
 }
+
 .compras p {
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .dados {
   display: flex;
-  margin: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+ 
+ 
 }
 
 .dados svg {
-  height: 40px;
-  width: 60px;
+  height: 30px;
+  width: 50px;
   cursor: pointer;
 }
 
 .dados p {
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .conf {
   display: flex;
-  margin: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+ 
+ 
 }
 
 .conf svg {
-  height: 40px;
-  width: 60px;
+  height: 30px;
+  width: 50px;
   cursor: pointer;
 }
 
 .conf p {
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .sair {
   display: flex;
-  margin: 20px;
+  margin-left: 15px;
+  margin-top: 5px;
+ 
+  
 }
 
 .sair svg {
-  height: 40px;
-  width: 60px;
+  height: 30px;
+  width: 50px;
   color: #dc0032;
   cursor: pointer;
 }
@@ -250,7 +273,7 @@
 .sair p {
   color: #dc0032;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .pessoa-nome {
@@ -260,6 +283,7 @@
 .seu-nome {
   border: none;
   box-shadow: 0 0 0 0;
+  text-decoration: underline;
 }
 /*........*/
 

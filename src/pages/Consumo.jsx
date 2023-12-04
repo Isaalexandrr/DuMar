@@ -11,6 +11,7 @@ import limpandolixo from "../imagens/limpandolixo.png";
 import reciclavel from "../imagens/reciclavel.png";
 import proibidonadar from "../imagens/proibidonadar.png";
 import { useEffect } from "react";
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Consumo = () => {
   useEffect(() => {
@@ -35,12 +36,13 @@ const Consumo = () => {
             className="row px-4 gap-5"
             style={{
               position: "absolute",
-              top: "200%",
+              top: "220%",
               transform: "translateY(-50%)",
               width: "95%",
-              left: 170,
+              left: 200,
             }}
-          >
+          > 
+           
             <div
               className="container-consumo"
              
@@ -104,13 +106,17 @@ const Consumo = () => {
                 promove uma sociedade mais equitativa, apoiando práticas
                 comerciais éticas e sustentáveis.
               </p>
+
+              
             </div>
+            
 
             <section>
               <div
                 className="container-poluição"
                 style={{ display: "flex", alignItems: "flex-start" }}
               >
+               
                 <h1 className={styles["poluicao"]}>POLUIÇÃO!</h1>
                 <p className={styles["poluicao-texto"]}>
                   Nos mares do nosso planeta, um drama silencioso se desenrola
@@ -129,18 +135,47 @@ const Consumo = () => {
                   mar está em
                   <br /> nossas mãos. #PareComOPlástico, #SalveOsOceanos.
                 </p>
+                </div>
                 <div className="row">
-                <div className="col-md-6">
+               <div className="col-sm-12 col-md-6 col-lg-4 offset-md-1 mb-1 ">
+                <img
+                className={`${styles["img-tartaruga"]} img-fluid`}
+               src={tartaruga}
+                alt=""
+               style={{
+                display: "flex",
+                flexDirection: "column",
+                width: 370,
+                height: 260,
+                borderRadius: "15px",
+                marginTop: "50px",
                 
-                </div>
-                </div>
+                
+               }}
+              />
+            </div>
 
-                <div className="row">
-                <div className="col-md-6">
+            <div className="col-sm-12 col-md-6 col-lg-4 ">
+             <img
+              className={`${styles["img-foca"]} img-fluid`}
+               src={foca}
+               alt=""
+              style={{
+               display: "flex",
+               flexDirection: "column",
+               width: 370,
+               height: 260,
+               borderRadius: "15px",
+               marginTop: "50px",
+              
+              }}
+              />
+           </div>
+          </div>
+
+           
+              
                 
-                </div>
-                </div>
-              </div>
             </section>
 
             <section>
@@ -156,11 +191,13 @@ const Consumo = () => {
                 </h1>
 
                 <p className={styles["pesca-textodois"]}> 
-                     Nos oceanos globais, várias espécies de peixes enfrentam extinção devido à pesca insustentável e degradação marinha. Algumas são proibidas devido à necessidade de preservação. Apesar de medidas rigorosas, fiscalização inadequada e demanda persistente levam à pesca ilegal. O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, desequilibrando ecossistemas marinhos.</p>
+                     Nos oceanos globais, várias espécies de peixes enfrentam <br />extinção devido à pesca insustentável e degradação marinha. <br /> Algumas são proibidas devido à necessidade de preservação. <br />Apesar de medidas rigorosas, fiscalização inadequada e demanda <br /> persistente levam à pesca ilegal. <br /> O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, <br /> desequilibrando ecossistemas marinhos.
 
-                <div className="container mt-4">
+                </p>
+
+                <div className="container mt-4 ">
                   <div className="row">
-                    <div className="col-md-4 col-sm-12 ">
+                    <div className="col-md-4 col-sm-12  ">
                       <div
                         className="card"
                         style={{
@@ -169,7 +206,7 @@ const Consumo = () => {
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
-                          right: 170,
+                          right: -30,
                           top: "30%",
                           width: 370,
                           height: 400,
