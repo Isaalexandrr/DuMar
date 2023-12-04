@@ -139,7 +139,7 @@ const Consumo = () => {
                 <div className="row">
                <div className="col-sm-12 col-md-6 col-lg-4 offset-md-1 mb-1 ">
                 <img
-                className={`${styles["img-tartaruga"]} img-fluid`}
+                className={`${styles["img-tartaruga"]} img-fluid mx auto`}
                src={tartaruga}
                 alt=""
                style={{
@@ -157,7 +157,7 @@ const Consumo = () => {
 
             <div className="col-sm-12 col-md-6 col-lg-4 ">
              <img
-              className={`${styles["img-foca"]} img-fluid`}
+              className={`${styles["img-foca"]} img-fluid mx-auto`}
                src={foca}
                alt=""
               style={{
@@ -259,6 +259,7 @@ const Consumo = () => {
                   </h1>
                   <div className="lixo">
                     <img className={styles["img-lixo"]} src={lixo} alt=""></img>
+                    
 
                     <h1
                       className={styles["lixo-texto"]}
