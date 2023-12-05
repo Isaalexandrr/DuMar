@@ -1,9 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+
 import styles from "./EsqueceuSenha.module.css";
+
 import ondaestrela3 from "../imagens/onda-estrela-3.png";
 import ondacoral from "../imagens/onda-coral.png";
-import { Link } from "react-router-dom";
 
 function EsqueceuSenha() {
   return (

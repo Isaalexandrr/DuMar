@@ -1,6 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import styles from "./QuemSomos.module.css";
+
 import Alanes from "../imagens/Alanes.jpg";
 import Gabii from "../imagens/Gabii.jpeg";
 import ISABELA from "../imagens/ISABELA (1).png";

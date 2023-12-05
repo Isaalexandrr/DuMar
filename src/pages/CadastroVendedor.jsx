@@ -1,31 +1,30 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./Cadastro.module.css";
-import ondaalga from "../imagens/onda-alga-1.png";
-import ondaestrela from "../imagens/onda-estrela-3.png";
 import { Link } from "react-router-dom";
 import { json } from "react-router-dom";
 
-function CadastroVendedor() {
+import styles from "./Cadastro.module.css";
 
-  
- 
+import ondaalga from "../imagens/onda-alga-1.png";
+import ondaestrela from "../imagens/onda-estrela-3.png";
+
+function CadastroVendedor() {
   const [tipoUsuario, setTipoUsuario] = useState("fisico");
 
   const handleChangeTipoUsario = (event) => {
     setTipoUsuario(event.target.value);
   };
 
-  const [nome, setNome] = useState()
-  const [email, setEmail] = useState()
-  const [celular, setCelular] = useState()
-  const [endereco, setEndereco] = useState()
-  const [senha, setSenha] = useState()
-  const [data, setData] = useState()
-  const [doc, setDoc] = useState()
-  const [tipoConta, setTipoConta] = useState()
-  const [sexo, setSexo] = useState()
-  const [whatsapp, setWhatsapp] = useState()
+  const [nome, setNome] = useState();
+  const [email, setEmail] = useState();
+  const [celular, setCelular] = useState();
+  const [endereco, setEndereco] = useState();
+  const [senha, setSenha] = useState();
+  const [data, setData] = useState();
+  const [doc, setDoc] = useState();
+  const [tipoConta, setTipoConta] = useState();
+  const [sexo, setSexo] = useState();
+  const [whatsapp, setWhatsapp] = useState();
 
   return (
     <div className="Container-fluid">
@@ -82,7 +81,9 @@ function CadastroVendedor() {
 
             <div className="text-start mt-4">
               <label className="fw-bold ms-2" htmlFor="nomeFisico">
-                {tipoUsuario === "fisico" ? "Nome Completo:" : "Nome da Empresa:"}
+                {tipoUsuario === "fisico"
+                  ? "Nome Completo:"
+                  : "Nome da Empresa:"}
               </label>
               <input
                 type="text"
@@ -114,7 +115,11 @@ function CadastroVendedor() {
                   <label className="fw-bold ms-2" htmlFor="sexo">
                     Sexo:
                   </label>
-                  <select className="form-select rounded-pill" id="sexo" onChange={(evt) => setSexo(evt.target.value)}>
+                  <select
+                    className="form-select rounded-pill"
+                    id="sexo"
+                    onChange={(evt) => setSexo(evt.target.value)}
+                  >
                     <option selected>Selecione...</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
@@ -207,7 +212,7 @@ function CadastroVendedor() {
               />
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">
-            <Link className="text-decoration-none" to='/TipoConta'>
+              <Link className="text-decoration-none" to="/TipoConta">
                 <button className="form-control rounded-pill bg-Secondary  mt-2">
                   Cancelar
                 </button>

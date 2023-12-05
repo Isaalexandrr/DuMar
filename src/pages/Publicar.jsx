@@ -13,7 +13,7 @@ function Publicar() {
         <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block align-self-end m-0 p-0">
           <img src={ondaalga} className={styles["ondaalga"]} />
         </div>
-        <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center mt-5"> 
+        <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center mt-5">
           <h1 id={styles["tittle"]} className="fs-3 fw-bold">
             DADOS DO PRODUTO
           </h1>

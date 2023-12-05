@@ -1,9 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import styles from "./TipoConta.module.css";
 import { GiLuckyFisherman } from "react-icons/gi";
 import { MdFoodBank } from "react-icons/md";
+
+import styles from "./TipoConta.module.css";
 
 function TipoConta() {
   return (
@@ -16,27 +17,27 @@ function TipoConta() {
               <h1 className="text-white">Qual seu objetivo?</h1>
             </div>
             <div className="col-6 text-center mt-5">
-              <Link to='/CadastroCliente'>
+              <Link to="/CadastroCliente">
                 <button className={styles["Button"]}>
-                    <MdFoodBank className={styles["icon"]} />
-                    <h3 className="text-white">Comprar</h3>
+                  <MdFoodBank className={styles["icon"]} />
+                  <h3 className="text-white">Comprar</h3>
                 </button>
               </Link>
             </div>
             <div className="col-6 text-center mt-5">
-            <Link to='/CadastroVendedor'>
+              <Link to="/CadastroVendedor">
                 <button className={styles["Button"]}>
-                    <GiLuckyFisherman className={styles["icon"]} />
-                    <h3 className="text-white">Vender</h3>
+                  <GiLuckyFisherman className={styles["icon"]} />
+                  <h3 className="text-white">Vender</h3>
                 </button>
               </Link>
             </div>
             <div className="col-12 text-center mt-5">
-                <Link to='/Login'>
-                    <button className={styles['voltar']}>
-                        <h3>Voltar</h3>
-                    </button>
-                </Link>
+              <Link to="/Login">
+                <button className={styles["voltar"]}>
+                  <h3>Voltar</h3>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

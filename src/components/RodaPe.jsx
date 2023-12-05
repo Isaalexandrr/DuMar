@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { bottom } from "@popperjs/core";
 
 import banner from "../imagens/banner.jpg";
-import { bottom } from "@popperjs/core";
 
 const RodaPe = () => {
   return (

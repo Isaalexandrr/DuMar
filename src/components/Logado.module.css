@@ -77,8 +77,6 @@
 /*perfil*/
 .usuario {
   display: flex;
-
-
 }
 
 .pesquisar {
@@ -157,7 +155,7 @@
   box-shadow: 0 0 0 0;
 }
 
-.edit{
+.edit {
   width: 260px;
   height: 390px;
 }
@@ -167,7 +165,6 @@
   margin-left: 20px;
   margin-top: 15px;
   gap: 10px;
- 
 }
 
 .usuario svg {
@@ -175,8 +172,6 @@
   height: 62px;
   cursor: pointer;
 }
-
-
 
 .usuario-nome {
   margin-top: 10px;
@@ -200,7 +195,6 @@
   display: flex;
   margin-left: 10px;
   margin-top: 15px;
- 
 }
 
 .compras svg {
@@ -219,8 +213,6 @@
   display: flex;
   margin-left: 10px;
   margin-top: 5px;
- 
- 
 }
 
 .dados svg {
@@ -239,8 +231,6 @@
   display: flex;
   margin-left: 10px;
   margin-top: 5px;
- 
- 
 }
 
 .conf svg {
@@ -255,19 +245,19 @@
   font-size: 18px;
 }
 
-.add-produto{
+.add-produto {
   display: flex;
   margin-left: 10px;
   margin-top: 5px;
 }
 
-.add-produto svg{
+.add-produto svg {
   height: 30px;
   width: 50px;
   cursor: pointer;
 }
 
-.add-produto p{
+.add-produto p {
   text-decoration: none;
   color: black;
   font-size: 18px;
@@ -277,8 +267,6 @@
   display: flex;
   margin-left: 15px;
   margin-top: 5px;
- 
-  
 }
 
 .sair svg {

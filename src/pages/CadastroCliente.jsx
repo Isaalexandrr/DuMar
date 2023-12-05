@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import styles from "./Cadastro.module.css";
+
 import ondaalga from "../imagens/onda-alga-1.png";
 import ondaestrela from "../imagens/onda-estrela-3.png";
 

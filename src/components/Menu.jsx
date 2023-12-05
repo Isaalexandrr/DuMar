@@ -5,9 +5,10 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { IoSearch } from "react-icons/io5";
 
 import styles from "./Menu.module.css";
+
+import { IoSearch } from "react-icons/io5";
 
 function Menu({ handleCategorySelect }) {
   const [searchTerm, setSearchTerm] = useState("");

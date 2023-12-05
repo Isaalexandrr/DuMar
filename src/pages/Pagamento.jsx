@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./Pagamento.module.css";
-import card from "../imagens/card_img.png";
 import { alertClasses } from "@mui/material";
 import { Link, Route } from "react-router-dom";
+
+import styles from "./Pagamento.module.css";
+
+import card from "../imagens/card_img.png";
 
 function Pagamento() {
   const [nome, setNome] = useState("");
