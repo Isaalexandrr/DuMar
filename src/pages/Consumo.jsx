@@ -153,14 +153,10 @@ const Consumo = () => {
                 <p className={styles["pesca-textodois"]}> 
                      Nos oceanos globais, várias espécies de peixes enfrentam <br />extinção devido à pesca insustentável e degradação marinha. <br /> Algumas são proibidas devido à necessidade de preservação. <br />Apesar de medidas rigorosas, fiscalização inadequada e demanda <br /> persistente levam à pesca ilegal. <br /> O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, <br /> desequilibrando ecossistemas marinhos.
 
-                <p className={styles["pesca-textodois"]}> 
-                     Nos oceanos globais, várias espécies de peixes enfrentam <br />extinção devido à pesca insustentável e degradação marinha. <br /> Algumas são proibidas devido à necessidade de preservação. <br />Apesar de medidas rigorosas, fiscalização inadequada e demanda <br /> persistente levam à pesca ilegal. <br /> O consumo excessivo ameaça não apenas essas espécies, mas também a biodiversidade, <br /> desequilibrando ecossistemas marinhos.
-
                 </p>
 
                 <div className="container mt-4 ">
                   <div className="row">
-                    <div className="col-sm-12 col-md-4 mb-4">
                     <div className="col-sm-12 col-md-4 mb-4">
                       <div
                         className="card"
@@ -170,10 +166,10 @@ const Consumo = () => {
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
-                          bottom: "90%",
+                          right: -700,
+                          top: "-100%",
                           width: 370,
                           height: 400,
-                          left:700,
                         }}
                       >
                         <div className="card-body d-flex flex-column align-items-start">
@@ -275,7 +271,6 @@ const Consumo = () => {
 
                   <div className="reciclavel">
                   <img
-                  <img
                       className={styles["img-reciclavel"]}
                       src={reciclavel}
                       alt=""
@@ -285,12 +280,10 @@ const Consumo = () => {
                       style={{ whiteSpace: "nowrap" }}
                     >
                        {" "}
-                       {" "}
                       4 - Recicle seu lixo, <br />
                       separe seu lixo por <br />
                       categoria, isso facilita <br /> na hora da reciclagem
                     </h1>
-                    
                     
                   </div>
 
@@ -314,7 +307,6 @@ const Consumo = () => {
               </div>
             </section>
           </div>
-      
       
   );
 };
