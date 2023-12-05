@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { ProductService } from "./service/ProdutoHome";
 import Dropdown from "react-bootstrap/Dropdown";
 import Menu from "./Menu";
-import { IoStar } from "react-icons/io5";
+import AdicionarCarrinho from "./Botao/AdicionarCarrinho";
 
 import styles from "./ProdutosHome.module.css";
-import AdicionarCarrinho from "./Botao/AdicionarCarrinho";
+
+import { IoStar } from "react-icons/io5";
+
 export default function ProdutoHome({ filter }) {
   const [products, setProducts] = useState([]);
 

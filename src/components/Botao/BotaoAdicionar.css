@@ -1,37 +1,27 @@
-
 .botao-adicionar-remover-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 100px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    height: 30px;
-    width: 150px;
-    border-radius: 30px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  height: 30px;
+  width: 150px;
+  border-radius: 30px;
 }
-  
-.botao-adicionar, .botao-remover {
-    background-color: #0a376e;
-    color: #0a376e;
-    border-radius: 50px;
-    border: #0a376e solid;
-    margin-bottom: 2px;
-   
 
-   
+.botao-adicionar,
+.botao-remover {
+  background-color: #0a376e;
+  color: #0a376e;
+  border-radius: 50px;
+  border: #0a376e solid;
+  margin-bottom: 2px;
 }
-  
 
-
-  
 .quantidade-itens {
-    color: #0a376e;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 25px;
-    
+  color: #0a376e;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px;
 }
-
-

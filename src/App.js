@@ -36,10 +36,10 @@ function App() {
       <div>
         <NavbarCustomizado handleCategorySelect={handleCategorySelect} />
         <Routes>
-          <Route path="/Configuracao" element={<Configuracao /> } />
-          <Route path="/CadastroCliente" element={<CadastroCliente /> } />
-          <Route path="/CadastroVendedor" element={<CadastroVendedor /> } />
-          <Route path="/TipoConta" element={<TipoConta /> } />
+          <Route path="/Configuracao" element={<Configuracao />} />
+          <Route path="/CadastroCliente" element={<CadastroCliente />} />
+          <Route path="/CadastroVendedor" element={<CadastroVendedor />} />
+          <Route path="/TipoConta" element={<TipoConta />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Consumo" element={<Consumo />} />

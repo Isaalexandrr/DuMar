@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./Cadastro.module.css";
-import ondaalga from "../imagens/onda-alga-1.png";
-import ondaestrela from "../imagens/onda-estrela-3.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -124,7 +121,9 @@ function CadastroVendedor() {
 
             <div className="text-start mt-4">
               <label className="fw-bold ms-2" htmlFor="nomeFisico">
-                {tipoUsuario === "fisico" ? "Nome Completo:" : "Nome da Empresa:"}
+                {tipoUsuario === "fisico"
+                  ? "Nome Completo:"
+                  : "Nome da Empresa:"}
               </label>
               <input
                 type="text"
@@ -256,7 +255,7 @@ function CadastroVendedor() {
               />
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">
-            <Link className="text-decoration-none" to='/TipoConta'>
+              <Link className="text-decoration-none" to="/TipoConta">
                 <button className="form-control rounded-pill bg-Secondary  mt-2">
                   Cancelar
                 </button>

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import './BotaoAdicionar.css'; 
-import styled from '@emotion/styled';
+import React, { useState } from "react";
+import "./BotaoAdicionar.css";
+import styled from "@emotion/styled";
 
-
-const BotaoAdicionar = ( ) => {
+const BotaoAdicionar = () => {
   const [quantidadeItens, setQuantidadeItens] = useState(1);
 
   const handleAdicionarItem = () => {
@@ -20,7 +19,7 @@ const BotaoAdicionar = ( ) => {
     <div className="botao-adicionar-remover-container">
       <div className="grid-caixa">
         <div className="grid-item">
-          <button className="botao-remover"  onClick={handleRemoverItem}>
+          <button className="botao-remover" onClick={handleRemoverItem}>
             -
           </button>
           <span className="quantidade-itens">{quantidadeItens}</span>
@@ -30,10 +29,7 @@ const BotaoAdicionar = ( ) => {
         </div>
       </div>
     </div>
-
-
   );
 };
 
 export default BotaoAdicionar;
-
