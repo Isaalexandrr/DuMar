@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 import styles from "./Publicar.module.css";
 
@@ -13,7 +14,7 @@ function Publicar() {
         <div className="col-3 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block align-self-end m-0 p-0">
           <img src={ondaalga} className={styles["ondaalga"]} />
         </div>
-        <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center mt-5"> 
+        <div className="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center mt-5">
           <h1 id={styles["tittle"]} className="fs-3 fw-bold">
             DADOS DO PRODUTO
           </h1>
@@ -31,16 +32,13 @@ function Publicar() {
             </div>
             <div className="text-start mt-4 w-50">
               <label className="fw-bold ms-2" htmlFor="tipoProduto">
-                Tipo do produto
+                Categoria
               </label>
-              <select
-                className="form-select rounded-pill w-50"
-                id="tipoProduto"
-              >
+              <select className="form-select rounded-pill w-50" id="Categoria">
                 <option selected>Selecione...</option>
-                <option value="tipo1">Tipo 1</option>
-                <option value="tipo2">Tipo 2</option>
-                <option value="tipo3">Tipo 3</option>
+                <option value="tipo1">Peixe</option>
+                <option value="tipo2">Crustáceo</option>
+                <option value="tipo3">Molusco</option>
               </select>
             </div>
             <div className="text-start w-75 mt-4 d-flex">
@@ -98,13 +96,21 @@ function Publicar() {
                 id="foto"
               />
             </div>
-            <div className="w-50 mx-auto mt-4 mb-4">
+            <div className="mx-auto w-50 mt-5">
               <input
-                id={styles["button-submit"]}
-                className="form-control rounded-pill fw-bold"
                 type="submit"
+                className="form-control rounded-pill fw-bold"
+                id={styles["Entrar"]}
                 value="Publicar"
               />
+              <Link className={styles["link"]} to="/">
+                <button
+                  className="form-control rounded-pill bg-transparent  mt-2"
+                  id={styles["voltar"]}
+                >
+                  Voltar
+                </button>
+              </Link>
             </div>
           </form>
         </div>

@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
 import styles from "./produtos.module.css";
+
 import ondacoral from "../imagens/onda-coral.png";
 import ondaestrela from "../imagens/onda-estrela-3.png";
 import { IoStar, IoStarOutline } from "react-icons/io5";
@@ -70,9 +71,7 @@ function Products() {
                   </div>
 
                   <div className={styles["comprar-nov"]}>
-                   
-                      <button type="submit">Comprar novamente</button>
-                    
+                    <button type="submit">Comprar novamente</button>
                   </div>
                 </div>
               </div>

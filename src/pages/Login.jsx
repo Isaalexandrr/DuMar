@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./login.module.css";
-import ondaestrela3 from "../imagens/onda-estrela-3.png";
-import ondacoral from "../imagens/onda-coral.png";
 import { Link, Route } from "react-router-dom";
 import { Button } from "bootstrap";
 
-function Login() {
+import ondaestrela3 from "../imagens/onda-estrela-3.png";
+import ondacoral from "../imagens/onda-coral.png";
 
+function Login() {
   function signUser(evt) {
-    if(email==='testeuser@teste.com' && senha==='teste123'){
-      alert("logado com sucesso!")
-    } else{
-      alert("email ou senha incorretos!")
+    if (email === "testeuser@teste.com" && senha === "teste123") {
+      alert("logado com sucesso!");
+    } else {
+      alert("email ou senha incorretos!");
     }
   }
 
-  const [email, setEmail] = useState()
-  const [senha, setSenha] = useState()
+  const [email, setEmail] = useState();
+  const [senha, setSenha] = useState();
 
   return (
     <div className="Container-fluid">
@@ -47,18 +47,19 @@ function Login() {
                 onChange={(evt) => setSenha(evt.target.value)}
               />
               <label class="mt-3" htmlFor="senha">
-               <Link to="/EsqueceuSenha" className={styles["link"]}> 
-               Esqueceu a senha?
-               </Link>
-                
+                <Link to="/EsqueceuSenha" className={styles["link"]}>
+                  Esqueceu a senha?
+                </Link>
               </label>
             </div>
             <div className="mx-auto w-50 mt-5">
               <button
                 className="form-control rounded-pill fw-bold"
                 id={styles["Entrar"]}
-                onClick={()=>signUser()}
-              >Entrar</button>
+                onClick={() => signUser()}
+              >
+                Entrar
+              </button>
               <label className="mt-2">Ainda não tem uma conta?</label>
               <Link className={styles["link"]} to="/TipoConta">
                 <button

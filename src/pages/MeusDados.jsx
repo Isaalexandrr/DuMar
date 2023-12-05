@@ -1,6 +1,8 @@
 import REACT from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import styles from "./MeusDados.module.css";
+
 import TubarãoChorão from "../imagens/TubarãoChorão.svg";
 
 function MeusDados() {

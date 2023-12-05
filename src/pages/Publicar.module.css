@@ -1,8 +1,17 @@
 #tittle {
   color: #a8f2fe;
 }
-#button-submit {
+#Entrar {
   background-color: #a8f2fe;
+}
+#voltar {
+  color: #a8f2fe;
+  border: 3px solid #a8f2fe;
+  text-decoration: none;
+  margin-bottom: 10%;
+}
+.link {
+  color: #a8f2fe;
 }
 .ondaalga {
   height: 300px;
