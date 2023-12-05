@@ -7,58 +7,73 @@
   justify-content: center;
   align-items: center;
   
+  
 }
+
 
 
 .container-consumo {
   display: flex;
   text-align: center;
   
+  
 }
+
 
 .consumo-c{
   font-size: 20px;
   
 }
 
+.caixa-sobre{
+  background-color: #dddddd85; 
+  border-radius: 15px; 
+  padding: 20px;
+  height: 350px;
+  margin-top: 30px;
+  
+}
+
+
 
 
 .texto-sobre {
-  text-align: center;
   height: 50px;
   width: 70px;
   padding-top: 20px;
   font-weight: bold;
-  font-size: 18px;
   color: black;
   font-size: 20px;
-  font-size: 20px;
+  margin-left: 130px;
+  margin-bottom: 10px;
+
+  
 }
 
 .img-inter {
-  padding-top: 30px;
+  padding-top: 10px;
+  margin-left: 130px;
+  padding-top: 10px;
+  margin-left: 130px;
 }
 
-.poluicao {
-  margin-top: 30px;
-}
+
+
 
 .poluicao-texto {
   font-size: 18px;
-  margin-top: 170px;
-  margin-right:300px;
   color: white;
+  text-align: center;
 
 }
 
 .pesca-texto {
   font-size: 18px;
-  margin-top: 80px; 
-  
 }
 
 .texto-especie {
   font-size: 20px;
+  
   
 }
 
@@ -84,6 +99,7 @@ body {
 }
 
 
+
 .img-peixes {
   width: 1040px;
   height: 600px;
@@ -98,11 +114,13 @@ body {
 }
 
 
+
 .poluicao {
   font-size: 20px;
   margin-top: 70px;
   margin-left: 10px;
 }
+
 
 .lixo-texto{
   font-size: 18px;
@@ -123,12 +141,14 @@ body {
 }
 
 .jogandolixo-texto{
+
   font-size: 18px;
   margin-top: -400px;
   margin-left: -200px;
 }
 
 .limpandolixo-texto{
+
   font-size: 18px;
   margin-top: -160px;
   margin-left: -300px;
@@ -138,7 +158,6 @@ body {
   width: 1040px;
   margin-left: -710px;
   margin-top: 80px;
- 
   
   
 }
@@ -162,13 +181,9 @@ body {
 
 .pesca-textodois {
   font-size: 18px;
-  margin-top: 170px;
-  margin-left:-110px;
+  margin-top: 120px;
+  margin-left:90px;
   color: white;
-  
 
-  
 
 }
-
-

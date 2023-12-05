@@ -104,7 +104,7 @@ function Logado() {
               </div>
             </DropdownItem>
 
-            <DropdownItem to="#/action-3">
+            <DropdownItem href="/Publicar">
               <div className={styles["add-produto"]}>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" 
               height="16" 

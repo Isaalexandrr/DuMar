@@ -16,10 +16,7 @@ function NavbarCustomizado() {
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>
-      <nav
-        className="navbar navbar-light bg-light"
-        id={styles["navLogo"]}
-      >
+      <nav className="navbar navbar-light bg-light" id={styles["navLogo"]}>
         <a className="navbar-brand" href="#">
           <div className="logos grid text-center mx-4">
             <Link to="/">
@@ -37,7 +34,7 @@ function NavbarCustomizado() {
       </nav>
 
       <nav className={styles["menu"]}>
-        <Menu />
+        <Menu handleCategorySelect={handleCategorySelect} />
       </nav>
     </div>
   );

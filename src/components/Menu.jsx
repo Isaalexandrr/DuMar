@@ -18,37 +18,37 @@ function Menu({ handleCategorySelect }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Adicione a lógica de pesquisa aqui se necessário
+
     console.log("Pesquisar por:", searchTerm);
   };
 
   return (
     <div className={styles["menu1"]}>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg">
         <Container fluid>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-5 my-lg-0"
-              style={{ maxHeight: "100px" }}
+              style={{ maxHeight: "100px gap-3" }}
               navbarScroll
             >
               <NavDropdown title="Categoria" id="navbarScrollingDropdown">
-                <NavDropdown.Item onClick={() => handleCategorySelect("Todos")}>
+                <NavDropdown.Item onClick={() => handleCategorySelect("")}>
                   Todos
                 </NavDropdown.Item>
                 <NavDropdown.Item onClick={() => handleCategorySelect("Peixe")}>
                   Peixe
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                  onClick={() => handleCategorySelect("Crustáceo")}
+                  onClick={() => handleCategorySelect("Crustáceos")}
                 >
                   Crustáceo
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                  onClick={() => handleCategorySelect("Molusco")}
+                  onClick={() => handleCategorySelect("Moluscos")}
                 >
-                  Molusco
+                  Moluscos
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/consumo">Consumo Consciente</Nav.Link>

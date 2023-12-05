@@ -50,7 +50,7 @@ export default function CarroselProduto() {
                 />
                 <div className={styles["texto"]}>
                   <h3>{product.name}</h3>
-                  <h4>R${product.price}</h4>
+                  <h4>R${product.price.toFixed(2)}</h4>
                 </div>
                 <div className={styles["estrela"]}>
                   <IoStar />
@@ -59,7 +59,7 @@ export default function CarroselProduto() {
                   <IoStar />
                   <IoStar />
                 </div>
-                <AdicionarCarrinho/>
+                <AdicionarCarrinho />
                 <div id={styles["detalhe"]} class="p-0 m-0">
                   <ul>
                     <li>

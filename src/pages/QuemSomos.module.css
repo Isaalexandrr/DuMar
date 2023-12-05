@@ -1,56 +1,69 @@
 .container {
-    background-color: white;
-    border-radius: 20px;
-    margin: 50px 20px ;
-    padding: 80px 100px;
-    text-align: justify;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  padding: 0%;
+  text-align: justify;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.h2{
-    color:#538aad ;
-    font-size: 20px;
-    font-weight: bold;
+.h2 {
+  color: #538aad;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 50px 0 0 50px;
 }
-.p{
-    color: black;
-    font-size: 18px;
-    padding: 0px 80px 0px 16px ;
-
+.p {
+  color: black;
+  font-size: 18px;
+  padding: 0px 80px 0px 16px;
+  margin-left: 30px;
 }
-.primeiraparte{
-    display: flex;
-    flex-direction: row;
-}
-
-.equipe{
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-}
-.equipe h2{
-    padding-bottom: 30px;
+.primeiraparte {
+  display: flex;
+  flex-direction: row;
 }
 
-.equipe img{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-
-}
-.eqp p{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 900px;
+.equipe h2 {
+  padding-bottom: 30px;
 }
 
-.equipe a{
+.equipe img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.eqp p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 1000px;
+}
+
+.equipe a {
+  text-decoration: none;
+  color: #538aad;
+  gap: 10px;
+}
+.equipe .eqp {
+  display: flex;
+  flex-direction: row;
+}
+.eqp div {
+  text-align: center;
+}
+#imgs {
+  width: 20%;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  #imgs {
+    width: 50%;
+    justify-content: center;
+  }
+  .equipe a {
     text-decoration: none;
-    color:#538aad;
-}
-.equipe .eqp{
-    display: flex;
-    flex-direction: row;
-}
-.eqp div{
-    text-align: center;
+    color: #538aad;
+    font-size: 12px;
+  }
 }

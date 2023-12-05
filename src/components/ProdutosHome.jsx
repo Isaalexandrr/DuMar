@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { ProductService } from "./service/ProdutoHome";
 import Dropdown from "react-bootstrap/Dropdown";
+import Menu from "./Menu";
 import { IoStar } from "react-icons/io5";
 
 import styles from "./ProdutosHome.module.css";
-import AdicionarCarrinho  from "./Botao/AdicionarCarrinho";
-export default function ProdutoHome() {
+import AdicionarCarrinho from "./Botao/AdicionarCarrinho";
+export default function ProdutoHome({ filter }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -29,7 +30,7 @@ export default function ProdutoHome() {
           <IoStar />
           <IoStar />
         </div>
-        <AdicionarCarrinho/>
+        <AdicionarCarrinho />
         <div id={styles["detalhe"]} className="p-0 m-0">
           <ul>
             <li>
@@ -62,11 +63,19 @@ export default function ProdutoHome() {
 
   return (
     <div className={styles["grid-container"]}>
-      {products.map((product) => (
-        <div key={product.id} className={styles["grid-item"]}>
-          {renderProduct(product)}
-        </div>
-      ))}
+      {filter !== ""
+        ? products
+            .filter((productsf) => productsf.category === filter)
+            .map((product) => (
+              <div key={product.id} className={styles["grid-item"]}>
+                {renderProduct(product)}
+              </div>
+            ))
+        : products.map((product) => (
+            <div key={product.id} className={styles["grid-item"]}>
+              {renderProduct(product)}
+            </div>
+          ))}
     </div>
   );
 }
