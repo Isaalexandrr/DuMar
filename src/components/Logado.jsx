@@ -6,7 +6,7 @@ import { DropdownItem } from "react-bootstrap";
 import styles from "./Logado.module.css";
 import Cart from "./Cart";
 
-import { IoPersonSharp, IoCartSharp } from "react-icons/io5";
+import { IoPersonSharp } from "react-icons/io5";
 
 function Logado() {
   return (

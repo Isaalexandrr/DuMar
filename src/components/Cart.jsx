@@ -1,8 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
+import BotaoAdicionar from "../components/Botao/BotaoAdicionar";
+import BotaoApagarItem from "../components/Botao/BotaoApagarItem";
 
 import styles from "./Cart.module.css";
+
 import BotaoAdicionar from "../components/Botao/BotaoAdicionar";
 import BotaoApagarItem from "../components/Botao/BotaoApagarItem";
 
