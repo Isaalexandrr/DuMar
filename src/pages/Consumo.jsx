@@ -109,10 +109,11 @@ const Consumo = () => {
         src={tartaruga}
         alt=""
         style={{
-          width: "93%",
+          width: "92%",
           height: "auto",
           borderRadius: "15px",
-          right:100,
+          marginLeft: 130
+         
         }}
       />
       </div>
@@ -122,9 +123,10 @@ const Consumo = () => {
         src={foca}
         alt=""
         style={{
-          width: "90%",
+          width: "89%",
           height: "auto",
           borderRadius: "15px",
+          marginLeft: 150
           
           
         }}
@@ -134,20 +136,16 @@ const Consumo = () => {
   
   </section>
   
-</section>
+</section>  
 
 
-            <section>
+          
               
-              <div
-                className="container-pesca mt-5"
-                style={{ display: "flex", alignItems: "flex-start" }}
-              > 
-                <h1
-                  className={styles["pesca-texto"]}
-                  style={{ whiteSpace: "nowrap" , textAlign: "right", marginRight: "200px",}}
-                  
-                >
+            <section class="container-pesca mt-5">
+                 <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+                <h1 className={styles["pesca-texto"]}>
                   PESCA PROIBIDA!
                 </h1>
 
@@ -167,10 +165,10 @@ const Consumo = () => {
                           display: "flex",
                           flexDirection: "column",
                           alignItems: "center",
-                          top: "30%",
+                          bottom: "90%",
                           width: 370,
                           height: 400,
-                          left:100
+                          left:700,
                         }}
                       >
                         <div className="card-body d-flex flex-column align-items-start">
@@ -181,6 +179,8 @@ const Consumo = () => {
                               margin: "0 auto",
                             }}
                           >
+
+                            
                             <div className={styles["texto-especie"]}>
                               ESPÉCIES SERIAMENTES AMEAÇADAS DE EXTINÇÃO{" "}
                             </div>
@@ -204,7 +204,12 @@ const Consumo = () => {
                   </div>
                 </div>
               </div>
+              </div>
+              </div>
+              </section>
+              <section>
             </section>
+           
 
             <section>
               <div>
