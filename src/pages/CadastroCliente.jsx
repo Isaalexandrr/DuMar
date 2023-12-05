@@ -4,74 +4,73 @@ import styles from "./Cadastro.module.css";
 import ondaalga from "../imagens/onda-alga-1.png";
 import ondaestrela from "../imagens/onda-estrela-3.png";
 import { Link, useNavigate } from "react-router-dom";
-import axios from 'axios'
+import axios from "axios";
 
 function CadastroCliente() {
-
-  const navigate = useNavigate()
- 
   const [tipoUsuario, setTipoUsuario] = useState("fisico");
+  const navigate = useNavigate()
 
   const handleChangeTipoUsario = (event) => {
     setTipoUsuario(event.target.value);
   };
 
-  const [dados, setDados] = useState([])
-  const [CLI_NOME, setCLI_NOME] = useState('')
-  const [CLI_EMAIL, setCLI_EMAIL] = useState('')
-  const [CLI_TELEFONE, setCLI_TELEFONE] = useState('')
-  const [CLI_ENDERECO, setCLI_ENDERECO] = useState('')
-  const [CLI_SENHA, setCLI_SENHA] = useState('')
-  const [CLI_DATA, setCLI_DATA] = useState('')
-  const [CLI_DOCUMENTO, setCLI_DOCUMENTO] = useState('')
-  const [CLI_SEXO, setCLI_SEXO] = useState('')
-  const [CLI_WHATSAPP, setCLI_WHATSAPP] = useState('')
+  const [dados, setDados] = useState([]);
+  const [CLI_NOME, setCLI_NOME] = useState("");
+  const [CLI_EMAIL, setCLI_EMAIL] = useState("");
+  const [CLI_TELEFONE, setCLI_TELEFONE] = useState("");
+  const [CLI_ENDERECO, setCLI_ENDERECO] = useState("");
+  const [CLI_SENHA, setCLI_SENHA] = useState("");
+  const [CLI_DATA, setCLI_DATA] = useState("");
+  const [CLI_DOCUMENTO, setCLI_DOCUMENTO] = useState("");
+  const [CLI_SEXO, setCLI_SEXO] = useState("");
+  const [CLI_WHATSAPP, setCLI_WHATSAPP] = useState("");
 
-  useEffect(()=>{
-    axios.get('http://localhost:3003/Cliente').then((response)=>{
-      setDados(response.data)
-    })
-    .catch((error)=>{
-      console.error('Erro ao buscar os dados', error)
-    })
-  }, [])
+  useEffect(() => {
+    axios
+      .get("http://localhost:3003/Cliente")
+      .then((response) => {
+        setDados(response.data);
+      })
+      .catch((error) => {
+        console.error("Erro ao buscar os dados", error);
+      });
+  }, []);
 
-  const handleSubmit = async(e)=>{
-    e.preventDefault()
-    try{
-      await axios.post('http://localhost:3003/inserirCliente', {
-        CLI_NOME,
-        CLI_EMAIL,
-        CLI_DATA,
-        CLI_SEXO,
-        CLI_DOCUMENTO,
-        CLI_ENDERECO,
-        CLI_TELEFONE,
-        CLI_WHATSAPP,
-        CLI_SENHA,
-      })
-      
-      .then(async()=>{
-        const response = await axios.get('http://localhost:3003/Cliente');
-      setDados(response.data);
-      setCLI_NOME('');
-      setCLI_EMAIL('');
-      setCLI_DATA('');
-      setCLI_SEXO('');
-      setCLI_DOCUMENTO('');
-      setCLI_ENDERECO('');
-      setCLI_TELEFONE('');
-      setCLI_WHATSAPP('');
-      setCLI_SENHA('');
-     
-      })
-      
+  const handleSubmit = (e) => {
+    // e.preventDefault();
+    try {
+        axios
+        .post("http://localhost:3003/inserirCliente", {
+          CLI_NOME,
+          CLI_EMAIL,
+          CLI_DATA,
+          CLI_SEXO,
+          CLI_DOCUMENTO,
+          CLI_ENDERECO,
+          CLI_TELEFONE,
+          CLI_WHATSAPP,
+          CLI_SENHA,
+        }, {
+          headers: {
+            'Content-Type': 'application/json',
+            // Outros headers, se necessário...
+          }
+        })
+        .then(function (response) {
+          alert('alerta')
+        })
+        .catch(function (error) {
+          console.log(error);
+        })
+        .finally(function () {
+          // always executed
+        });
+    } catch (error) {
+      console.log("error");
     }
-    catch(error){
-      console.log('error')
-    }
-    finally{alert('recarregue')}
-  }
+    alert('cadastrado com sucesso!')
+    navigate('/Login')
+  };
 
   return (
     <div className="Container-fluid">
@@ -83,7 +82,7 @@ function CadastroCliente() {
           <h1 id={styles["tittle"]} className="fs-3 fw-bold mt-5">
             DADOS CADASTRAIS
           </h1>
-          <form className="text-start mt-4">
+          <form className="text-start mt-4" onSubmit={(e) => handleSubmit(e)}>
             <div class="form-check form-check-inline text-start ms-2">
               <input
                 class="form-check-input"
@@ -129,7 +128,9 @@ function CadastroCliente() {
 
             <div className="text-start mt-4">
               <label className="fw-bold ms-2" htmlFor="nomeFisico">
-                {tipoUsuario === "fisico" ? "Nome Completo:" : "Nome da Empresa:"}
+                {tipoUsuario === "fisico"
+                  ? "Nome Completo:"
+                  : "Nome da Empresa:"}
               </label>
               <input
                 type="text"
@@ -163,7 +164,12 @@ function CadastroCliente() {
                   <label className="fw-bold ms-2" htmlFor="sexo">
                     Sexo:
                   </label>
-                  <select className="form-select rounded-pill" id="sexo" value={CLI_SEXO} onChange={(e) => setCLI_SEXO(e.target.value)}>
+                  <select
+                    className="form-select rounded-pill"
+                    id="sexo"
+                    value={CLI_SEXO}
+                    onChange={(e) => setCLI_SEXO(e.target.value)}
+                  >
                     <option selected>Selecione...</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
@@ -254,15 +260,14 @@ function CadastroCliente() {
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">
               <input
-                type="button"
+                type="submit"
                 id={styles["button-submit"]}
                 className="form-control rounded-pill fw-bold"
                 value="Cadastrar"
-                onClick={(e)=>handleSubmit(e)}
               />
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">
-            <Link className="text-decoration-none" to='/TipoConta'>
+              <Link className="text-decoration-none" to="/TipoConta">
                 <button className="form-control rounded-pill bg-Secondary  mt-2">
                   Cancelar
                 </button>

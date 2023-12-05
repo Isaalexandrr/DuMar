@@ -13,7 +13,8 @@ import { DropdownItem } from "react-bootstrap";
 function Logado() {
 
   function handleDelete() {
-    localStorage.removeItem('Token');
+    localStorage.removeItem('token');
+    document.location.href = '/'
   } 
 
   return (

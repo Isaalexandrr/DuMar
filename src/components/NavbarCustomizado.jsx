@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
-import React, { useState } from "react";
+import React, { useState, useEffect, useReducer } from "react";
 
 import styles from "./Navbar.module.css";
 import Entrar from "./Entrar";
@@ -11,8 +11,21 @@ import Menu from "./Menu";
 import logo1 from "../imagens/logo1.png";
 import logo2 from "../imagens/logo2.png";
 
-function NavbarCustomizado() {
-  const logado = false;
+function NavbarCustomizado({handleCategorySelect}) {
+
+  const [logado, setLogado] = useState(false);
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+
+  useEffect(() => {
+    if (localStorage.getItem('token')) {
+      setLogado(true);
+    }
+
+    console.log(logado)
+  }, [forceUpdate]);
+
+  console.log('qualquer coisa')
+
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>

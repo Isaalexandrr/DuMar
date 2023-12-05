@@ -21,6 +21,7 @@ function Login() {
         localStorage.setItem("token", token);
         alert("Logado com sucesso!");
         setLoggedIn(true);
+        document.location.href = '/'
       })
       .catch((error) => {
         console.error(error);
