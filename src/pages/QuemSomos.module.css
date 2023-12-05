@@ -12,12 +12,13 @@
   color: #538aad;
   font-size: 20px;
   font-weight: bold;
-  margin: 50px 0 0 20px;
+  margin: 50px 0 0 50px;
 }
 .p {
   color: black;
   font-size: 18px;
   padding: 0px 80px 0px 16px;
+  margin-left: 30px;
 }
 .primeiraparte {
   display: flex;
@@ -36,7 +37,7 @@
 .eqp p {
   font-size: 20px;
   text-align: center;
-  font-weight: 900px;
+  font-weight: 1000px;
 }
 
 .equipe a {
