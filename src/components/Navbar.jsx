@@ -12,7 +12,7 @@ import logo1 from "../imagens/logo1.png";
 import logo2 from "../imagens/logo2.png";
 
 function NavbarCustomizado() {
-  const logado = true;
+  const logado = false;
 
   return (
     <div className={styles["nav-bar grid-caixa"]}>
@@ -32,7 +32,7 @@ function NavbarCustomizado() {
         </a>
 
         <div className={styles["pessoa-carro"]}>
-          {logado ? <Entrar /> : <Logado />}
+          {logado ? <Logado /> : <Entrar />}
         </div>
       </nav>
 

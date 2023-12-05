@@ -144,7 +144,7 @@ function CadastroVendedor() {
                 Senha:
               </label>
               <input
-                type="passoword"
+                type="password"
                 className="form-control rounded-pill"
                 id="senhaFisico"
                 value={VEN_SENHA}

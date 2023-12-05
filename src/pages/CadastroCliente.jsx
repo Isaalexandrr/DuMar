@@ -51,9 +51,8 @@ function CadastroCliente() {
         CLI_SENHA,
       })
       
-      navigate('/Login');
-      
-      const response = await axios.get('http://localhost:3003/Cliente');
+      .then(async()=>{
+        const response = await axios.get('http://localhost:3003/Cliente');
       setDados(response.data);
       setCLI_NOME('');
       setCLI_EMAIL('');
@@ -64,14 +63,15 @@ function CadastroCliente() {
       setCLI_TELEFONE('');
       setCLI_WHATSAPP('');
       setCLI_SENHA('');
-
+     
+      })
+      
     }
     catch(error){
       console.log('error')
     }
+    finally{alert('recarregue')}
   }
-
-
 
   return (
     <div className="Container-fluid">
@@ -83,7 +83,7 @@ function CadastroCliente() {
           <h1 id={styles["tittle"]} className="fs-3 fw-bold mt-5">
             DADOS CADASTRAIS
           </h1>
-          <form className="text-start mt-4" onSubmit={handleSubmit}>
+          <form className="text-start mt-4">
             <div class="form-check form-check-inline text-start ms-2">
               <input
                 class="form-check-input"
@@ -149,7 +149,7 @@ function CadastroCliente() {
                 Senha:
               </label>
               <input
-                type="passoword"
+                type="password"
                 className="form-control rounded-pill"
                 id="senhaFisico"
                 value={CLI_SENHA}
@@ -254,10 +254,11 @@ function CadastroCliente() {
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">
               <input
-                type="submit"
+                type="button"
                 id={styles["button-submit"]}
                 className="form-control rounded-pill fw-bold"
                 value="Cadastrar"
+                onClick={(e)=>handleSubmit(e)}
               />
             </div>
             <div className="w-50 mx-auto mt-4 mb-4">

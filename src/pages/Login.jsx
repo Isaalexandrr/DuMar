@@ -3,21 +3,34 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./login.module.css";
 import ondaestrela3 from "../imagens/onda-estrela-3.png";
 import ondacoral from "../imagens/onda-coral.png";
-import { Link, Route } from "react-router-dom";
-import { Button } from "bootstrap";
+import { Link, Navigate } from "react-router-dom";
+import instance from "../components/TokenConfig";
 
 function Login() {
+  const [CLI_EMAIL, setCLI_EMAIL] = useState("");
+  const [CLI_SENHA, setCLI_SENHA] = useState("");
+  const [isLoggedIn, setLoggedIn] = useState(false);
 
-  function signUser(evt) {
-    if(email==='testeuser@teste.com' && senha==='teste123'){
-      alert("logado com sucesso!")
-    } else{
-      alert("email ou senha incorretos!")
-    }
+  function handleLogin(e) {
+    e.preventDefault();
+
+    instance
+      .post("http://localhost:3003/Login", { CLI_EMAIL, CLI_SENHA })
+      .then((response) => {
+        const token = response.data.token;
+        localStorage.setItem("token", token);
+        alert("Logado com sucesso!");
+        setLoggedIn(true);
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Email ou senha incorretos!");
+      });
   }
 
-  const [email, setEmail] = useState()
-  const [senha, setSenha] = useState()
+  if (isLoggedIn) {
+    return <Navigate to="/" />; // Alteração aqui para Redirect
+  }
 
   return (
     <div className="Container-fluid">
@@ -29,39 +42,42 @@ function Login() {
           <h1 id={styles["tittle"]} className="fs-2 fw-bold mx-auto mt-5">
             Bem-vindo(a). <br /> Acesse sua conta!
           </h1>
-          <form className="text-center mt-4" action="">
+          <form className="text-center mt-4" onSubmit={handleLogin}>
             <div className=" mx-auto w-50 mt-5">
               <input
                 type="text"
+                value={CLI_EMAIL}
                 className="form-control rounded-pill"
                 placeholder="E-mail"
-                onChange={(evt) => setEmail(evt.target.value)}
+                onChange={(e) => setCLI_EMAIL(e.target.value)}
               />
             </div>
             <div className="mx-auto text-end w-50 mt-4">
               <input
-                type="passowrd"
+                type="password"
                 id="senha"
+                value={CLI_SENHA}
                 className="form-control rounded-pill"
                 placeholder="Senha"
-                onChange={(evt) => setSenha(evt.target.value)}
+                onChange={(e) => setCLI_SENHA(e.target.value)}
               />
               <label class="mt-3" htmlFor="senha">
-               <Link to="/EsqueceuSenha" className={styles["link"]}> 
-               Esqueceu a senha?
-               </Link>
-                
+                <Link to="/EsqueceuSenha" className={styles["link"]}>
+                  Esqueceu a senha?
+                </Link>
               </label>
             </div>
             <div className="mx-auto w-50 mt-5">
               <button
                 className="form-control rounded-pill fw-bold"
                 id={styles["Entrar"]}
-                onClick={()=>signUser()}
-              >Entrar</button>
+              >
+                Entrar
+              </button>
               <label className="mt-2">Ainda não tem uma conta?</label>
               <Link className={styles["link"]} to="/TipoConta">
                 <button
+                  type="submit"
                   className="form-control rounded-pill bg-transparent  mt-2"
                   id={styles["cadastro"]}
                 >
