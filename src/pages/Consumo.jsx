@@ -14,6 +14,7 @@ import limpandolixo from "../imagens/limpandolixo.png";
 import reciclavel from "../imagens/reciclavel.png";
 import proibidonadar from "../imagens/proibidonadar.png";
 
+
 const Consumo = () => {
   useEffect(() => {
     document.body.classList.add(styles.consumoBody);
