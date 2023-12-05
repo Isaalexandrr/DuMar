@@ -7,17 +7,34 @@
   justify-content: center;
   align-items: center;
   
+  
 }
+
 
 
 .container-consumo {
   display: flex;
   text-align: center;
   
+  
 }
 
 .consumo-c{
+.consumo-c{
   font-size: 20px;
+  
+}
+
+.caixa-sobre{
+  background-color: #dddddd85; 
+  border-radius: 15px; 
+  padding: 20px;
+  height: 350px;
+  margin-top: 30px;
+  
+}
+
+
   
 }
 
@@ -42,18 +59,26 @@
   margin-left: 130px;
   margin-bottom: 10px;
   
+  margin-left: 130px;
+  margin-bottom: 10px;
+  
 }
 
 .img-inter {
+  padding-top: 10px;
+  margin-left: 130px;
   padding-top: 10px;
   margin-left: 130px;
 }
 
 
 
+
 .poluicao-texto {
   font-size: 18px;
   color: white;
+  text-align: center;
+
   text-align: center;
 
 }
@@ -64,6 +89,7 @@
 
 .texto-especie {
   font-size: 20px;
+  
   
 }
 
@@ -89,6 +115,7 @@ body {
 }
 
 
+
 .img-peixes {
   width: 1040px;
   height: 600px;
@@ -103,12 +130,14 @@ body {
 }
 
 
+
 .poluicao {
   font-size: 20px;
   margin-top: 70px;
   margin-left: 10px;
 }
 
+.lixo-texto{
 .lixo-texto{
   font-size: 18px;
   margin-left: -180px;
@@ -128,11 +157,13 @@ body {
 }
 
 .jogandolixo-texto{
+.jogandolixo-texto{
   font-size: 18px;
   margin-top: -400px;
   margin-left: -200px;
 }
 
+.limpandolixo-texto{
 .limpandolixo-texto{
   font-size: 18px;
   margin-top: -160px;
@@ -146,8 +177,12 @@ body {
  
   
   
+ 
+  
+  
 }
 
+.reciclavel-texto{
 .reciclavel-texto{
   font-size: 18px;
   margin-top: -470px;
@@ -160,6 +195,7 @@ body {
 }
 
 .proibidonadar-texto{
+.proibidonadar-texto{
   font-size: 18px;
   margin-top: -190px;
   margin-left: -390px;
@@ -170,6 +206,8 @@ body {
   margin-top: 120px;
   margin-right:70px;
   color: white;
+  
+
   
 
 }
