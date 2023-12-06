@@ -63,7 +63,7 @@
 }
 
 .grid-item {
-  flex: 0 0 calc(15% - 0px);
+  flex: 0 0 calc(20% - 0px);
   margin: 10px;
   box-sizing: border-box;
 }

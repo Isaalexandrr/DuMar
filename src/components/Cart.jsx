@@ -6,9 +6,6 @@ import BotaoApagarItem from "../components/Botao/BotaoApagarItem";
 
 import styles from "./Cart.module.css";
 
-import BotaoAdicionar from "../components/Botao/BotaoAdicionar";
-import BotaoApagarItem from "../components/Botao/BotaoApagarItem";
-
 import salmao from "../imagens/salmao.jpg";
 
 import { IoCartSharp } from "react-icons/io5";

@@ -409,3 +409,7 @@
 .continuar {
   margin-top: 10px;
 }
+.sair{
+  border: none;
+  background: transparent;
+}

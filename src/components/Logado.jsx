@@ -24,7 +24,7 @@ function Logado() {
             id="dropdown-basic"
             className={styles["seu-nome"]}
           >
-            Seu nome
+            Gerson
           </Dropdown.Toggle>
 
           <Dropdown.Menu className={styles["edit"]}>
@@ -45,9 +45,9 @@ function Logado() {
                 />
               </svg>
               <div className={styles["usuario-nome"]}>
-                <a href="#">Seu nome</a>
+                <a href="#">Gerson Barbosa</a>
                 <p className={styles["usuario-email"]}>
-                  emailusuário@gmail.com
+                  gersononline42@gmail.com
                 </p>
               </div>
             </div>
@@ -103,7 +103,7 @@ function Logado() {
               </div>
             </DropdownItem>
 
-            <DropdownItem href="/Publicar">
+            {/* <DropdownItem href="/Publicar">
               <div className={styles["add-produto"]}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ function Logado() {
                 </svg>
                 <p>Adicionar produto</p>
               </div>
-            </DropdownItem>
+            </DropdownItem> */}
 
             <DropdownItem to="#/action-3">
               <div className={styles["sair"]}>
@@ -141,7 +141,7 @@ function Logado() {
                     d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
                   />
                 </svg>
-                <button className="" onClick={handleDelete}>Sair</button>
+                <button className={styles['sair']} onClick={handleDelete}>Sair</button>
               </div>
             </DropdownItem>
           </Dropdown.Menu>

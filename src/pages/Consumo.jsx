@@ -135,8 +135,8 @@ const Consumo = () => {
       <section class="container-pesca mt-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <h1 className={styles["pesca-texto"]}>PESCA PROIBIDA!</h1>
+          <h1 className='fs-5'>PESCA PROIBIDA!</h1>
+            <div class="col-6">
 
               <p className={styles["pesca-textodois"]}>
                 Nos oceanos globais, várias espécies de peixes enfrentam <br />
@@ -148,149 +148,109 @@ const Consumo = () => {
                 excessivo ameaça não apenas essas espécies, mas também a
                 biodiversidade, <br /> desequilibrando ecossistemas marinhos.
               </p>
-
-              <div className="container mt-4 ">
-                <div className="row">
-                  <div className="col-sm-12 col-md-4 mb-4">
-                    <div
-                      className="card"
-                      style={{
-                        backgroundColor: "rgba(255, 255, 255, 0.363)",
-                        borderRadius: "15px",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        right: -700,
-                        top: "-100%",
-                        width: 370,
-                        height: 400,
-                      }}
-                    >
-                      <div className="card-body d-flex flex-column align-items-start">
-                        <h1
-                          className="card-title font-weight-bold text-dark custom-text-size text-center "
-                          style={{
-                            textAlign: "center",
-                            margin: "0 auto",
-                          }}
-                        >
-                          <div className={styles["texto-especie"]}>
-                            ESPÉCIES SERIAMENTES AMEAÇADAS DE EXTINÇÃO{" "}
-                          </div>
-                          <strong>
-                            <span
-                              className="text-danger"
-                              style={{ fontSize: "18px" }}
-                            >
-                              !!PESCA PROIBIDA!!
-                            </span>
-                          </strong>
-                        </h1>
-                      </div>
-                      <img
-                        className={styles["img-peixes"]}
-                        src={peixes}
-                        alt=""
-                      ></img>
+            </div>
+            <div className="col-6">
+              <div
+                className="card"
+                style={{
+                  backgroundColor: "rgba(255, 255, 255, 0.363)",
+                  borderRadius: "15px",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  width: 370,
+                  height: 400,
+                }}
+              >
+                <div className="card-body d-flex flex-column align-items-start pb-0">
+                  <h1
+                    className="card-title font-weight-bold text-dark custom-text-size text-center "
+                    style={{
+                      textAlign: "center",
+                      margin: "0 auto",
+                    }}
+                  >
+                    <div className={styles["texto-especie"]}>
+                      ESPÉCIES SERIAMENTES AMEAÇADAS DE EXTINÇÃO{" "}
                     </div>
-                  </div>
+                    <strong>
+                      <span
+                        className="text-danger"
+                        style={{ fontSize: "18px" }}
+                      >
+                        !!PESCA PROIBIDA!!
+                      </span>
+                    </strong>
+                  </h1>
                 </div>
+                <img className={styles["img-peixes"]} src={peixes} alt=""></img>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section></section>
 
-      <section>
-        <div>
-          <div
-            className="container-pesca"
-            style={{ display: "flex", alignItems: "flex-start" }}
-          >
-            <h1
-              className={styles["preserv-texto"]}
-              style={{ whiteSpace: "nowrap" }}
-            >
-              DICAS DE PRESERVAÇÃO!
-            </h1>
-            <div className="lixo">
-              <img className={styles["img-lixo"]} src={lixo} alt=""></img>
+      <section className="w-100">
+        <div className="row w-100 gap-1 ms-5 mt-5">
+          <h1 className="fs-5 mt-5">
+            DICAS DE PRESERVAÇÃO!
+          </h1>
+          <div className="col-2 d-block text-center">
+            <img className={styles["img-lixo"]} src={lixo} alt=""></img>
 
-              <h1
-                className={styles["lixo-texto"]}
-                style={{ whiteSpace: "nowrap" }}
-              >
-                {" "}
-                1- troque <br /> objetos <br /> descartáveis de <br />
-                plástico por <br /> objetos de <br />
-                papeis
-              </h1>
-            </div>
-            <div className="jogandolixo">
-              <img
-                className={styles["img-jogandolixo"]}
-                src={jogandolixo}
-                alt=""
-              ></img>
-              <h1
-                className={styles["jogandolixo-texto"]}
-                style={{ whiteSpace: "nowrap" }}
-              >
-                {" "}
-                2 - Recolha <br /> todo seu lixo, não <br /> deixe na praia
-              </h1>
-            </div>
+            <p>
+              1- troque <br /> objetos <br /> descartáveis de <br />
+              plástico por <br /> objetos de <br />
+              papeis
+            </p>
+          </div>
+          <div className="col-2 d-block text-center">
+            <p>
+              2 - Recolha <br /> todo seu lixo, não <br /> deixe na praia
+            </p>
+            <img
+              className={styles["img-jogandolixo"]}
+              src={jogandolixo}
+              alt=""
+            ></img>
+          </div>
 
-            <div className="limpandolixo">
-              <img
-                className={styles["img-limpandolixo"]}
-                src={limpandolixo}
-                alt=""
-              ></img>
-              <h1
-                className={styles["limpandolixo-texto"]}
-                style={{ whiteSpace: "nowrap" }}
-              >
-                {" "}
-                3 - Participe de <br />
-                movimentos de <br /> limpezas <br /> costeiras{" "}
-              </h1>
-            </div>
+          <div className="col-2 d-block text-center">
+            <img
+              className={styles["img-limpandolixo"]}
+              src={limpandolixo}
+              alt=""
+            ></img>
+            <p>
+              3 - Participe de <br />
+              movimentos de <br /> limpezas <br /> costeiras{" "}
+            </p>
+          </div>
 
-            <div className="reciclavel">
-              <img
-                className={styles["img-reciclavel"]}
-                src={reciclavel}
-                alt=""
-              ></img>
-              <h1
-                className={styles["reciclavel-texto"]}
-                style={{ whiteSpace: "nowrap" }}
-              >
-                {" "}
-                4 - Recicle seu lixo, <br />
-                separe seu lixo por <br />
-                categoria, isso facilita <br /> na hora da reciclagem
-              </h1>
-            </div>
+          <div className="col-2 d-block text-center">
+            <p>
+              4 - Recicle seu lixo, <br />
+              separe seu lixo por <br />
+              categoria, isso facilita <br /> na hora da reciclagem
+            </p>
+            <img
+              className={styles["img-reciclavel"]}
+              src={reciclavel}
+              alt=""
+            ></img>
+          </div>
 
-            <div className="proibidonadar">
-              <img
-                className={styles["img-proibidonadar"]}
-                src={proibidonadar}
-                alt=""
-              ></img>
-              <h1
-                className={styles["proibidonadar-texto"]}
-                style={{ whiteSpace: "nowrap" }}
-              >
-                5 - Respeite as <br />
-                sinalizações de <br />
-                praia, preserve sua <br /> vida e a vida dos <br /> oceanos,{" "}
-                <br /> respeitando as <br /> instruções
-              </h1>
-            </div>
+          <div className="col-2 d-block text-center">
+            <img
+              className={styles["img-proibidonadar"]}
+              src={proibidonadar}
+              alt=""
+            ></img>
+            <p>
+              5 - Respeite as <br />
+              sinalizações de <br />
+              praia, preserve sua <br /> vida e a vida dos <br /> oceanos,{" "}
+              <br /> respeitando as <br /> instruções
+            </p>
           </div>
         </div>
       </section>

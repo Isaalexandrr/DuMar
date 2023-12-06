@@ -23,7 +23,7 @@ function EsqueceuSenha() {
               <input
                 type="text"
                 className="form-control rounded-pill"
-                placeholder="Digite seu E-mail"
+                placeholder="Digite seu e-mail"
               />
             </div>
 
@@ -32,7 +32,7 @@ function EsqueceuSenha() {
                 type="passowrd"
                 id="senha"
                 className="form-control rounded-pill"
-                placeholder="Nova Senha"
+                placeholder="Nova senha"
               />
             </div>
             <div className="mx-auto w-50 mt-4  ">
